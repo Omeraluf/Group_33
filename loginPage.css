@@ -1,0 +1,394 @@
+html, body {
+    margin: 0;
+    height:max-content;
+	width:min-content;
+}
+
+.e58_30 { 
+	overflow:hidden;
+	border:1px solid rgba(0, 0, 0, 1);
+}
+.e58_30 { 
+	background-color:rgba(255, 255, 255, 1);
+	width:1440px;
+	height:1024px;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+	position:absolute;
+}
+.e57_170 { 
+	box-shadow:0px 5px 16px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:1440px;
+	height:112px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e57_170 { 
+	border:0px solid rgba(0, 0, 0, 1);
+}
+.e57_171 { 
+	box-shadow:0px 0px 19px rgba(0, 0, 0, 0.25);
+	width:219px;
+	height:102px;
+	position:absolute;
+	left:610px;
+	top:5px;
+	border-top-left-radius:37px;
+	border-top-right-radius:37px;
+	border-bottom-left-radius:37px;
+	border-bottom-right-radius:37px;
+	background-image:url(images/dr_wh.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e58_6 { 
+	width:812px;
+	height:422px;
+	position:absolute;
+	left:314px;
+	top:253px;
+}
+.e58_2 { 
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
+	background-color:rgba(176.00000470876694, 214.00000244379044, 191.00000381469727, 0.3499999940395355);
+	width:812px;
+	height:422px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.e57_224 { 
+	color:rgba(0, 0, 0, 1);
+	width:265px;
+	height:31px;
+	position:absolute;
+	left:456px;
+	top:45px;
+	font-family:Inter;
+	text-align:left;
+	font-size:26px;
+	letter-spacing:0;
+}
+.e58_25 { 
+	color:rgba(83.93750354647636, 83.93750354647636, 83.93750354647636, 1);
+	width:329px;
+	height:34px;
+	position:absolute;
+	left:428px;
+	top:88px;
+	font-family:Inter;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+}
+.e58_16 { 
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:461px;
+	top:238px;
+}
+.e58_17 { 
+	color:rgba(0, 0, 0, 0.6000000238418579);
+	width:65px;
+	height:17px;
+	position:absolute;
+	left:12px;
+	top:13px;
+	font-family:Inter;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.e58_18 { 
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.15000000596046448);
+	background-color:rgba(210.37499696016312, 210.37499696016312, 210.37499696016312, 0.699999988079071);
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.e58_19 { 
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:461px;
+	top:178px;
+}
+.e58_20 { 
+	color:rgba(0, 0, 0, 0.6000000238418579);
+	width:36px;
+	height:17px;
+	position:absolute;
+	left:12px;
+	top:12px;
+	font-family:Inter;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+}
+.register_form_field { 
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.15000000596046448);
+	background-color:rgba(210.37499696016312, 210.37499696016312, 210.37499696016312, 0.699999988079071);
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+/* explanation - i chose this one and not the other, 
+OTHER than what daniel did because i think this is the real button, and with this one you can change the color and
+make it act more like a button then the other one, BUT
+i'm not sure. 
+needs to check about the:
+* button functionality
+* hover
+*/
+.e58_22 { 
+	width:132px;
+	height:47px;
+	position:absolute;
+	left:523px;
+	top:323px;
+
+	color:white;
+	font-size: large;
+	background-color:rgba(106.58203125, 167.5230547785759, 239.0625, 1);
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	
+}
+/*e58_23*/
+.register_form_submit { 
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.25);
+	background-color:rgba(106.58203125, 167.5230547785759, 239.0625, 1);
+	width:132px;
+	height:47px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+
+	color:white;
+	font-size: large;
+	border: none;
+	
+}
+
+.register_form_submit:hover{
+	/* added by Omer - @not finished@ - needs to be centered*/
+	width: 110%;
+	height: 110%;
+	position:absolute;
+	transition:0.3s;
+}
+.e58_24 { 
+	color:rgba(255, 255, 255, 1);
+	width:81px;
+	height:24px;
+	position:absolute;
+	left:26px;
+	top:12px;
+	font-family:Inter;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+.e58_26 { 
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:1126px;
+	top:350px;
+}
+.e58_27 { 
+	background-color:rgba(0, 0, 0, 1);
+	width:19.600000381469727px;
+	height:20.000001907348633px;
+	position:absolute;
+	left:1.9999991655349731px;
+	top:1.9999995231628418px;
+}
+.e58_5 { 
+	width:315px;
+	height:422px;
+	position:absolute;
+	left:314px;
+	top:253px;
+}
+.e57_222 { 
+	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
+	background-color:rgba(176.00000470876694, 214.00000244379044, 191.00000381469727, 0.15000000596046448);
+	width:315px;
+	height:422px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.e57_223 { 
+	color:rgba(0, 0, 0, 1);
+	width:195px;
+	height:31px;
+	position:absolute;
+	left:60px;
+	top:45px;
+	font-family:Inter;
+	text-align:left;
+	font-size:26px;
+	letter-spacing:0;
+}
+.e58_3 { 
+	color:rgba(83.93750354647636, 83.93750354647636, 83.93750354647636, 1);
+	width:262px;
+	height:34px;
+	position:absolute;
+	left:27px;
+	top:88px;
+	font-family:Inter;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+}
+.e58_12 { 
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:30px;
+	top:238px;
+}
+.e58_10 { 
+	color:rgba(0, 0, 0, 0.6000000238418579);
+	width:65px;
+	height:17px;
+	position:absolute;
+	left:12px;
+	top:13px;
+	font-family:Inter;
+	text-align:left;
+	font-size:14px;
+	letter-spacing:0;
+}
+.login_form_field { 
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.15000000596046448);
+	background-color:rgba(210.37499696016312, 210.37499696016312, 210.37499696016312, 0.699999988079071);
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.e58_11 { 
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:30px;
+	top:178px;
+}
+.e58_9 { 
+	color:rgba(0, 0, 0, 0.6000000238418579);
+	width:36px;
+	height:17px;
+	position:absolute;
+	left:12px;
+	top:12px;
+	font-family:Inter;
+	text-align:center;
+	font-size:14px;
+	letter-spacing:0;
+}
+.login_form_field { 
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.15000000596046448);
+	background-color:rgba(210.37499696016312, 210.37499696016312, 210.37499696016312, 0.699999988079071);
+	width:255px;
+	height:40px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+.e58_15 { 
+	width:132px;
+	height:47px;
+	position:absolute;
+	left:92px;
+	top:323px;
+}
+.login_form_submit { 
+	box-shadow:0px 0px 5px rgba(0, 0, 0, 0.25);
+	color:white;
+	font-size: large;
+	background-color:rgba(106.58203125, 167.5230547785759, 239.0625, 1);
+	width:132px;
+	height:47px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	
+	border: none;
+	/* the black border is gone with this */
+}
+.login_form_submit:hover{	
+	/* added by Omer - @not finished@ - needs to be centered*/
+	width: 110%;
+	height: 110%;
+	position:absolute;
+	transition:0.3s;
+}
+
+.e58_14 { 
+	color:rgba(255, 255, 255, 1);
+	width:74px;
+	height:24px;
+	position:absolute;
+	left:29px;
+	top:12px;
+	font-family:Inter;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+
+.radio_select{
+	left:450px;
+	top: 295px;
+	position: relative;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	z-index: 1;
+}
