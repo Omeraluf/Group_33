@@ -1,7 +1,7 @@
 "use strict";
 
 const account1 ={
-    username: "daniel",
+    username: "daniel", // daniel == pipi
     password: "1234",
     role: "student"
 }
