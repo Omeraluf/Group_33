@@ -3,7 +3,7 @@
 const DrWHBtn = document.getElementById("e57_118");
 DrWHBtn.addEventListener("click", (e) =>{
     e.preventDefault();
-    window.location.assign("C:\Users\barda\Desktop\js\מעודכן\Project 1\\main.html");
+    window.location.assign("./main.html");
   //ADD the right file
 });
 
@@ -19,7 +19,7 @@ function dropDownCartBtn(){
     const cartBtn_myCart = document.getElementById("e57_156_1");
     cartBtn_myCart.addEventListener("click", (e)=>{
         e.preventDefault();
-        window.location.assign("C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\loginPage.html");
+        window.location.assign("./loginPage.html");
     })
 
 
@@ -31,7 +31,7 @@ function dropDownBellBtn(){
     const cartBtn_myBell = document.getElementById("e57_156_2");
     cartBtn_myBell.addEventListener("click", (e)=>{
         e.preventDefault();
-        window.location.assign("C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\nextPage.html");
+        window.location.assign("./nextPage.html");
     })
 
 
@@ -43,7 +43,7 @@ function dropDownPersonBtn(){
     const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
     cartBtn_myPerson.addEventListener("click", (e)=>{
         e.preventDefault();
-        window.location.assign("C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\loginPage.html");
+        window.location.assign("./loginPage.html");
     })
 
 
@@ -88,12 +88,12 @@ const btnJewellery = document.getElementById("Jewellery");
 btnDigital.addEventListener("click", (e) =>{
     e.preventDefault();
     alert("Hey");
-    window.location.assign("C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\loginPage.html");
+    window.location.assign("./loginPage.html");
   //ADD the right file
 });
 btnArt.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\loginPage.html");
+    window.location.assign("./loginPage.html");
     //ADD the right file
 });
 btnTextile.addEventListener("click", (e) => {
@@ -103,7 +103,7 @@ btnTextile.addEventListener("click", (e) => {
 });
 btnPhotography.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\addPhotograpy.html");
+    window.location.assign("./addPhotograpy.html");
     //ADD the right file
 });
 btnJewellery.addEventListener("click", (e) => {
@@ -139,7 +139,7 @@ let GoPro = {
 //   GoPro,
 // ];
 let HowMany = 0;
-const hideGoProchoice = document.querySelector(".choosehowmanyGoPro");
+// const hideGoProchoice = document.querySelector(".choosehowmanyGoPro");
 const btnGoProUp = document.getElementById("plusGoPro");
 const btnGoProDown = document.getElementById("minusGoPro");
 
@@ -153,8 +153,8 @@ if (GoPro.quantity > 0) {
     console.log(CartProduct);
     document.getElementById(
       "DescriptionGoPro"
-    ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`;
-    GoPro.quantity--;
+    ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`;  //TODO #1 20 to GoPro.quantity
+    GoPro.quantity--;                                                       //TODO #2 block the -number option 
   });
 }
 

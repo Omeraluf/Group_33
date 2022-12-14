@@ -1,2 +1,3 @@
 # Test
-# The-Four-Friends
+# Group 33
+#Digital wearhouse project

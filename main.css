@@ -727,6 +727,12 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	
+	color: rgba(0, 0, 0, 1);
+	font-family: Inter;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0;
   }
   .textPhotography {
 	color: rgba(0, 0, 0, 1);
