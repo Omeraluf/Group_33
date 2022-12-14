@@ -1,7 +1,7 @@
 "use strict";
 
 const account1 ={
-    username: "daniel", // daniel == pipi
+    username: "dani",
     password: "1234",
     role: "student"
 }
@@ -94,4 +94,8 @@ generateText = (namey, age) =>{
 }
 
 
+
 //Hey
+
+//daniel is the queen
+
