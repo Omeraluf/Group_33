@@ -93,4 +93,9 @@ generateText = (namey, age) =>{
     return '${namey} (${age} years old)';
 }
 
+
+
+//Hey
+
 //daniel is the queen
+
