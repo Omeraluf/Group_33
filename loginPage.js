@@ -1,7 +1,7 @@
 "use strict";
 
 const account1 ={
-    username: "daniel", // daniel == pipi
+    username: "dani",
     password: "1234",
     role: "student"
 }
@@ -91,4 +91,12 @@ registerButton.addEventListener("click", (e) => {
 
 generateText = (namey, age) =>{
     return '${namey} (${age} years old)';
+
 }
+
+
+
+//Hey
+
+//daniel is the queen
+
