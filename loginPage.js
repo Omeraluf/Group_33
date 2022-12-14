@@ -23,6 +23,7 @@ let users = [account1, account2, account3];                                  //c
 const loginForm = document.getElementById("login_form");
 const loginButton = document.getElementById("login_form_submit");
 
+
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();                                                             //from a website describing what it does - "Clicking on a "Submit" button, prevent it from submitting a form"
     const username = loginForm.username.value;
@@ -34,7 +35,7 @@ loginButton.addEventListener("click", (e) => {
     alert(users[i].username + " and " + users[i].password);                                     //put in comment when done
     if (username.toLowerCase() === users[i].username.toLowerCase() && password === users[i].password) {           //added "username.toLowerCase()"
         alert("You have successfully logged in.");
-        location.replace('C:\\Users\\barda\\Desktop\\js\\update\\Project 1\\main.html'); // DOUBLE '\\' in every path! *this is important* // change by your own comp
+        location.replace('./main.html'); // DOUBLE '\\' in every path! *this is important* // change by your own comp
         break;      //if for some reason it didn't work
        // location.reload();
     } else {
@@ -83,3 +84,11 @@ registerButton.addEventListener("click", (e) => {
         alert("Name is already taken, chose another one");
     }
 })
+
+
+
+//unit tests
+
+generateText = (namey, age) =>{
+    return '${namey} (${age} years old)';
+}
