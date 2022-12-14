@@ -92,3 +92,5 @@ registerButton.addEventListener("click", (e) => {
 generateText = (namey, age) =>{
     return '${namey} (${age} years old)';
 }
+
+//daniel is the queen
