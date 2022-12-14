@@ -1,7 +1,7 @@
 "use strict";
 
 const account1 ={
-    username: "daniel",
+    username: "dani",
     password: "1234",
     role: "student"
 }
