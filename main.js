@@ -39,13 +39,19 @@ function dropDownBellBtn(){
 function dropDownPersonBtn(){
     document.getElementById("dropDown_myPerson").classList.toggle("show");
 }
-    // Links
-    const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
-    cartBtn_myPerson.addEventListener("click", (e)=>{
+  // Links
+    // Log out button
+    const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
+    logOutBtn_myPerson.addEventListener("click", (e)=>{
         e.preventDefault();
         window.location.assign("./loginPage.html");
     })
 
+    const myPerson_helpSupport = document.getElementById("help_support"); //change this
+    myPerson_helpSupport.addEventListener("click", (e)=>{
+        e.preventDefault();
+        window.location.assign("./help_support.html");
+    })
 
 
     //probably erase this

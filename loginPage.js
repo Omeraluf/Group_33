@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 "use strict";
 
 const account1 ={
@@ -83,6 +86,7 @@ registerButton.addEventListener("click", (e) => {
     else{
         alert("Name is already taken, chose another one");
     }
+<<<<<<< Updated upstream
 })
 
 
@@ -100,3 +104,6 @@ generateText = (namey, age) =>{
 
 //daniel is the queen
 
+=======
+})
+>>>>>>> Stashed changes
