@@ -1,4 +1,5 @@
 {
+
   "devDependencies": {
     "jest": "^29.3.1",
     "puppeteer": "^19.4.0"
@@ -247,4 +248,9 @@
   },
   "homepage": "https://github.com/Omeraluf/Group_33#readme",
   "keywords": []
+
+  "dependencies": {
+    "sqlite3": "^5.1.4"
+  }
+
 }
