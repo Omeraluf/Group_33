@@ -74,10 +74,128 @@ exports.test3 = () =>{
 //@@ checking storage @@
 
 
+//@@ report student - start @@
+//1
+let MacBook = {
+    category: "Digital",
+    name: "MacBook",
+    quantity: 3,
+    MaxQuantity: 3,
+    MKT: "0006",
+  };
+
+let test4_var = MacBook.quantity;
+
+exports.test4 = () =>{
+    return test4_var
+}
+
+//2
+let brush = {
+    category: "Art",
+    name: "brush",
+    quantity: 100,
+    MKT: "0010",
+    MaxQuantity: 100,
+  };
+
+let test5_var = brush.MKT;
+
+exports.test5 = () =>{
+    return test5_var
+}
+
+//3
+let silver = {
+    category: "Jewllery",
+    name: "silver",
+    quantity: 60,
+    MKT: "0017",
+    MaxQuantity: 30,
+  };
+
+let test6_var = silver.MaxQuantity;
+
+exports.test6 = () =>{
+    return test6_var
+}
+//@@report student - end @@
+//@@report StorageKeeper - start @@
+
+//1
+let stretcher = {
+    category: "Jewllery",
+    name: "stretcher",
+    quantity: 10,
+    MKT: "0021",
+    MaxQuantity: 10,
+  };
+
+let test7_var = stretcher.name;
+
+exports.test7 = () =>{
+    if(test7_var == "STRETCHER".toLowerCase()){
+        return true;
+    }
+    return false;
+}  
+
+//2
+let VideoCamera = {
+    category: "photography",
+    name: "VideoCamera",
+    quantity: 10,
+    MaxQuantity: 10,
+    MKT: "0000",
+  };
+
+exports.test8 = () =>{
+    if(VideoCamera.category == "Art"){
+        return true;
+        }
+    return false;
+}
+
+//3
+let Umbrella = {
+    category: "photography",
+    name: "Umbrella",
+    quantity: 5,
+    MaxQuantity: 5,
+    MKT: "0003",
+  };
+ 
+exports.test9 = () =>{
+    if(Umbrella.quantity == Umbrella.MaxQuantity){
+        return true;
+        }
+    return false;
+}
+
+//@@report StorageKeeper - end @@
+//@@search - start @@
+let productName = "Art";
 
 
+exports.test10 = () =>{
+    let serchForproduct = "Art"
+        if (productName === serchForproduct) {
+          return "Art";}
+          else{
+            return "Not Art"
+          }
+      };
 
+exports.test11 = () =>{
+let serchForproduct = "Artyyyy"
+    if (productName === serchForproduct) {
+        return "Art";}
+        else{
+        return "Not Art"
+        }
+    };
 
+//@@search - end @@
 
 
 

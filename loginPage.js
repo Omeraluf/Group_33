@@ -86,17 +86,17 @@ registerButton.addEventListener("click", (e) => {
     else{
         alert("Name is already taken, chose another one");
     }
-<<<<<<< Updated upstream
+
 })
 
 
 
 //unit tests
 
-generateText = (namey, age) =>{
-    return '${namey} (${age} years old)';
+// generateText = (namey, age) =>{
+//     return '${namey} (${age} years old)';
 
-}
+// }
 
 
 
@@ -104,6 +104,4 @@ generateText = (namey, age) =>{
 
 //daniel is the queen
 
-=======
-})
->>>>>>> Stashed changes
+
