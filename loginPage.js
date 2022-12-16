@@ -1,4 +1,5 @@
 "use strict";
+
 const account1 = {
   username: "daniel",
   password: "1234",
@@ -21,7 +22,6 @@ let users = [account1, account2, account3]; //changed to let cause its mutable
 //let storageusers;
 const loginForm = document.getElementById("login_form");
 const loginButton = document.getElementById("login_form_submit");
-
 
 const usersss = [];
 
@@ -58,7 +58,7 @@ loginButton.addEventListener("click", (e) => {
   //     i++ //can be done like python too, but good!
   //   ) {
   const data = JSON.parse(window.localStorage.getItem("account"));
-  alert(`${username} and ${password}`); //put in comment when done
+  // alert(`${username} and ${password}`); //put in comment when done
   console.log(data);
   //check if there are something in the local storage
   if (!data) return;
@@ -70,8 +70,9 @@ loginButton.addEventListener("click", (e) => {
       username.toLowerCase() === User.username.toLowerCase() &&
       password === User.password
     ) {
-      alert("You have successfully logged in.");
+      // alert("You have successfully logged in.");
       location.replace("./main.html");
+      
     }
   });
 
@@ -80,14 +81,15 @@ loginButton.addEventListener("click", (e) => {
     i < users.length;
     i++ //can be done like python too, but good!
   ) {
-    alert(users[i].username + " and " + users[i].password); //put in comment when done
+    // alert(users[i].username + " and " + users[i].password); //put in comment when done
     if (
       username.toLowerCase() === users[i].username.toLowerCase() &&
       password === users[i].password
     ) {
       //added "username.toLowerCase()"
-      alert("You have successfully logged in.");
+      alert("You have successfully logged in.1");
       location.replace("./main.html");
+      break;
     }
   }
 
@@ -139,7 +141,7 @@ registerButton.addEventListener("click", (e) => {
 
   let registerForFlag = 0;
   for (var accounts in users) {
-    alert(accounts + "/" + users.length);
+    // alert(accounts + "/" + users.length);
     if (
       usernameRegister.toLowerCase() == users[accounts].username.toLowerCase()
     )
@@ -159,13 +161,13 @@ registerButton.addEventListener("click", (e) => {
     window.localStorage.setItem("account", JSON.stringify(usersss));
 
     alert(users.length); //working
-    alert(
-      users[users.length - 1].username +
-        " " +
-        users[users.length - 1].password +
-        " " +
-        users[users.length - 1].role
-    ); // working
+    // alert(
+    //   users[users.length - 1].username +
+    //     " " +
+    //     users[users.length - 1].password +
+    //     " " +
+    //     users[users.length - 1].role
+    // ); // working
   } else {
     alert("Name is already taken, chose another one");
   }
@@ -173,8 +175,6 @@ registerButton.addEventListener("click", (e) => {
 
 //unit tests
 
-
 // generateText = (namey, age) => {
 //   return "${namey} (${age} years old)";
 //};
-
