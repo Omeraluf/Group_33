@@ -1,6 +1,7 @@
 .thewholePage {
   overflow: hidden;
 }
+
 .thewholePage {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 1);
@@ -8,6 +9,7 @@
   height: 1024px;
   position: absolute;
 }
+
 .e177_3 {
   box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 1);
@@ -17,9 +19,11 @@
   left: 0px;
   top: 0px;
 }
+
 .e177_3 {
   border: 0px solid rgba(0, 0, 0, 1);
 }
+
 .e57_118 {
   box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
   width: 219px;
@@ -35,6 +39,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .e177_5 {
   width: 193px;
   height: 47px;
@@ -42,6 +47,7 @@
   left: 1229px;
   top: 33px;
 }
+
 .e177_6 {
   width: 47px;
   height: 47px;
@@ -58,6 +64,7 @@
   left: 14px;
   top: 13px;
 }
+
 .e177_9 {
   width: 47px;
   height: 47px;
@@ -74,6 +81,7 @@
   left: 14.125px;
   top: 12.25px;
 }
+
 .e177_12 {
   width: 47px;
   height: 47px;
@@ -81,6 +89,7 @@
   left: 0px;
   top: 0px;
 }
+
 .e177_13 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 500px;
@@ -91,6 +100,7 @@
   left: 0px;
   top: 0px;
 }
+
 .e177_14 {
   background-color: rgba(0, 0, 0, 1);
   width: 20px;
@@ -99,6 +109,7 @@
   left: 13px;
   top: 15px;
 }
+
 .e57_132 {
   width: 429px;
   height: 43px;
@@ -343,43 +354,60 @@
   left: 292px;
   top: 233px;
 }
-.Umbrella {
-  width: 206px;
-  height: 330px;
-  position: absolute;
-  left: 277px;
-  top: 307px;
-}
+
+/*
+
 .e177_59 {
-  color: rgba(0, 0, 0, 1);
-  width: 124px;
-  height: 60px;
-  position: absolute;
-  left: 29px;
-  top: 270px;
-  font-family: Inter;
-  text-align: left;
-  font-size: 12px;
-  letter-spacing: 0;
+    color: rgba(0, 0, 0, 1);
+    width: 124px;
+    height: 60px;
+    position: absolute;
+    left: 29px;
+    top: 270px;
+    font-family: Inter;
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0;
 }
+
 .e177_60 {
-  width: 206px;
-  height: 229px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  background-image: url(images/____________.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.GoPro {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    width: 206px;
+    height: 197px;
+    position: absolute;
+    left: 0px;
+    top: 31px;
+    background-image: url(images/____________.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    width: 212px;
+    height: 197px;
+    position: absolute;
+    left: 0px;
+    top: 0px; */
+
+/* background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+} */
+
+.e177_42 {
   width: 212px;
   height: 298px;
   position: absolute;
   left: 0px;
   top: 339px;
 }
-.GoPropic {
+
+.LEDBourd {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 212px;
   height: 197px;
@@ -390,11 +418,12 @@
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-image: url(images/gopro.png);
+  background-image: url(images/ledBord.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .e177_44 {
   color: rgba(0, 0, 0, 1);
   width: 77px;
@@ -407,7 +436,8 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-.choosehowmanyGoPro {
+
+.choosehowmanyLEDBourd {
   width: 145px;
   height: 77px;
   position: absolute;
@@ -415,12 +445,13 @@
   top: 69px;
   opacity: 0;
 }
-.choosehowmanyGoPro:hover {
+
+.choosehowmanyLEDBourd:hover {
   opacity: 100;
 }
 
-.minusGoPro {
-  color: rgba(255, 255, 255, 1);
+.minusLEDBourd {
+  color: rgba(0, 0, 0, 1);
   width: 37px;
   height: 54px;
   position: absolute;
@@ -432,8 +463,9 @@
   letter-spacing: 0;
   cursor: pointer;
 }
-.amountGoPro {
-  color: rgba(255, 255, 255, 1);
+
+.amountLEDBourd {
+  color: rgba(0, 0, 0, 1);
   width: 42px;
   height: 69px;
   position: absolute;
@@ -444,8 +476,9 @@
   font-size: 50px;
   letter-spacing: 0;
 }
-.plusGoPro {
-  color: rgba(255, 255, 255, 1);
+
+.plusLEDBourd {
+  color: rgba(0, 0, 0, 1);
   width: 40px;
   height: 53px;
   position: absolute;
@@ -457,13 +490,69 @@
   letter-spacing: 0;
   cursor: pointer;
 }
-.VideoCamera {
+
+.ApplePencil {
   width: 207px;
   height: 298px;
   position: absolute;
   left: 5px;
   top: 0px;
 }
+
+.choosehowmanyApplePencil {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+
+.choosehowmanyApplePencil:hover {
+  opacity: 100;
+}
+
+.minusApplePencil {
+  color: rgba(0, 0, 0, 1);
+  width: 37px;
+  height: 54px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.amountApplePencil {
+  color: rgba(0, 0, 0, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+
+.plusApplePencil {
+  color: rgba(0, 0, 0, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
 .e177_40 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 207px;
@@ -475,11 +564,12 @@
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-image: url(images/____________24mp.png);
+  background-image: url(images/AppelPencil.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.videocameratext {
+
+.e177_41 {
   color: rgba(0, 0, 0, 1);
   width: 177px;
   height: 60px;
@@ -491,13 +581,69 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-.CarCamera {
+
+.ipads {
   width: 207px;
   height: 298px;
   position: absolute;
   left: 292px;
   top: 2px;
 }
+
+.choosehowmanyipads {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+
+.choosehowmanyipads:hover {
+  opacity: 100;
+}
+
+.minusipads {
+  color: rgba(0, 0, 0, 1);
+  width: 37px;
+  height: 54px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.amountipads {
+  color: rgba(0, 0, 0, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+
+.plusipads {
+  color: rgba(0, 0, 0, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
 .e177_46 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 207px;
@@ -509,10 +655,11 @@
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
-  background-image: url(images/_________.png);
+  background-image: url(images/ipads.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .e177_47 {
   color: rgba(0, 0, 0, 1);
   width: 80px;
@@ -525,13 +672,69 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-.tripodCamera {
+
+.McBook {
   width: 207px;
   height: 298px;
   position: absolute;
   left: 590px;
   top: 2px;
 }
+
+.choosehowmanyMcBook {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+
+.choosehowmanyMcBook:hover {
+  opacity: 100;
+}
+
+.minusMcBook {
+  color: rgba(0, 0, 0, 1);
+  width: 37px;
+  height: 54px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.amountMcBook {
+  color: rgba(0, 0, 0, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+
+.plusMcBook {
+  color: rgba(0, 0, 0, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
 .e177_49 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 207px;
@@ -543,10 +746,11 @@
   border-top-right-radius: 17px;
   border-bottom-left-radius: 17px;
   border-bottom-right-radius: 17px;
-  background-image: url(images/_____.png);
+  background-image: url(images/macbook.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .e177_50 {
   color: rgba(0, 0, 0, 1);
   width: 178px;
@@ -559,6 +763,7 @@
   font-size: 12px;
   letter-spacing: 0;
 }
+
 .e177_51 {
   color: rgba(0, 0, 0, 1);
   width: 163px;
@@ -571,6 +776,7 @@
   font-size: 12px;
   letter-spacing: 0;
 }
+
 .e177_52 {
   background-color: rgba(0, 0, 0, 1);
   width: 19.999998092651367px;
@@ -606,6 +812,7 @@
   cursor: pointer;
   z-index: 1;
 }
+
 .e57_156 {
   background-color: rgba(
     245.43749392032623,
@@ -927,6 +1134,7 @@
   left: 19px;
   top: 153px;
 }
+
 .Jewelleryback {
   width: 198px;
   height: 84px;
@@ -934,6 +1142,7 @@
   left: 0px;
   top: 504px;
 }
+
 .Jewellery {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -954,6 +1163,7 @@
   cursor: pointer;
   border: none;
 }
+
 .textJewellery {
   color: rgba(0, 0, 0, 1);
   width: 150.3141326904297px;
@@ -968,6 +1178,7 @@
   /* font-family: 'Courier New', Courier, monospace;  */
   /* CHANGE the font */
 }
+
 .Photographyback {
   width: 198px;
   height: 84px;
@@ -975,6 +1186,7 @@
   left: 0px;
   top: 375px;
 }
+
 .Photography {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -1001,6 +1213,7 @@
   font-size: 30px;
   letter-spacing: 0;
 }
+
 /* .textPhotography {
 	color: rgba(0, 0, 0, 1);
 	width: 195px;
@@ -1023,6 +1236,7 @@
   top: 250px;
   cursor: pointer;
 }
+
 .Textile {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -1043,6 +1257,7 @@
   cursor: pointer;
   border: none;
 }
+
 .textTextile {
   color: rgba(0, 0, 0, 1);
   width: 102.6282730102539px;
@@ -1055,6 +1270,7 @@
   font-size: 32px;
   letter-spacing: 0;
 }
+
 .Artback {
   width: 198px;
   height: 84px;
@@ -1062,6 +1278,7 @@
   left: 0px;
   top: 125px;
 }
+
 .Art {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -1082,6 +1299,7 @@
   cursor: pointer;
   border: none;
 }
+
 .TextArt {
   color: rgba(0, 0, 0, 1);
   width: 48.722511291503906px;
@@ -1095,6 +1313,7 @@
   letter-spacing: 0;
   cursor: pointer;
 }
+
 .Digitalback {
   width: 198px;
   height: 84px;
@@ -1103,14 +1322,10 @@
   top: 0px;
   cursor: pointer;
 }
+
 .Digital {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
+  background-color: rgba(0, 0, 0, 0.25);
   width: 198px;
   height: 84px;
   position: absolute;
@@ -1123,6 +1338,7 @@
   cursor: pointer;
   border: none;
 }
+
 .TextDigital {
   color: rgba(0, 0, 0, 1);
   width: 98.48167419433594px;
