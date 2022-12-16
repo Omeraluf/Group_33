@@ -1,5 +1,4 @@
 "use strict";
-
 const account1 = {
   username: "daniel",
   password: "1234",
@@ -22,6 +21,7 @@ let users = [account1, account2, account3]; //changed to let cause its mutable
 //let storageusers;
 const loginForm = document.getElementById("login_form");
 const loginButton = document.getElementById("login_form_submit");
+
 
 const usersss = [];
 
@@ -173,6 +173,8 @@ registerButton.addEventListener("click", (e) => {
 
 //unit tests
 
+
 // generateText = (namey, age) => {
 //   return "${namey} (${age} years old)";
 //};
+
