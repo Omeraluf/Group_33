@@ -1,3 +1,6 @@
+/**
+ * @jest-environment jsdom
+ */
 "use strict";
 const account1 = {
   username: "daniel",
@@ -119,6 +122,55 @@ const registerForm = document.getElementById("register_form");
 const registerButton = document.getElementById("register_form_submit");
 
 registerButton.addEventListener("click", (e) => {
+
+    e.preventDefault();
+    const usernameRegister = registerForm.username_register.value;
+    const passwordRegister = registerForm.password_register.value;
+    
+    const roleRegister = registerForm.role.value;
+
+    
+    
+    // const roleRegister = document.querySelectorAll('input[name="role"]');
+    // const btn = document.querySelector('#btn');
+
+    alert("Checking if username: " + usernameRegister + " + " + passwordRegister + " + " + roleRegister);
+
+    let registerForFlag = 0;
+    for (var accounts in users){
+        alert(accounts + "/" + users.length);
+        if(usernameRegister.toLowerCase() == users[accounts].username.toLowerCase())
+        registerForFlag = 1;
+    }
+    if(registerForFlag == 0){                               // @@@@@@@ needs to make infinite accounts @@@@@@@@
+        const account_new ={
+            username: String(usernameRegister),
+            password: String(passwordRegister),
+            role: String(roleRegister)
+        }
+        users.push(account_new);
+        alert(users.length); //working
+        alert(users[users.length-1].username + " " + users[users.length-1].password + " " + users[users.length-1].role); // working
+    }
+    else{
+        alert("Name is already taken, chose another one");
+    }
+
+})
+
+
+
+//unit tests
+
+// generateText = (namey, age) =>{
+//     return '${namey} (${age} years old)';
+
+// }
+
+
+
+//Hey
+
   e.preventDefault();
   const usernameRegister = registerForm.username_register.value;
   const passwordRegister = registerForm.password_register.value;
@@ -174,7 +226,9 @@ registerButton.addEventListener("click", (e) => {
 //unit tests
 
 
+
 // generateText = (namey, age) => {
 //   return "${namey} (${age} years old)";
 //};
+
 
