@@ -18,7 +18,7 @@ const account3 = {
   role: "storage_keeper",
 };
 
-let users = [account1, account2, account3]; //changed to let cause its mutable
+var users = [account1, account2, account3]; // let caused problems, changed to var
 //let storageusers;
 const loginForm = document.getElementById("login_form");
 const loginButton = document.getElementById("login_form_submit");
@@ -171,6 +171,40 @@ registerButton.addEventListener("click", (e) => {
   } else {
     alert("Name is already taken, chose another one");
   }
+
+// daniel try
+  //forgot password
+const forgotPass = document.getElementById("forgot_password");
+
+forgotPass.addEventListener("click",(e) =>{
+    e.preventDefault();
+    location.replace('./forgot password.html'); 
+})
+
+const forgotPas = document.getElementById("forgotPas");
+const forgotButton = document.getElementById("forgot_pass_submit");
+
+if(forgotPas.username_pass.value != null && forgotPas.new_password.value != null)
+{
+    const usernameForgot = forgotPas.username_pass.value;
+    const newPass = forgotPas.new_password.value;
+}
+
+  usersss[i] = data;
+  usersss[i].forEach((User) => {
+  console.log(User);
+  if (
+    usernameForgot.toLowerCase() === User.username.toLowerCase()
+  ) {
+    usersss[i].password = newPass;
+    //maybe remove
+    usersss.push(storageusers);
+    //local storage to put info in
+    window.localStorage.setItem("account", JSON.stringify(usersss));
+    alert("You have successfully changed the password.");
+    location.replace("./main.html");
+  }
+})
 });
 
 //unit tests
