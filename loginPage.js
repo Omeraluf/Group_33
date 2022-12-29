@@ -178,7 +178,7 @@ const forgotPass = document.getElementById("forgot_password");
 
 forgotPass.addEventListener("click",(e) =>{
     e.preventDefault();
-    location.replace('./forgot password.html'); 
+    window.location.replace('./forgot password.html'); 
 })
 
 const forgotPas = document.getElementById("forgotPas");
