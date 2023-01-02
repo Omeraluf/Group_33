@@ -392,3 +392,8 @@ needs to check about the:
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	z-index: 1;
 }
+.forgot_password{
+	height: 25px;
+	position:relative;
+	top:-20px;
+}
