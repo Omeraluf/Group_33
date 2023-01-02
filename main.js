@@ -1,6 +1,19 @@
 "use strict";
 //Dr.WH button
+<<<<<<< Updated upstream
 const DrWHBtn = document.getElementById("e57_118");
+=======
+const DrWHBtn = document.getElementById("drWHpic");
+
+if (DrWHBtn !== null) {
+  DrWHBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./main.html");
+    //ADD the right file
+  });
+}
+
+>>>>>>> Stashed changes
 DrWHBtn.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.assign("./main.html");
@@ -11,6 +24,102 @@ DrWHBtn.addEventListener("click", (e) => {
 
 // when the user clicks on the button, it toggles between hidding and showing the dropdown content
 // Cart Button
+<<<<<<< Updated upstream
+=======
+
+function dropDownCartBtn() {
+  document.getElementById("dropDown_myCart").classList.toggle("show");
+}
+// Links
+const cartBtn_myCart = document.getElementById("e57_156_1");
+if (cartBtn_myCart !== null) {
+  cartBtn_myCart.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./loginPage.html");
+  });
+}
+
+// Bell Button
+function dropDownBellBtn() {
+  document.getElementById("dropDown_myBell").classList.toggle("show");
+}
+// Links
+const cartBtn_myBell = document.getElementById("e57_156_2");
+if (cartBtn_myBell !== null) {
+  cartBtn_myBell.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./nextPage.html");
+  });
+}
+
+// Person Button
+function dropDownPersonBtn() {
+  document.getElementById("dropDown_myPerson").classList.toggle("show");
+}
+// Links
+// Log out button
+const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
+if (logOutBtn_myPerson !== null) {
+  logOutBtn_myPerson.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./loginPage.html");
+  });
+}
+
+const myPerson_helpSupport = document.getElementById("help_support"); //change this
+if (myPerson_helpSupport !== null) {
+  myPerson_helpSupport.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./help_support.html");
+  });
+}
+
+const myPerson_reportStudent = document.getElementById("reportStudent"); //change this
+if (myPerson_reportStudent !== null) {
+  myPerson_reportStudent.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./reportStudent.html");
+  });
+}
+
+const myPerson_reportStorageKeeper = document.getElementById(
+  "reportStorageKeeper"
+); //change this
+if (myPerson_reportStorageKeeper !== null) {
+  myPerson_reportStorageKeeper.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./reportStorageKeeper.html");
+  });
+}
+
+//probably erase this
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+>>>>>>> Stashed changes
 // function dropDownCartBtn() {
 //   document.getElementById("dropDown_myCart").classList.toggle("show");
 // }
@@ -80,6 +189,7 @@ const btnTextile = document.getElementById("Textile");
 const btnPhotography = document.getElementById("Photography");
 const btnJewellery = document.getElementById("Jewellery");
 
+<<<<<<< Updated upstream
 btnDigital.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.assign("./addDigital.html");
@@ -105,6 +215,43 @@ btnJewellery.addEventListener("click", (e) => {
   window.location.assign("#");
   //ADD the right file
 });
+=======
+if (btnDigital !== null) {
+  btnDigital.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./addDigital.html");
+  });
+}
+
+if (btnTextile !== null) {
+  btnTextile.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./addTextile.html");
+    //ADD the right file
+  });
+}
+if (btnPhotography !== null) {
+  btnPhotography.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./addPhotograpy.html");
+    //ADD the right file
+  });
+}
+if (btnJewellery !== null) {
+  btnJewellery.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./addJewellery.html");
+    //ADD the right file
+  });
+}
+if (btnArt !== null) {
+  btnArt.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./addtoart.html");
+    //ADD the right file
+  });
+}
+>>>>>>> Stashed changes
 
 // GoPro in cart - element
 // copied from Yuvals - addPhotography.js
@@ -266,6 +413,10 @@ let stretcher = {
   MKT: "0021",
   MaxQuantity: 10,
 };
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 const JewlleryProduct = [silver, gold, cutter, welder, stretcher];
 const TextileProduct = [sewingMechine, fabric, tapeMessures, manniqen];
 const ArtProduct = [canvas, brush, faberCastell, paint];
@@ -277,6 +428,10 @@ const photographyProduct = [
   Umbrella,
   GoPro,
 ];
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 let AlltheProducts = [
   photographyProduct,
   DigitalProduct,
@@ -336,21 +491,23 @@ if (searchProductPop !== null) {
   document.getElementById(`${searchProductPop}`).style.border =
     "8px solid green";
 }
+<<<<<<< Updated upstream
 //box-shadow ="0px 5px 16px rgba(60, 255, 0, 0.25)";
 // if (searchProductPop === "GoPro") {
 //   console.log("found GoPro");
 // }
+=======
+
+>>>>>>> Stashed changes
 let HowMany = 0;
-//const hideGoProchoice = document.querySelector(".choosehowmanyGoPro");
 const btnGoProUp = document.getElementById("plusGoPro");
 const btnGoProDown = document.getElementById("minusGoPro");
 //select product and amount
 if (btnGoProUp !== null) {
   //check if the pruduct available
-  if (GoPro.quantity > 0) {
-    btnGoProUp.addEventListener("click", (e) => {
-      e.preventDefault();
-      //show the button from click on plus
+  btnGoProUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (GoPro.quantity > 0) {
       document.getElementById("amountGoPro").textContent = ++HowMany;
       console.log(HowMany);
       CartProduct.push("GoPro"); //Add to the cart
@@ -358,13 +515,18 @@ if (btnGoProUp !== null) {
       document.getElementById(
         "DescriptionGoPro"
       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`; //TODO #1 20 to GoPro.quantity
-      GoPro.quantity--; //TODO #2 block the -number option
-    });
-  }
+      GoPro.quantity--;
+    }
+  });
 }
 
 //if there is something in the cart from this product
+<<<<<<< Updated upstream
 if (btnGoProDown !== null) {
+=======
+
+if (btnGoProUp !== null) {
+>>>>>>> Stashed changes
   btnGoProDown.addEventListener("click", function () {
     if (HowMany > 0) {
       document.getElementById("amountGoPro").textContent = --HowMany;
@@ -380,6 +542,7 @@ if (btnGoProDown !== null) {
     }
   });
 }
+<<<<<<< Updated upstream
 HowMany = 0;
 const btncanvasUp = document.getElementById("pluscanvad");
 const btncanvasDown = document.getElementById("minuscanvas");
@@ -417,3 +580,266 @@ if (btnGoProDown !== null) {
     }
   });
 }
+=======
+
+//generic way only if we search
+HowMany = 0;
+let amount = "quantity";
+const btnUp = document.getElementById(`plus${searchProductPop}`);
+console.log(btnUp);
+console.log(searchProductPop.quantity);
+const btnDown = document.getElementById(`minus${searchProductPop}`);
+//select product and amount
+if (btnUp !== null) {
+  //check if the pruduct available
+  //if (`${searchProductPop}`.quantity > 0) {
+  btnUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    //show the button from click on plus
+    document.getElementById(`amount${searchProductPop}`).textContent =
+      ++HowMany;
+    console.log(HowMany);
+    CartProduct.push(searchProductPop); //Add to the cart
+    console.log(CartProduct);
+    document.getElementById(
+      `Description${searchProductPop}`
+    ).textContent = ` ${searchProductPop} Available: ${
+      100 - HowMany
+    } Color: all`; //TODO #1 20 to canvas.quantity
+    searchProductPop.quantity--; //TODO #2 block the -number option
+  });
+  //}
+}
+const btnUpGeneral = document.getElementById(`plus${AlltheProducts}`);
+console.log(btnUp);
+console.log(searchProductPop.quantity);
+const btnDownGeneral = document.getElementById(`minus${searchProductPop}`);
+//select product and amount
+if (btnUp !== null) {
+  //check if the pruduct available
+  //if (`${searchProductPop}`.quantity > 0) {
+  btnUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    //show the button from click on plus
+    document.getElementById(`amount${searchProductPop}`).textContent =
+      ++HowMany;
+    console.log(HowMany);
+    CartProduct.push(searchProductPop); //Add to the cart
+    console.log(CartProduct);
+    document.getElementById(
+      `Description${searchProductPop}`
+    ).textContent = ` ${searchProductPop} Available: ${
+      100 - HowMany
+    } Color: all`; //TODO #1 20 to canvas.quantity
+    //searchProductPop.quantity--; //TODO #2 block the -number option
+  });
+  //}
+}
+//if there is something in the cart from this product
+// if (btnDown !== null) {
+//   btnDown.addEventListener("click", function () {
+//     if (HowMany > 0) {
+//       document.getElementById(`amount${searchProductPop}`).textContent = --HowMany;
+//       console.log(canvas.quantity);
+//       CartProduct.pop("canvas");
+//       console.log(HowMany);
+//       document.getElementById(
+//         `Descriptio${searchProductPop}`
+//       ).textContent = ` ${searchProductPop} Available: ${canvas.quantity + 1} Color: white`;
+//       canvas.quantity++;
+//     }
+//   });
+// }
+
+//report student
+
+document.getElementById(
+  "report_quantity_1"
+).textContent = `${VideoCamera.quantity}`;
+document.getElementById("report_name_1").textContent = `${VideoCamera.name}`;
+document.getElementById("report_mkt_1").textContent = `${VideoCamera.MKT}`;
+
+document.getElementById(
+  "report_quantity_2"
+).textContent = `${CarCamera.quantity}`;
+document.getElementById("report_name_2").textContent = `${CarCamera.name}`;
+document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
+
+document.getElementById(
+  "report_quantity_3"
+).textContent = `${tripodCamera.quantity}`;
+document.getElementById("report_name_3").textContent = `${tripodCamera.name}`;
+document.getElementById("report_mkt_3").textContent = `${tripodCamera.MKT}`;
+
+document.getElementById(
+  "report_quantity_4"
+).textContent = `${Umbrella.quantity}`;
+document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
+document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
+
+document.getElementById("report_quantity_5").textContent = `${GoPro.quantity}`;
+document.getElementById("report_name_5").textContent = `${GoPro.name}`;
+document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
+
+document.getElementById("report_quantity_6").textContent = `${ipads.quantity}`;
+document.getElementById("report_name_6").textContent = `${ipads.name}`;
+document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
+
+document.getElementById(
+  "report_quantity_7"
+).textContent = `${MacBook.quantity}`;
+document.getElementById("report_name_7").textContent = `${MacBook.name}`;
+document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
+
+document.getElementById(
+  "report_quantity_8"
+).textContent = `${ApplePencil.quantity}`;
+document.getElementById("report_name_8").textContent = `${ApplePencil.name}`;
+document.getElementById("report_mkt_8").textContent = `${ApplePencil.MKT}`;
+
+document.getElementById(
+  "report_quantity_9"
+).textContent = `${LEDbourd.quantity}`;
+document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
+document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
+
+document.getElementById(
+  "report_quantity_10"
+).textContent = `${canvas.quantity}`;
+document.getElementById("report_name_10").textContent = `${canvas.name}`;
+document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
+
+document.getElementById("report_quantity_11").textContent = `${brush.quantity}`;
+document.getElementById("report_name_11").textContent = `${brush.name}`;
+document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
+
+document.getElementById(
+  "report_quantity_12"
+).textContent = `${faberCastell.quantity}`;
+document.getElementById("report_name_12").textContent = `${faberCastell.name}`;
+document.getElementById("report_mkt_12").textContent = `${faberCastell.MKT}`;
+
+document.getElementById("report_quantity_13").textContent = `${paint.quantity}`;
+document.getElementById("report_name_13").textContent = `${paint.name}`;
+document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
+
+document.getElementById(
+  "report_quantity_14"
+).textContent = `${sewingMechine.quantity}`;
+document.getElementById("report_name_14").textContent = `${sewingMechine.name}`;
+document.getElementById("report_mkt_14").textContent = `${sewingMechine.MKT}`;
+
+document.getElementById(
+  "report_quantity_15"
+).textContent = `${fabric.quantity}`;
+document.getElementById("report_name_15").textContent = `${fabric.name}`;
+document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
+
+document.getElementById(
+  "report_quantity_16"
+).textContent = `${tapeMessures.quantity}`;
+document.getElementById("report_name_16").textContent = `${tapeMessures.name}`;
+document.getElementById("report_mkt_16").textContent = `${tapeMessures.MKT}`;
+
+document.getElementById(
+  "report_quantity_17"
+).textContent = `${manniqen.quantity}`;
+document.getElementById("report_name_17").textContent = `${manniqen.name}`;
+document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
+
+document.getElementById(
+  "report_quantity_18"
+).textContent = `${silver.quantity}`;
+document.getElementById("report_name_18").textContent = `${silver.name}`;
+document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
+
+document.getElementById("report_quantity_19").textContent = `${gold.quantity}`;
+document.getElementById("report_name_19").textContent = `${gold.name}`;
+document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
+
+document.getElementById(
+  "report_quantity_20"
+).textContent = `${cutter.quantity}`;
+document.getElementById("report_name_20").textContent = `${cutter.name}`;
+document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
+
+document.getElementById(
+  "report_quantity_21"
+).textContent = `${welder.quantity}`;
+document.getElementById("report_name_21").textContent = `${welder.name}`;
+document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
+
+document.getElementById(
+  "report_quantity_22"
+).textContent = `${stretcher.quantity}`;
+document.getElementById("report_name_22").textContent = `${stretcher.name}`;
+document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
+
+//report storageKeeper addons
+document.getElementById(
+  "report_quantity_max_1"
+).textContent = `${VideoCamera.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_2"
+).textContent = `${CarCamera.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_3"
+).textContent = `${tripodCamera.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_4"
+).textContent = `${Umbrella.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_5"
+).textContent = `${GoPro.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_6"
+).textContent = `${ipads.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_7"
+).textContent = `${MacBook.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_8"
+).textContent = `${ApplePencil.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_9"
+).textContent = `${LEDbourd.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_10"
+).textContent = `${canvas.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_11"
+).textContent = `${brush.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_12"
+).textContent = `${faberCastell.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_13"
+).textContent = `${paint.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_14"
+).textContent = `${sewingMechine.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_15"
+).textContent = `${fabric.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_16"
+).textContent = `${tapeMessures.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_17"
+).textContent = `${manniqen.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_18"
+).textContent = `${silver.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_19"
+).textContent = `${gold.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_20"
+).textContent = `${cutter.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_21"
+).textContent = `${welder.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_22"
+).textContent = `${stretcher.MaxQuantity}`;
+>>>>>>> Stashed changes
