@@ -1,16 +1,20 @@
-.e244_3 {
+.e58_31 {
     overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 
-.e244_3 {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.e58_31 {
     background-color: rgba(255, 255, 255, 1);
     width: 1440px;
     height: 1024px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     position: absolute;
 }
 
-.e244_4 {
+.e57_117 {
     box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
     background-color: rgba(255, 255, 255, 1);
     width: 1440px;
@@ -20,11 +24,11 @@
     top: 0px;
 }
 
-.e244_4 {
+.e57_117 {
     border: 0px solid rgba(0, 0, 0, 1);
 }
 
-.e244_5 {
+.e57_118 {
     box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
     width: 219px;
     height: 102px;
@@ -40,7 +44,7 @@
     background-size: cover;
 }
 
-.e244_6 {
+.e57_119 {
     width: 193px;
     height: 47px;
     position: absolute;
@@ -48,7 +52,7 @@
     top: 33px;
 }
 
-.e244_7 {
+.e57_120 {
     width: 47px;
     height: 47px;
     position: absolute;
@@ -56,7 +60,8 @@
     top: 0px;
 }
 
-.e244_8 {
+/* e57_121 */
+.dropbtn_myPerson {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 500px;
     background-color: rgba(255, 255, 255, 1);
@@ -67,7 +72,7 @@
     top: 0px;
 }
 
-.e244_9 {
+.e57_122 {
     background-color: rgba(0, 0, 0, 1);
     width: 20px;
     height: 20px;
@@ -76,7 +81,7 @@
     top: 13px;
 }
 
-.e244_10 {
+.e57_123 {
     width: 47px;
     height: 47px;
     position: absolute;
@@ -84,18 +89,7 @@
     top: 0px;
 }
 
-.e244_11 {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 500px;
-    background-color: rgba(255, 255, 255, 1);
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-.e244_12 {
+.e57_125 {
     background-color: rgba(0, 0, 0, 1);
     width: 20px;
     height: 23.625px;
@@ -104,7 +98,7 @@
     top: 12.25px;
 }
 
-.e244_13 {
+.e57_126 {
     width: 47px;
     height: 47px;
     position: absolute;
@@ -112,27 +106,141 @@
     top: 0px;
 }
 
-.e244_14 {
+/* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
+/* The green colour^ */
+
+/* Dropdown Button */
+.dropbtn_myCart {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     border-radius: 500px;
+    /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
+    /* The green colour^ */
     background-color: rgba(255, 255, 255, 1);
     width: 47px;
     height: 47px;
+    /* position:absolute; */
+    left: 0px;
+    top: 0px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
+/* The green colour^ */
+
+/* Dropdown Button */
+/* .dropbtn_myCart {
+	background-color:rgba(255, 255, 255, 1);
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  } */
+
+/* Dropdown button on hover & focus */
+.dropbtn_myCart:hover,
+.dropbtn_myCart:focus {
+    background-color: rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_cart {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myCart {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myCart a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myCart a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+
+/* .e57_128 { 
+	background-color:rgba(0, 0, 0, 1);
+	width:20px;
+	height:20px;
+	position:absolute;
+	left:13px;
+	top:15px;
+} */
+
+.cart_logo {
+    height: 28px;
+    width: 28px;
+    background-image: url(images/cart_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: auto; */
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    /* grid-area:span; */
+}
+
+/* THE ICON */
+.e57_129 {
+    width: 88px;
+    height: 43px;
+    position: absolute;
+    left: 749px;
+    top: 38px;
+}
+
+.e57_130 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    width: 88px;
+    height: 43px;
     position: absolute;
     left: 0px;
     top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.e244_15 {
-    background-color: rgba(0, 0, 0, 1);
-    width: 20px;
+.e57_131 {
+    color: rgba(0, 0, 0, 1);
+    width: 72px;
     height: 20px;
     position: absolute;
-    left: 13px;
-    top: 15px;
+    left: 8px;
+    top: 13px;
+    font-family: Inter;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0;
 }
 
-.e244_19 {
+.e57_132 {
     width: 429px;
     height: 43px;
     position: absolute;
@@ -140,7 +248,7 @@
     top: 35px;
 }
 
-.e244_20 {
+.e57_133 {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
     width: 429px;
@@ -152,18 +260,26 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+
+
 }
 
-.e244_21 {
-    background-color: rgba(0, 0, 0, 1);
+.e57_134 {
+    /* background-color:rgba(0, 0, 0, 1); */
     width: 20px;
     height: 17.575000762939453px;
     position: absolute;
     left: 14.933547019958496px;
     top: 12px;
+    background-image: url(images/search_logo.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    opacity: 30%;
+    left: 400px;
+
 }
 
-.e244_22 {
+.e57_135 {
     color: rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
     width: 54.30379867553711px;
     height: 15px;
@@ -176,7 +292,406 @@
     letter-spacing: 0;
 }
 
-.e244_23 {
+/* .e57_136 { 
+	width:198px;
+	height:588px;
+	position:absolute;
+	left:13px;
+	top:159px;
+}
+.e57_137 { 
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:504px;
+}
+.e57_138 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.e57_139 { 
+	color:rgba(0, 0, 0, 1);
+	width:150.3141326904297px;
+	height:39px;
+	position:absolute;
+	left:23.842931747436523px;
+	top:22px;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+}
+.e57_140 { 
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:375px;
+}
+.e57_141 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.e57_142 { 
+	color:rgba(0, 0, 0, 1);
+	width:195px;
+	height:36px;
+	position:absolute;
+	left:2px;
+	top:24px;
+	font-family:Inter;
+	text-align:center;
+	font-size:30px;
+	letter-spacing:0;
+}
+.e57_143 { 
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:250px;
+}
+.e57_144 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.e57_145 { 
+	color:rgba(0, 0, 0, 1);
+	width:102.6282730102539px;
+	height:39px;
+	position:absolute;
+	left:49.75916290283203px;
+	top:22px;
+	font-family:Inter;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+}
+.e57_146 { 
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:125px;
+}
+.e57_147 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.e57_148 { 
+	color:rgba(0, 0, 0, 1);
+	width:48.722511291503906px;
+	height:39px;
+	position:absolute;
+	left:74.63874053955078px;
+	top:23px;
+	font-family:Inter;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+}
+.e57_149 { 
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e57_150 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+	width:198px;
+	height:84px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:23px;
+	border-top-right-radius:23px;
+	border-bottom-left-radius:23px;
+	border-bottom-right-radius:23px;
+}
+.e57_151 { 
+	color:rgba(0, 0, 0, 1);
+	width:98.48167419433594px;
+	height:39px;
+	position:absolute;
+	left:49.75916290283203px;
+	top:23px;
+	font-family:Inter;
+	text-align:center;
+	font-size:32px;
+	letter-spacing:0;
+} */
+.e57_152 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    width: 367.00048828125px;
+    height: 353px;
+    position: absolute;
+    left: 909px;
+    top: 97px;
+}
+
+.e57_153 {
+    width: 367.00048828125px;
+    height: 353px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.e57_154 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 367.0003356933594px;
+    height: 353px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.e57_155 {
+    background-color: rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.33000001311302185);
+    /* width:362.5428466796875px;
+	height:46.216705322265625px;
+	position:absolute;
+	left:2.476191520690918px;
+	top:3.98419189453125px; */
+    /* border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px; */
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.e57_156 {
+    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    /* width:367.0003356933594px;
+	height:47.81038284301758px;
+	position:absolute; */
+    /* left:-0.0002314651501365006px;
+	top:54.18510055541992px; */
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    /* add it everywhere! */
+}
+
+.e57_157 {
+    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    width: 367.0003356933594px;
+    height: 47.81038284301758px;
+    position: absolute;
+    left: -0.0002314651501365006px;
+    top: 154.5869140625px;
+
+    text-align: right;
+    font-size: large;
+    border: none;
+}
+
+.e57_158 {
+    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    width: 367.0003356933594px;
+    height: 47.81038284301758px;
+    position: absolute;
+    left: -0.0002314651501365006px;
+    top: 254.98870849609375px;
+
+    text-align: right;
+    font-size: large;
+    border: none;
+}
+
+.e57_159 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    /* width:367.0003356933594px;
+	height:47.81038284301758px;
+	position:absolute; */
+    /* left:-0.0002314651501365006px;
+	top:104.38600158691406px;
+
+	text-align: right;
+	font-size: large;
+	border: none; */
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    /* add it everywhere! */
+}
+
+.e57_160 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 367.0003356933594px;
+    height: 47.81038284301758px;
+    position: absolute;
+    left: -0.0002314651501365006px;
+    top: 204.78781127929688px;
+
+    text-align: right;
+    font-size: large;
+    border: none;
+}
+
+.e57_161 {
+    background-color: rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
+    width: 367.0003356933594px;
+    height: 47.81038284301758px;
+    position: absolute;
+    left: -0.0002314651501365006px;
+    top: 305.1896057128906px;
+
+    text-align: right;
+    font-size: large;
+    border: none;
+}
+
+.e57_162 {
+    color: rgba(0, 0, 0, 1);
+    width: 191.1769561767578px;
+    height: 27.88939094543457px;
+    position: absolute;
+    left: 167.89907836914062px;
+    top: 15.936798095703125px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 28px;
+    letter-spacing: 0;
+}
+
+.e57_163 {
+    color: rgba(0, 0, 0, 1);
+    width: 118.86650085449219px;
+    height: 20.717832565307617px;
+    position: absolute;
+    left: 239.71409606933594px;
+    top: 71.715576171875px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0;
+
+}
+
+.e57_164 {
+    color: rgba(0, 0, 0, 1);
+    width: 269px;
+    height: 21px;
+    position: absolute;
+    left: 90px;
+    top: 120px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e57_165 {
+    color: rgba(0, 0, 0, 1);
+    width: 288px;
+    height: 21px;
+    position: absolute;
+    left: 71px;
+    top: 169px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e57_166 {
+    color: rgba(0, 0, 0, 1);
+    width: 118.86650085449219px;
+    height: 20.717832565307617px;
+    position: absolute;
+    left: 240.2093963623047px;
+    top: 217.53724670410156px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e57_167 {
+    color: rgba(0, 0, 0, 1);
+    width: 118.86650085449219px;
+    height: 20.717832565307617px;
+    position: absolute;
+    left: 240.2093963623047px;
+    top: 266.14447021484375px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.e57_168 {
+    color: rgba(0, 0, 0, 1);
+    width: 118.86650085449219px;
+    height: 20.717832565307617px;
+    position: absolute;
+    left: 240.2093963623047px;
+    top: 314.7516784667969px;
+    font-family: Itim;
+    text-align: right;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+
+.Leftcategoties {
     width: 198px;
     height: 588px;
     position: absolute;
@@ -184,7 +699,7 @@
     top: 153px;
 }
 
-.e244_24 {
+.Jewelleryback {
     width: 198px;
     height: 84px;
     position: absolute;
@@ -192,9 +707,12 @@
     top: 504px;
 }
 
-.e244_25 {
+.Jewellery {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    background-color: rgba(245.43749392032623,
+            245.43749392032623,
+            245.43749392032623,
+            1);
     width: 198px;
     height: 84px;
     position: absolute;
@@ -204,9 +722,17 @@
     border-top-right-radius: 23px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+    cursor: pointer;
+    border: none;
+
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0;
 }
 
-.e244_26 {
+.textJewellery {
     color: rgba(0, 0, 0, 1);
     width: 150.3141326904297px;
     height: 39px;
@@ -216,9 +742,12 @@
     text-align: center;
     font-size: 32px;
     letter-spacing: 0;
+    cursor: pointer;
+    /* font-family: 'Courier New', Courier, monospace;  */
+    /* CHANGE the font */
 }
 
-.e244_27 {
+.Photographyback {
     width: 198px;
     height: 84px;
     position: absolute;
@@ -226,9 +755,12 @@
     top: 375px;
 }
 
-.e244_28 {
+.Photography {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    background-color: rgba(245.43749392032623,
+            245.43749392032623,
+            245.43749392032623,
+            1);
     width: 198px;
     height: 84px;
     position: absolute;
@@ -238,9 +770,17 @@
     border-top-right-radius: 23px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+    cursor: pointer;
+    border: none;
+
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0;
 }
 
-.e244_29 {
+.textPhotography {
     color: rgba(0, 0, 0, 1);
     width: 195px;
     height: 36px;
@@ -251,19 +791,25 @@
     text-align: center;
     font-size: 30px;
     letter-spacing: 0;
+    cursor: pointer;
+    /* border:none; */
 }
 
-.e244_30 {
+.Textileback {
     width: 198px;
     height: 84px;
     position: absolute;
     left: 0px;
     top: 250px;
+    cursor: pointer;
 }
 
-.e244_31 {
+.Textile {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    background-color: rgba(245.43749392032623,
+            245.43749392032623,
+            245.43749392032623,
+            1);
     width: 198px;
     height: 84px;
     position: absolute;
@@ -273,9 +819,11 @@
     border-top-right-radius: 23px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+    cursor: pointer;
+    border: none;
 }
 
-.e244_32 {
+.textTextile {
     color: rgba(0, 0, 0, 1);
     width: 102.6282730102539px;
     height: 39px;
@@ -288,7 +836,7 @@
     letter-spacing: 0;
 }
 
-.e244_33 {
+.Artback {
     width: 198px;
     height: 84px;
     position: absolute;
@@ -296,9 +844,12 @@
     top: 125px;
 }
 
-.e244_34 {
+.Art {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    background-color: rgba(245.43749392032623,
+            245.43749392032623,
+            245.43749392032623,
+            1);
     width: 198px;
     height: 84px;
     position: absolute;
@@ -308,9 +859,11 @@
     border-top-right-radius: 23px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+    cursor: pointer;
+    border: none;
 }
 
-.e244_35 {
+.TextArt {
     color: rgba(0, 0, 0, 1);
     width: 48.722511291503906px;
     height: 39px;
@@ -321,19 +874,24 @@
     text-align: center;
     font-size: 32px;
     letter-spacing: 0;
+    cursor: pointer;
 }
 
-.e244_36 {
+.Digitalback {
     width: 198px;
     height: 84px;
     position: absolute;
     left: 0px;
     top: 0px;
+    cursor: pointer;
 }
 
-.e244_37 {
+.Digital {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
+    background-color: rgba(245.43749392032623,
+            245.43749392032623,
+            245.43749392032623,
+            1);
     width: 198px;
     height: 84px;
     position: absolute;
@@ -343,9 +901,17 @@
     border-top-right-radius: 23px;
     border-bottom-left-radius: 23px;
     border-bottom-right-radius: 23px;
+    cursor: pointer;
+    border: none;
+
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0;
 }
 
-.e244_38 {
+.TextDigital {
     color: rgba(0, 0, 0, 1);
     width: 98.48167419433594px;
     height: 39px;
@@ -356,6 +922,242 @@
     text-align: center;
     font-size: 32px;
     letter-spacing: 0;
+    cursor: pointer;
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
+/* 124 */
+.dropbtn_myBell {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 500px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 47px;
+    height: 47px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.bell_logo {
+    height: 26px;
+    width: 26px;
+    background-image: url(images/bell_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: auto; */
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    /* grid-area:span; */
+}
+
+.dropbtn_myBell {
+    background-color: rgba(255, 255, 255, 1);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn_myBell:hover,
+.dropbtn_myBell:focus {
+    background-color: rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_bell {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myBell {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: -50px;
+    top: 47px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myBell a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myBell a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
+.person_logo {
+    height: 26px;
+    width: 26px;
+    background-image: url(images/person_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin: auto; */
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    /* grid-area:span; */
+}
+
+.dropbtn_myPerson {
+    background-color: rgba(255, 255, 255, 1);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn_myPerson:hover,
+.dropbtn_myPerson:focus {
+    background-color: rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_person {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myPerson {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: -50px;
+    top: 47px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myPerson a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myPerson a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+/* Edited by Omer 14/12/22 */
+.contact_info {
+    width: 850px;
+    height: 750px;
+    border: 10px black;
+    padding: 10px;
+    margin: 0px;
+
+    position: relative;
+    left: 300px;
+    top: 200px;
+
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1);
+    /* background-color:none; */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    /* opacity: 50%; */
+    font-family: 'Courier New', Courier, monospace;
+    /* direction: rtl; */
+    /* in hebrew its right to left */
+    /* border: 5px; */
+}
+
+.contact_info_head_1 {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-family: "Alef hebrew", sans-serif;
+}
+
+.contact_info_head_2 {
+    text-align: center;
+    color: gray;
+    font-family: "Alef hebrew", sans-serif;
+    font-size: 13.5px;
+}
+
+.contact_info_seperate_three_column_1,
+.contact_info_seperate_three_column_2,
+.contact_info_seperate_three_column_3 {
+    float: left;
+    width: 33%;
+    text-align: center;
+    letter-spacing: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+/* .contact_info_seperate_three_row:after{
+    i have no idea whas this is doing
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.contact_info_seperate_three_row {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 50%;
+}
+
+.contact_info_sperate_three_innterText {
+    font-size: 20px;
+}
+
+.contact_info_sperate_three_innterText_3 {
+    letter-spacing: 0px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact_info_sperate_three_innterText_3_link:visited {
+    color: blue;
+}
+
+.myTable {
+    /* direction: rtl; */
+    text-align: right;
+    /* left:500px; */
+    margin: 0 auto;
+    padding: 0 auto;
+    font-size: 18px;
 }
 
 .e244_53 {
