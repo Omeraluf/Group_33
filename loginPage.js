@@ -193,6 +193,7 @@ if(forgotPass != null)
     e.preventDefault();
     alert("press forgot password");
     location.replace("./forgot password.html");
+
 })
 }
 
