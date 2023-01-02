@@ -130,13 +130,22 @@ function dropDownCartBtn(){
     document.getElementById("dropDown_myCart").classList.toggle("show");
 }
     // Links
-    const cartBtn_myCart = document.getElementById("e57_156_1");
-    if(cartBtn_myCart !== null){
-    cartBtn_myCart.addEventListener("click", (e)=>{
-        e.preventDefault();
-        window.location.assign("./loginPage.html");
-    })
-  }
+  //   const cartBtn_myCart = document.getElementById("e57_156_1");     //this if for the "eglon" - its just moving you to the login page, care cause it's the same const name
+  //                                                                    // as the 2nd button "myCart"
+  //   if(cartBtn_myCart !== null){
+  //   cartBtn_myCart.addEventListener("click", (e)=>{
+  //       e.preventDefault();
+  //       window.location.assign("./loginPage.html");
+  //   })
+  // }
+
+  const cartBtn_myCart = document.getElementById("myCart");
+  if(cartBtn_myCart !== null){
+  cartBtn_myCart.addEventListener("click", (e)=>{
+      e.preventDefault();
+      window.location.assign("./myCart.html");
+  })
+}
 
 // Bell Button
 function dropDownBellBtn(){
@@ -164,6 +173,20 @@ function dropDownPersonBtn(){
         window.location.assign("./loginPage.html");
     })}
 
+    const myPerson_myProfile = document.getElementById("myProfile"); //change this
+    if(myPerson_myProfile !== null){
+      myPerson_myProfile.addEventListener("click", (e)=>{
+          e.preventDefault();
+          window.location.assign("./myProfile.html");
+      })}
+
+    const myPerson_messageBox = document.getElementById("messageBox"); //change this
+    if(myPerson_messageBox !== null){
+      myPerson_messageBox.addEventListener("click", (e)=>{
+          e.preventDefault();
+          window.location.assign("./messageBox.html");
+      })}
+
     const myPerson_helpSupport = document.getElementById("help_support"); //change this
     if(myPerson_helpSupport !== null){
       myPerson_helpSupport.addEventListener("click", (e)=>{
@@ -178,7 +201,12 @@ function dropDownPersonBtn(){
           window.location.assign("./reportStudent.html");
       })}
 
-      
+      const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
+    if(myPerson_reportTeacher !== null){
+      myPerson_reportTeacher.addEventListener("click", (e)=>{
+          e.preventDefault();
+          window.location.assign("./reportTeacher.html");
+      })}
 
       const myPerson_reportStorageKeeper = document.getElementById("reportStorageKeeper"); //change this
     if(myPerson_reportStorageKeeper !== null){
@@ -286,6 +314,7 @@ const btnJewellery = document.getElementById("Jewellery");
 
 
 
+
 if (btnDigital !== null) {
   btnDigital.addEventListener("click", (e) => {
     e.preventDefault();
@@ -302,6 +331,7 @@ if (btnTextile !== null) {
 }
 if (btnPhotography !== null) {
   btnPhotography.addEventListener("click", (e) => {
+
     e.preventDefault();
     window.location.assign("./addPhotograpy.html");
     //ADD the right file
@@ -323,6 +353,7 @@ if (btnArt !== null) {
 }
 
 })};
+
 
 
 
@@ -1053,4 +1084,5 @@ document.getElementById(
 document.getElementById(
   "report_quantity_max_22"
 ).textContent = `${stretcher.MaxQuantity}`;
+
 

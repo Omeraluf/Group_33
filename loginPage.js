@@ -1,28 +1,27 @@
 
-//data base try!!! Daniel
-
-//ends here data base try
-
 "use strict";
-const account1 = {
+
+var account1 = {
   username: "daniel",
   password: "1234",
   role: "student",
 };
 
-const account2 = {
+var account2 = {
   username: "omer",
   password: "1111",
   role: "teacher",
 };
 
-const account3 = {
+var account3 = {
   username: "yonah",
   password: "1996",
   role: "storage_keeper",
 };
 
+
 var users = [account1, account2, account3]; // let caused problems, changed to var
+
 //let storageusers;
 const loginForm = document.getElementById("login_form");
 const loginButton = document.getElementById("login_form_submit");
@@ -50,6 +49,7 @@ class userss {
 // }
 let storageusers;
 
+
 if(loginButton != null)
 {
   loginButton.addEventListener("click", (e) => {
@@ -60,6 +60,7 @@ if(loginButton != null)
     //yuval try
     //   for (
     let i = 0;
+
     //     i < usersss.length;
     //     i++ //can be done like python too, but good!
     //   ) {
@@ -97,6 +98,7 @@ if(loginButton != null)
         location.replace("./main.html");
         break;
       }
+
     }
   
     //omer :
@@ -127,6 +129,7 @@ if(loginButton != null)
 //register button
 const registerForm = document.getElementById("register_form");
 const registerButton = document.getElementById("register_form_submit");
+
 if(registerButton != null)
 {
   registerButton.addEventListener("click", (e) => {
@@ -184,6 +187,7 @@ if(registerButton != null)
 }
 
 
+
 // daniel try
 //forgot password
 const forgotPass = document.getElementById("forgot_password");
@@ -225,6 +229,7 @@ if(forgotPas != null)
     localStorage.setItem("account", JSON.stringify(usersss));
     alert("You have successfully changed the password.");
     location.replace("./main.html");
+
   }
 
     //location.replace("./loginPage.html");
@@ -236,6 +241,7 @@ if(forgotPas != null)
   
 
 //unit tests
+
 
 // generateText = (namey, age) => {
 //   return "${namey} (${age} years old)";
