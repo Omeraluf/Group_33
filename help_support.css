@@ -688,6 +688,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .textJewellery {
 	color: rgba(0, 0, 0, 1);
@@ -777,6 +778,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .textTextile {
 	color: rgba(0, 0, 0, 1);
@@ -816,6 +818,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .TextArt {
 	color: rgba(0, 0, 0, 1);
@@ -857,6 +860,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .TextDigital {
 	color: rgba(0, 0, 0, 1);

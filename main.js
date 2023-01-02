@@ -20,84 +20,11 @@ DrWHBtn.addEventListener("click", (e) =>{
 });
 }
 
-DrWHBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.assign("./main.html");
-  //ADD the right file
-});
-
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Omer's part
 
 // when the user clicks on the button, it toggles between hidding and showing the dropdown content
 // Cart Button
-
-
-function dropDownCartBtn() {
-  document.getElementById("dropDown_myCart").classList.toggle("show");
-}
-// Links
-const cartBtn_myCart = document.getElementById("e57_156_1");
-if (cartBtn_myCart !== null) {
-  cartBtn_myCart.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.assign("./loginPage.html");
-  });
-}
-
-// Bell Button
-function dropDownBellBtn() {
-  document.getElementById("dropDown_myBell").classList.toggle("show");
-}
-// Links
-const cartBtn_myBell = document.getElementById("e57_156_2");
-if (cartBtn_myBell !== null) {
-  cartBtn_myBell.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.assign("./nextPage.html");
-  });
-}
-
-// Person Button
-function dropDownPersonBtn() {
-  document.getElementById("dropDown_myPerson").classList.toggle("show");
-}
-// Links
-// Log out button
-const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
-if (logOutBtn_myPerson !== null) {
-  logOutBtn_myPerson.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.assign("./loginPage.html");
-  });
-}
-
-const myPerson_helpSupport = document.getElementById("help_support"); //change this
-if (myPerson_helpSupport !== null) {
-  myPerson_helpSupport.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.assign("./help_support.html");
-  });
-}
-
-const myPerson_reportStudent = document.getElementById("reportStudent"); //change this
-if (myPerson_reportStudent !== null) {
-  myPerson_reportStudent.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.assign("./reportStudent.html");
-  });
-}
-
-const myPerson_reportStorageKeeper = document.getElementById(
-  "reportStorageKeeper"
-); //change this
-if (myPerson_reportStorageKeeper !== null) {
-  myPerson_reportStorageKeeper.addEventListener("click", (e) => {
-    e.preventDefault();
-    window.location.assign("./reportStorageKeeper.html");
-  });
-}
-
 //probably erase this
 // window.onclick = function(event){
 //     if(!event.target.matches('.dropbtn')){
@@ -352,7 +279,7 @@ if (btnArt !== null) {
   });
 }
 
-})};
+
 
 
 
@@ -592,7 +519,7 @@ if (btnSearch !== null) {
 let searchProductPop = JSON.parse(window.localStorage.getItem("searchProduct"));
 if (searchProductPop !== null) {
   document.getElementById(`${searchProductPop}`).style.border =
-    "8px solid green";
+    "dashed rgb(40, 192, 53)";
 }
 
 let HowMany = 0;
@@ -829,7 +756,7 @@ HowMany = 0;
 let amount = "quantity";
 const btnUp = document.getElementById(`plus${searchProductPop}`);
 console.log(btnUp);
-console.log(searchProductPop.quantity);
+// console.log(searchProductPop.quantity);
 const btnDown = document.getElementById(`minus${searchProductPop}`);
 //select product and amount
 if (btnUp !== null) {
@@ -854,7 +781,7 @@ if (btnUp !== null) {
 }
 const btnUpGeneral = document.getElementById(`plus${AlltheProducts}`);
 console.log(btnUp);
-console.log(searchProductPop.quantity);
+// console.log(searchProductPop.quantity);
 const btnDownGeneral = document.getElementById(`minus${searchProductPop}`);
 //select product and amount
 if (btnUp !== null) {
