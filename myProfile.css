@@ -1079,7 +1079,8 @@
 .contact_info_seperate_three_row{
     margin:0 auto;
     padding: 0 auto;
-    width: 50%;
+    text-align: center;
+    /* width: 45%; */
 }
 
 .contact_info_sperate_three_innterText{
@@ -1103,4 +1104,17 @@
     margin:0 auto;
     padding: 0 auto;
     font-size: 18px;
+}
+
+.profile_logo{
+        height: 100px;
+        width: 100px;
+        background-image:url(images/profile_logo.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        position:relative;
+        /* margin: auto; */
+        /* position:absolute; */
+        left:45%;
+        /* grid-area:span; */
 }

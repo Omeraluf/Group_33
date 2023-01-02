@@ -1104,3 +1104,16 @@
     padding: 0 auto;
     font-size: 18px;
 }
+
+.envelope_logo{
+        height: 80px;
+        width: 80px;
+        background-image:url(images/delivery_logo.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        position:relative;
+        /* margin: auto; */
+        /* position:absolute; */
+        left:46%;
+        /* grid-area:span; */
+}

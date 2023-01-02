@@ -26,13 +26,22 @@ function dropDownCartBtn(){
     document.getElementById("dropDown_myCart").classList.toggle("show");
 }
     // Links
-    const cartBtn_myCart = document.getElementById("e57_156_1");
-    if(cartBtn_myCart !== null){
-    cartBtn_myCart.addEventListener("click", (e)=>{
-        e.preventDefault();
-        window.location.assign("./loginPage.html");
-    })
-  }
+  //   const cartBtn_myCart = document.getElementById("e57_156_1");     //this if for the "eglon" - its just moving you to the login page, care cause it's the same const name
+  //                                                                    // as the 2nd button "myCart"
+  //   if(cartBtn_myCart !== null){
+  //   cartBtn_myCart.addEventListener("click", (e)=>{
+  //       e.preventDefault();
+  //       window.location.assign("./loginPage.html");
+  //   })
+  // }
+
+  const cartBtn_myCart = document.getElementById("myCart");
+  if(cartBtn_myCart !== null){
+  cartBtn_myCart.addEventListener("click", (e)=>{
+      e.preventDefault();
+      window.location.assign("./myCart.html");
+  })
+}
 
 // Bell Button
 function dropDownBellBtn(){
@@ -60,6 +69,20 @@ function dropDownPersonBtn(){
         window.location.assign("./loginPage.html");
     })}
 
+    const myPerson_myProfile = document.getElementById("myProfile"); //change this
+    if(myPerson_myProfile !== null){
+      myPerson_myProfile.addEventListener("click", (e)=>{
+          e.preventDefault();
+          window.location.assign("./myProfile.html");
+      })}
+
+    const myPerson_messageBox = document.getElementById("messageBox"); //change this
+    if(myPerson_messageBox !== null){
+      myPerson_messageBox.addEventListener("click", (e)=>{
+          e.preventDefault();
+          window.location.assign("./messageBox.html");
+      })}
+
     const myPerson_helpSupport = document.getElementById("help_support"); //change this
     if(myPerson_helpSupport !== null){
       myPerson_helpSupport.addEventListener("click", (e)=>{
@@ -74,7 +97,12 @@ function dropDownPersonBtn(){
           window.location.assign("./reportStudent.html");
       })}
 
-      
+      const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
+    if(myPerson_reportTeacher !== null){
+      myPerson_reportTeacher.addEventListener("click", (e)=>{
+          e.preventDefault();
+          window.location.assign("./reportTeacher.html");
+      })}
 
       const myPerson_reportStorageKeeper = document.getElementById("reportStorageKeeper"); //change this
     if(myPerson_reportStorageKeeper !== null){
@@ -182,11 +210,6 @@ const btnJewellery = document.getElementById("Jewellery");
 
 
 if(btnDigital !== null){
-btnDigital.addEventListener("click", (e) =>{
-    e.preventDefault();
-    alert("Hey");
-    window.location.assign("./loginPage.html");
-
 btnDigital.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.assign("./addDigital.html");
@@ -194,13 +217,6 @@ btnDigital.addEventListener("click", (e) => {
   //ADD the right file
 })};
 
-if(btnArt !== null){
-btnArt.addEventListener("click", (e) => {
-
-    e.preventDefault();
-    window.location.assign("./loginPage.html");
-    //ADD the right file
-})};
 if(btnTextile !== null){
 btnTextile.addEventListener("click", (e) => {
     e.preventDefault();
@@ -219,26 +235,13 @@ btnJewellery.addEventListener("click", (e) => {
     window.location.assign("#");
     //ADD the right file
 })};
-
+if(btnArt !== null){
+  btnArt.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.assign("./addtoart.html");
   //ADD the right file
-});
-btnTextile.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.assign("#");
-  //ADD the right file
-});
-btnPhotography.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.assign("./addPhotograpy.html");
-  //ADD the right file
-});
-btnJewellery.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.assign("#");
-  //ADD the right file
-});
+})};
+
 
 
 // GoPro in cart - element
@@ -295,73 +298,7 @@ let MacBook = {
   MKT: "0006",
 
 };
-let ApplePencil = {
-  category: "Digital",
-  name: "ApplePencil",
-  quantity: 50,
-  MaxQuantity: 50,
-  MKT: "0007",
-};
-let LEDbourd = {
-  category: "Digital",
-  name: "LEDbourd",
-  quantity: 50,
-  MaxQuantity: 50,
-  MKT: "0008",
-};
-let canvas = {
-  category: "Art",
-  name: "canvas",
-  quantity: 100,
-  MKT: "0009",
-  MaxQuantity: 100,
-};
-let brush = {
-  category: "Art",
-  name: "brush",
-  quantity: 100,
-  MKT: "0010",
-  MaxQuantity: 100,
-};
-let faberCastell = {
-  category: "Art",
-  name: "faberCastell",
-  quantity: 70,
-  MKT: "0011",
-  MaxQuantity: 70,
-};
 
-let paint = {
-  category: "Art",
-  name: "paint",
-  quantity: 200,
-  MKT: "0012",
-  MaxQuantity: 200,
-};
-
-let sewingMechine = {
-  category: "Textile",
-  name: "sewingMechine",
-  quantity: 15,
-  MKT: "0013",
-  MaxQuantity: 15,
-};
-let fabric = {
-  category: "Textile",
-  name: "fabric",
-  quantity: 100,
-  MKT: "0014",
-  MaxQuantity: 100,
-};
-let tapeMessures = {
-  category: "Textile",
-  name: "tapeMessures",
-  quantity: 200,
-  MKT: "0015",
-  MaxQuantity: 200,
-};
-
-};
 let ApplePencil = {
   category: "Digital",
   name: "ApplePencil",
@@ -574,22 +511,22 @@ if (btnGoProUp !== null) {
 }
 
 
-//check if the pruduct available
-if (GoPro.quantity > 0) {
-  if(btnGoProUp !== null){
-    btnGoProUp.addEventListener("click", function () {
-      //show the button from click on plus
-      document.getElementById("amountGoPro").textContent = ++HowMany;
-      console.log(HowMany);
-      CartProduct.push("GoPro"); //Add to the cart
-      console.log(CartProduct);
-      document.getElementById(
-        "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`;  //TODO #1 20 to GoPro.quantity
-      GoPro.quantity--;                                                       //TODO #2 block the -number option 
+// //check if the pruduct available
+// if (GoPro.quantity > 0) {
+//   if(btnGoProUp !== null){
+//     btnGoProUp.addEventListener("click", function () {
+//       //show the button from click on plus
+//       document.getElementById("amountGoPro").textContent = ++HowMany;
+//       console.log(HowMany);
+//       CartProduct.push("GoPro"); //Add to the cart
+//       console.log(CartProduct);
+//       document.getElementById(
+//         "DescriptionGoPro"
+//       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`;  //TODO #1 20 to GoPro.quantity
+//       GoPro.quantity--;                                                       //TODO #2 block the -number option 
       
-  });
-}}
+//   });
+// }}
 
 //if there is something in the cart from this product
 
@@ -779,3 +716,15 @@ if (btnGoProDown !== null) {
   });
 }
 
+//local storage tries - Omer
+// let lastName;
+// localStorage.setItem(lastName,"Assenheimer");
+// document.getElementById("lastName").innerHTML = localStorage.getItem(lastName);
+
+
+  // Store
+  localStorage.setItem("lastname", "Smith");
+  // Retrieve
+  document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+
+  document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
