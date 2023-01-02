@@ -20,20 +20,20 @@
 .e177_3 {
   border: 0px solid rgba(0, 0, 0, 1);
 }
-.e57_118 { 
-	box-shadow:0px 0px 19px rgba(0, 0, 0, 0.25);
-	width:219px;
-	height:102px;
-	position:absolute;
-	left:13px;
-	top:6px;
-	border-top-left-radius:37px;
-	border-top-right-radius:37px;
-	border-bottom-left-radius:37px;
-	border-bottom-right-radius:37px;
-	background-image:url(images/dr_wh.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+.drWHpic {
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
+  width: 219px;
+  height: 102px;
+  position: absolute;
+  left: 13px;
+  top: 6px;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 37px;
+  border-bottom-left-radius: 37px;
+  border-bottom-right-radius: 37px;
+  background-image: url(images/dr_wh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .e177_5 {
   width: 193px;
@@ -99,14 +99,14 @@
   left: 13px;
   top: 15px;
 }
-.e177_18 {
+.e57_132 {
   width: 429px;
   height: 43px;
   position: absolute;
   left: 257px;
   top: 35px;
 }
-.e177_19 {
+.SearchBarBox {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
     245.43749392032623,
@@ -124,20 +124,21 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.e177_20 {
+
+.Searchbtn {
   /* background-color:rgba(0, 0, 0, 1); */
-	width:20px;
-	height:17.575000762939453px;
-	position:absolute;
-	left:14.933547019958496px;
-	top:12px;
-	background-image: url(images/search_logo.png);
-	background-size:20px;
-	background-repeat: no-repeat;
-	opacity: 30%;
-  left:400px;
+  width: 20px;
+  height: 17.575000762939453px;
+  position: absolute;
+  left: 14.933547019958496px;
+  top: 12px;
+  background-image: url(images/search_logo.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  opacity: 30%;
+  left: 400px;
 }
-.e177_21 {
+.e57_135 {
   color: rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
   width: 54.30379867553711px;
   height: 15px;
@@ -149,192 +150,6 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-/* .leftCategories {
-  width: 204px;
-  height: 581px;
-  position: absolute;
-  left: 13px;
-  top: 160px;
-}
-.e177_23 {
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 6px;
-  top: 497px;
-}
-.e177_24 {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-}
-.e177_25 {
-  color: rgba(0, 0, 0, 1);
-  width: 150.3141326904297px;
-  height: 39px;
-  position: absolute;
-  left: 23.842931747436523px;
-  top: 22px;
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 0;
-}
-.e177_26 {
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 6px;
-  top: 368px;
-}
-.e177_27 {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(0, 0, 0, 0.25);
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-}
-.e177_28 {
-  color: rgba(0, 0, 0, 1);
-  width: 195px;
-  height: 36px;
-  position: absolute;
-  left: 2px;
-  top: 24px;
-  font-family: Inter;
-  text-align: center;
-  font-size: 30px;
-  letter-spacing: 0;
-}
-.e177_29 {
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 6px;
-  top: 243px;
-}
-.e177_30 {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-}
-.e177_31 {
-  color: rgba(0, 0, 0, 1);
-  width: 102.6282730102539px;
-  height: 39px;
-  position: absolute;
-  left: 49.75916290283203px;
-  top: 22px;
-  font-family: Inter;
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 0;
-}
-.e177_32 {
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 6px;
-  top: 118px;
-}
-.e177_33 {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
-  width: 198px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-}
-.e177_34 {
-  color: rgba(0, 0, 0, 1);
-  width: 48.722511291503906px;
-  height: 39px;
-  position: absolute;
-  left: 74.63874053955078px;
-  top: 23px;
-  font-family: Inter;
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 0;
-}
-.e177_35 {
-  width: 204px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.e177_36 {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
-  width: 204px;
-  height: 84px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-top-left-radius: 23px;
-  border-top-right-radius: 23px;
-  border-bottom-left-radius: 23px;
-  border-bottom-right-radius: 23px;
-}
-.e177_37 {
-  color: rgba(0, 0, 0, 1);
-  width: 101.4659652709961px;
-  height: 39.000003814697266px;
-  position: absolute;
-  left: 51.266971588134766px;
-  top: 23.000003814697266px;
-  font-family: Inter;
-  text-align: center;
-  font-size: 32px;
-  letter-spacing: 0;
-} */
 .e177_38 {
   width: 797px;
   height: 637px;
@@ -342,12 +157,22 @@
   left: 292px;
   top: 233px;
 }
-.e177_58 {
+.Umbrella {
   width: 206px;
   height: 330px;
   position: absolute;
   left: 277px;
   top: 307px;
+}
+.e177_60 {
+  width: 206px;
+  height: 229px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(images/____________.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .e177_59 {
   color: rgba(0, 0, 0, 1);
@@ -361,17 +186,58 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-.e177_60 {
-  width: 206px;
-  height: 229px;
+.choosehowmanyUmbrella {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+.choosehowmanyUmbrella :hover {
+  opacity: 100;
+}
+
+.minusUmbrella {
+  color: rgba(255, 255, 255, 1);
+  width: 37px;
+  height: 54px;
   position: absolute;
   left: 0px;
-  top: 0px;
-  background-image: url(images/____________.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
 }
-.e177_42 {
+.amountUmbrella {
+  color: rgba(255, 255, 255, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+.plusUmbrella {
+  color: rgba(255, 255, 255, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.GoPro {
   width: 212px;
   height: 298px;
   position: absolute;
@@ -456,7 +322,7 @@
   letter-spacing: 0;
   cursor: pointer;
 }
-.e177_39 {
+.VideoCamera {
   width: 207px;
   height: 298px;
   position: absolute;
@@ -490,7 +356,57 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-.e177_45 {
+.choosehowmanyVideoCamera {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+.choosehowmanyVideoCamera:hover {
+  opacity: 100;
+}
+
+.minusVideoCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 37px;
+  height: 54px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.amountVideoCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+.plusVideoCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.CarCamera {
   width: 207px;
   height: 298px;
   position: absolute;
@@ -524,7 +440,57 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-.e177_48 {
+.choosehowmanyCarCamera {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+.choosehowmanyCarCamera:hover {
+  opacity: 100;
+}
+
+.minusCarCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 37px;
+  height: 54px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.amountCarCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+.plusCarCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.tripodCamera {
   width: 207px;
   height: 298px;
   position: absolute;
@@ -581,91 +547,105 @@
 
 /* Rectangles design */
 
-.e57_155 { 
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.33000001311302185);
-	/* width:362.5428466796875px;
+.e57_155 {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.33000001311302185
+  );
+  /* width:362.5428466796875px;
 	height:46.216705322265625px;
 	position:absolute;
 	left:2.476191520690918px;
 	top:3.98419189453125px; */
-	/* border-top-left-radius:10px;
+  /* border-top-left-radius:10px;
 	border-top-right-radius:10px;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px; */
 
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: right;
-	font-size: large;
-	border: none;
-	cursor: pointer;
-	z-index: 1;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
-.e57_156 { 
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	/* width:367.0003356933594px;
+.e57_156 {
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
-	/* left:-0.0002314651501365006px;
+  /* left:-0.0002314651501365006px;
 	top:54.18510055541992px; */
 
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: right;
-	font-size: large;
-	border: none;
-	cursor: pointer;
-	z-index: 1;
-	/* add it everywhere! */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* add it everywhere! */
 }
 
-.e57_159 { 
-	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	/* width:367.0003356933594px;
+.e57_159 {
+  background-color: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
+  /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
-	/* left:-0.0002314651501365006px;
+  /* left:-0.0002314651501365006px;
 	top:104.38600158691406px;
 
 	text-align: right;
 	font-size: large;
 	border: none; */
 
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: right;
-	font-size: large;
-	border: none;
-	cursor: pointer;
-	z-index: 1;
-	/* add it everywhere! */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* add it everywhere! */
 }
 
 /* Rectangles design */
 
-
 /* CART */
 
 /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
-	/* The green colour^ */
-	
- /* Dropdown Button */
- .dropbtn_myCart { 
-	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
-	border-radius:500px;
-	/* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
-	/* The green colour^ */
-	background-color:rgba(255, 255, 255, 1);
-	width:47px;
-	height:47px;
-	/* position:absolute; */
-	left:0px;
-	top:0px;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
+/* The green colour^ */
+
+/* Dropdown Button */
+.dropbtn_myCart {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+  /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
+  /* The green colour^ */
+  background-color: rgba(255, 255, 255, 1);
+  width: 47px;
+  height: 47px;
+  /* position:absolute; */
+  left: 0px;
+  top: 0px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
- 
+
 /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
-	/* The green colour^ */
+/* The green colour^ */
 
 /* Dropdown Button */
 /* .dropbtn_myCart {
@@ -676,55 +656,65 @@
 	border: none;
 	cursor: pointer;
   } */
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn_myCart:hover, .dropbtn_myCart:focus {
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown_cart {
-	position: relative;
-	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropDown_myCart {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right:0px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropDown_myCart a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropDown_myCart a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
 
-  .cart_logo{
-    height: 28px;
-    width: 28px;
-    background-image:url(images/cart_logo.png);
-    background-repeat:no-repeat;
-    background-size:cover;
-    /* margin: auto; */
-    position:absolute;
-    left:8px;
-    top:12px;
-    /* grid-area:span; */
-  }
+/* Dropdown button on hover & focus */
+.dropbtn_myCart:hover,
+.dropbtn_myCart:focus {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_cart {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myCart {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myCart a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myCart a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.cart_logo {
+  height: 28px;
+  width: 28px;
+  background-image: url(images/cart_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  /* grid-area:span; */
+}
 
 /* CART */
 
@@ -740,138 +730,158 @@
   top: 0px;
 }
 
-.bell_logo{
-	height: 26px;
-	width: 26px;
-	background-image:url(images/bell_logo.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	/* margin: auto; */
-	position:absolute;
-	left:10px;
-	top:11px;
-	/* grid-area:span; */
+.bell_logo {
+  height: 26px;
+  width: 26px;
+  background-image: url(images/bell_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  /* grid-area:span; */
 }
 
 .dropbtn_myBell {
-	background-color:rgba(255, 255, 255, 1);
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn_myBell:hover, .dropbtn_myBell:focus {
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown_bell {
-	position: relative;
-	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropDown_myBell {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right:-50px;
-	top: 47px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropDown_myBell a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropDown_myBell a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn_myBell:hover,
+.dropbtn_myBell:focus {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_bell {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myBell {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: -50px;
+  top: 47px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myBell a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myBell a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
 
 /* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
 
 /* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
 
 .dropbtn_myPerson {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 500px;
-    background-color: rgba(255, 255, 255, 1);
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-  }
-   
-.person_logo{
-	height: 26px;
-	width: 26px;
-	background-image:url(images/person_logo.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	/* margin: auto; */
-	position:absolute;
-	left:10px;
-	top:11px;
-	/* grid-area:span; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.person_logo {
+  height: 26px;
+  width: 26px;
+  background-image: url(images/person_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  /* grid-area:span; */
 }
 
 .dropbtn_myPerson {
-	background-color:rgba(255, 255, 255, 1);
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn_myPerson:hover, .dropbtn_myPerson:focus {
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown_person {
-	position: relative;
-	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropDown_myPerson {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right:-50px;
-	top: 47px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropDown_myPerson a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropDown_myPerson a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn_myPerson:hover,
+.dropbtn_myPerson:focus {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_person {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myPerson {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: -50px;
+  top: 47px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myPerson a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myPerson a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
 
 /* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -908,6 +918,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .textJewellery {
 	color: rgba(0, 0, 0, 1);
@@ -932,12 +943,7 @@
   }
   .Photography {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
+	background-color: rgba(0, 0, 0, 0.25);
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -949,14 +955,14 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
-
-  color: rgba(0, 0, 0, 1);
+	
+	color: rgba(0, 0, 0, 1);
 	font-family: Inter;
 	text-align: center;
 	font-size: 30px;
 	letter-spacing: 0;
   }
-  /* .textPhotography {
+  .textPhotography {
 	color: rgba(0, 0, 0, 1);
 	width: 195px;
 	height: 36px;
@@ -968,8 +974,8 @@
 	font-size: 30px;
 	letter-spacing: 0;
 	cursor: pointer;
-	border:none;
-  } */
+	/* border:none; */
+  }
   .Textileback {
 	width: 198px;
 	height: 84px;
@@ -997,6 +1003,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .textTextile {
 	color: rgba(0, 0, 0, 1);
@@ -1036,6 +1043,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .TextArt {
 	color: rgba(0, 0, 0, 1);
@@ -1077,6 +1085,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .TextDigital {
 	color: rgba(0, 0, 0, 1);
