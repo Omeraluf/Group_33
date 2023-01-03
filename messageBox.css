@@ -24,9 +24,7 @@
 .e57_117 { 
 	border:0px solid rgba(0, 0, 0, 1);
 }
-
-.drWHpic { 
-
+.e57_118 { 
 	box-shadow:0px 0px 19px rgba(0, 0, 0, 0.25);
 	width:219px;
 	height:102px;
@@ -688,7 +686,12 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
-	font-size: 32px;
+
+	color: rgba(0, 0, 0, 1);
+	font-family: Inter;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0;
   }
   .textJewellery {
 	color: rgba(0, 0, 0, 1);
@@ -778,7 +781,6 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
-	font-size: 32px;
   }
   .textTextile {
 	color: rgba(0, 0, 0, 1);
@@ -818,7 +820,6 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
-	font-size: 32px;
   }
   .TextArt {
 	color: rgba(0, 0, 0, 1);
@@ -860,7 +861,12 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
-	font-size: 32px;
+
+	color: rgba(0, 0, 0, 1);
+	font-family: Inter;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 0;
   }
   .TextDigital {
 	color: rgba(0, 0, 0, 1);
@@ -1018,7 +1024,7 @@
 /* Edited by Omer 14/12/22 */
 .contact_info{
     width: 850px;
-    height: 450px;
+    height: 750px;
     border: 10px black;
     padding: 10px;
     margin: 0px;
@@ -1034,8 +1040,8 @@
 	border-bottom-left-radius:100px;
 	border-bottom-right-radius:100px;
     /* opacity: 50%; */
-    font-family: "Alef hebrew", sans-serif;
-    direction: rtl;
+    font-family: 'Courier New', Courier, monospace;
+    /* direction: rtl; */
     /* in hebrew its right to left */
     /* border: 5px; */
 }
@@ -1044,11 +1050,14 @@
     text-align: center;
     font-size: 40px;
     letter-spacing: 4px;
+    font-family: "Alef hebrew", sans-serif;
 }
 
 .contact_info_head_2{
     text-align: center;
     color:gray;
+    font-family: "Alef hebrew", sans-serif;
+    font-size: 13.5px;
 }
 
 .contact_info_seperate_three_column_1, .contact_info_seperate_three_column_2, .contact_info_seperate_three_column_3{
@@ -1067,7 +1076,11 @@
     clear: both;
 } */
 
-
+.contact_info_seperate_three_row{
+    margin:0 auto;
+    padding: 0 auto;
+    width: 50%;
+}
 
 .contact_info_sperate_three_innterText{
     font-size: 20px;
@@ -1081,4 +1094,26 @@
 
 .contact_info_sperate_three_innterText_3_link:visited{
     color:blue;
+}
+
+.myTable{
+    /* direction: rtl; */
+    text-align: right;
+    /* left:500px; */
+    margin:0 auto;
+    padding: 0 auto;
+    font-size: 18px;
+}
+
+.envelope_logo{
+        height: 60px;
+        width: 60px;
+        background-image:url(images/envelope.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        position:relative;
+        /* margin: auto; */
+        /* position:absolute; */
+        left:48%;
+        /* grid-area:span; */
 }

@@ -17,18 +17,30 @@
       </select>
     </div>
 
-    <div class="radio_select">
-      <input type="radio" id="html" name="fav_language" value="HTML" />
-      <label for="html">HTML</label><br />
-      <input type="radio" id="css" name="fav_language" value="CSS" />
-      <label for="css">CSS</label><br />
-      <input
-        type="radio"
-        id="javascript"
-        name="fav_language"
-        value="JavaScript"
-      />
-      <label for="javascript">JavaScript</label>
-    </div>
-  </body>
+
+        <div class="radio_select">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+
+        <br>
+        <div id="result">hey</div>
+
+        <script defer src="main.js"></script>
+        <!-- <script>
+            if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        </script> -->
+    </body>
 </html>
+
