@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    </head>
-    <body>
-        <h1>
-            This is just a temp page, you can try stuff here
-        </h1>
-        <div>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-        </div>
-        <div>
-            <label for="type_of_user">I am a...</label>
+  <head> </head>
+  <body>
+    <h1>This is just a temp page, you can try stuff here</h1>
+    <div>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"> I have a bike</label><br />
+    </div>
+    <div>
+      <label for="type_of_user">I am a...</label>
 
-                <select name="permission" id="permission">
-                <option value="student">Student</option>
-                <option value="professor">Professor</option>
-                <option value="manager">Storage Manager</option>
-                </select>
-        </div>
+      <select name="permission" id="permission">
+        <option value="student">Student</option>
+        <option value="professor">Professor</option>
+        <option value="manager">Storage Manager</option>
+      </select>
+    </div>
+
 
         <div class="radio_select">
             <input type="radio" id="html" name="fav_language" value="HTML">
@@ -28,5 +26,21 @@
             <input type="radio" id="javascript" name="fav_language" value="JavaScript">
             <label for="javascript">JavaScript</label>
         </div>
+
+        <br>
+        <div id="result">hey</div>
+
+        <script defer src="main.js"></script>
+        <!-- <script>
+            if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+        } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        </script> -->
     </body>
 </html>
+

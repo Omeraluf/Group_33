@@ -1,125 +1,125 @@
 
-.e58_31 { 
-	overflow:hidden;
-	border:1px solid rgba(0, 0, 0, 1);
+.e58_31 {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 1);
 }
-.e58_31 { 
-	background-color:rgba(255, 255, 255, 1);
-	width:1440px;
-	height:1024px;
-	border-top-left-radius:2px;
-	border-top-right-radius:2px;
-	border-bottom-left-radius:2px;
-	border-bottom-right-radius:2px;
-	position:absolute;
+.e58_31 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 1024px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  position: absolute;
 }
-.e57_117 { 
-	box-shadow:0px 5px 16px rgba(0, 0, 0, 0.25);
-	background-color:rgba(255, 255, 255, 1);
-	width:1440px;
-	height:112px;
-	position:absolute;
-	left:0px;
-	top:0px;
+.e57_117 {
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 112px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
-.e57_117 { 
-	border:0px solid rgba(0, 0, 0, 1);
+.e57_117 {
+  border: 0px solid rgba(0, 0, 0, 1);
 }
-.e57_118 { 
-	box-shadow:0px 0px 19px rgba(0, 0, 0, 0.25);
-	width:219px;
-	height:102px;
-	position:absolute;
-	left:13px;
-	top:6px;
-	border-top-left-radius:37px;
-	border-top-right-radius:37px;
-	border-bottom-left-radius:37px;
-	border-bottom-right-radius:37px;
-	background-image:url(images/dr_wh.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+.drWHpic {
+  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
+  width: 219px;
+  height: 102px;
+  position: absolute;
+  left: 13px;
+  top: 6px;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 37px;
+  border-bottom-left-radius: 37px;
+  border-bottom-right-radius: 37px;
+  background-image: url(images/dr_wh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.e57_119 { 
-	width:193px;
-	height:47px;
-	position:absolute;
-	left:1229px;
-	top:33px;
+.e57_119 {
+  width: 193px;
+  height: 47px;
+  position: absolute;
+  left: 1229px;
+  top: 33px;
 }
-.e57_120 { 
-	width:47px;
-	height:47px;
-	position:absolute;
-	left:146px;
-	top:0px;
+.e57_120 {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 146px;
+  top: 0px;
 }
 /* e57_121 */
-.dropbtn_myPerson { 
-	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
-	border-radius:500px;
-	background-color:rgba(255, 255, 255, 1);
-	width:47px;
-	height:47px;
-	position:absolute;
-	left:0px;
-	top:0px;
+.dropbtn_myPerson {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
-.e57_122 { 
-	background-color:rgba(0, 0, 0, 1);
-	width:20px;
-	height:20px;
-	position:absolute;
-	left:14px;
-	top:13px;
+.e57_122 {
+  background-color: rgba(0, 0, 0, 1);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 14px;
+  top: 13px;
 }
-.e57_123 { 
-	width:47px;
-	height:47px;
-	position:absolute;
-	left:72px;
-	top:0px;
+.e57_123 {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 72px;
+  top: 0px;
 }
 
-.e57_125 { 
-	background-color:rgba(0, 0, 0, 1);
-	width:20px;
-	height:23.625px;
-	position:absolute;
-	left:14.125px;
-	top:12.25px;
+.e57_125 {
+  background-color: rgba(0, 0, 0, 1);
+  width: 20px;
+  height: 23.625px;
+  position: absolute;
+  left: 14.125px;
+  top: 12.25px;
 }
-.e57_126 { 
-	width:47px;
-	height:47px;
-	position:absolute;
-	left:0px;
-	top:0px;
+.e57_126 {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
-	/* The green colour^ */
-	
- /* Dropdown Button */
-.dropbtn_myCart { 
-	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
-	border-radius:500px;
-	/* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
-	/* The green colour^ */
-	background-color:rgba(255, 255, 255, 1);
-	width:47px;
-	height:47px;
-	/* position:absolute; */
-	left:0px;
-	top:0px;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
+/* The green colour^ */
+
+/* Dropdown Button */
+.dropbtn_myCart {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+  /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
+  /* The green colour^ */
+  background-color: rgba(255, 255, 255, 1);
+  width: 47px;
+  height: 47px;
+  /* position:absolute; */
+  left: 0px;
+  top: 0px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
- 
+
 /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
-	/* The green colour^ */
+/* The green colour^ */
 
 /* Dropdown Button */
 /* .dropbtn_myCart {
@@ -130,43 +130,52 @@
 	border: none;
 	cursor: pointer;
   } */
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn_myCart:hover, .dropbtn_myCart:focus {
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown_cart {
-	position: relative;
-	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropDown_myCart {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right:0px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropDown_myCart a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropDown_myCart a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
 
+/* Dropdown button on hover & focus */
+.dropbtn_myCart:hover,
+.dropbtn_myCart:focus {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_cart {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myCart {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myCart a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myCart a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
 
 /* .e57_128 { 
 	background-color:rgba(0, 0, 0, 1);
@@ -177,99 +186,106 @@
 	top:15px;
 } */
 
-.cart_logo{
-	height: 28px;
-	width: 28px;
-	background-image:url(images/cart_logo.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	/* margin: auto; */
-	position:absolute;
-	left:8px;
-	top:12px;
-	/* grid-area:span; */
+.cart_logo {
+  height: 28px;
+  width: 28px;
+  background-image: url(images/cart_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  /* grid-area:span; */
 }
 /* THE ICON */
-.e57_129 { 
-	width:88px;
-	height:43px;
-	position:absolute;
-	left:749px;
-	top:38px;
+.e57_129 {
+  width: 88px;
+  height: 43px;
+  position: absolute;
+  left: 749px;
+  top: 38px;
 }
-.e57_130 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:88px;
-	height:43px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
+.e57_130 {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 88px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.e57_131 { 
-	color:rgba(0, 0, 0, 1);
-	width:72px;
-	height:20px;
-	position:absolute;
-	left:8px;
-	top:13px;
-	font-family:Inter;
-	text-align:center;
-	font-size:12px;
-	letter-spacing:0;
+.e57_131 {
+  color: rgba(0, 0, 0, 1);
+  width: 72px;
+  height: 20px;
+  position: absolute;
+  left: 8px;
+  top: 13px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0;
 }
-.e57_132 { 
-	width:429px;
-	height:43px;
-	position:absolute;
-	left:257px;
-	top:35px;
+.e57_132 {
+  width: 429px;
+  height: 43px;
+  position: absolute;
+  left: 257px;
+  top: 35px;
 }
-.e57_133 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:429px;
-	height:43px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
-	
-	
+.e57_133 {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 429px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-.e57_134 { 
-	/* background-color:rgba(0, 0, 0, 1); */
-	width:20px;
-	height:17.575000762939453px;
-	position:absolute;
-	left:14.933547019958496px;
-	top:12px;
-	background-image: url(images/search_logo.png);
-	background-size:20px;
-	background-repeat: no-repeat;
-	opacity: 30%;
-	left:400px;
-	
+.e57_134 {
+  /* background-color:rgba(0, 0, 0, 1); */
+  width: 20px;
+  height: 17.575000762939453px;
+  position: absolute;
+  left: 14.933547019958496px;
+  top: 12px;
+  background-image: url(images/search_logo.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  opacity: 30%;
+  left: 400px;
 }
-.e57_135 { 
-	color:rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
-	width:54.30379867553711px;
-	height:15px;
-	position:absolute;
-	left:48px;
-	top:16px;
-	font-family:Inter;
-	text-align:left;
-	font-size:12px;
-	letter-spacing:0;
+.e57_135 {
+  color: rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
+  width: 54.30379867553711px;
+  height: 15px;
+  position: absolute;
+  left: 48px;
+  top: 16px;
+  font-family: Inter;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0;
 }
 /* .e57_136 { 
 	width:198px;
@@ -437,222 +453,260 @@
 	font-size:32px;
 	letter-spacing:0;
 } */
-.e57_152 { 
-	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
-	width:367.00048828125px;
-	height:353px;
-	position:absolute;
-	left:909px;
-	top:97px;
+.e57_152 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  width: 367.00048828125px;
+  height: 353px;
+  position: absolute;
+  left: 909px;
+  top: 97px;
 }
-.e57_153 { 
-	width:367.00048828125px;
-	height:353px;
-	position:absolute;
-	left:0px;
-	top:0px;
+.e57_153 {
+  width: 367.00048828125px;
+  height: 353px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
-.e57_154 { 
-	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	width:367.0003356933594px;
-	height:353px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
+.e57_154 {
+  background-color: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
+  width: 367.0003356933594px;
+  height: 353px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.e57_155 { 
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.33000001311302185);
-	/* width:362.5428466796875px;
+.e57_155 {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.33000001311302185
+  );
+  /* width:362.5428466796875px;
 	height:46.216705322265625px;
 	position:absolute;
 	left:2.476191520690918px;
 	top:3.98419189453125px; */
-	/* border-top-left-radius:10px;
+  /* border-top-left-radius:10px;
 	border-top-right-radius:10px;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px; */
 
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: right;
-	font-size: large;
-	border: none;
-	cursor: pointer;
-	z-index: 1;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
-.e57_156 { 
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	/* width:367.0003356933594px;
+.e57_156 {
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
-	/* left:-0.0002314651501365006px;
+  /* left:-0.0002314651501365006px;
 	top:54.18510055541992px; */
 
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: right;
-	font-size: large;
-	border: none;
-	cursor: pointer;
-	z-index: 1;
-	/* add it everywhere! */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* add it everywhere! */
 }
-.e57_157 { 
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:367.0003356933594px;
-	height:47.81038284301758px;
-	position:absolute;
-	left:-0.0002314651501365006px;
-	top:154.5869140625px;
+.e57_157 {
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 367.0003356933594px;
+  height: 47.81038284301758px;
+  position: absolute;
+  left: -0.0002314651501365006px;
+  top: 154.5869140625px;
 
-	text-align: right;
-	font-size: large;
-	border: none;
+  text-align: right;
+  font-size: large;
+  border: none;
 }
-.e57_158 { 
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:367.0003356933594px;
-	height:47.81038284301758px;
-	position:absolute;
-	left:-0.0002314651501365006px;
-	top:254.98870849609375px;
+.e57_158 {
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 367.0003356933594px;
+  height: 47.81038284301758px;
+  position: absolute;
+  left: -0.0002314651501365006px;
+  top: 254.98870849609375px;
 
-	text-align: right;
-	font-size: large;
-	border: none;
+  text-align: right;
+  font-size: large;
+  border: none;
 }
-.e57_159 { 
-	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	/* width:367.0003356933594px;
+.e57_159 {
+  background-color: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
+  /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
-	/* left:-0.0002314651501365006px;
+  /* left:-0.0002314651501365006px;
 	top:104.38600158691406px;
 
 	text-align: right;
 	font-size: large;
 	border: none; */
 
-	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	text-align: right;
-	font-size: large;
-	border: none;
-	cursor: pointer;
-	z-index: 1;
-	/* add it everywhere! */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* add it everywhere! */
 }
-.e57_160 { 
-	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	width:367.0003356933594px;
-	height:47.81038284301758px;
-	position:absolute;
-	left:-0.0002314651501365006px;
-	top:204.78781127929688px;
+.e57_160 {
+  background-color: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
+  width: 367.0003356933594px;
+  height: 47.81038284301758px;
+  position: absolute;
+  left: -0.0002314651501365006px;
+  top: 204.78781127929688px;
 
-	text-align: right;
-	font-size: large;
-	border: none;
+  text-align: right;
+  font-size: large;
+  border: none;
 }
-.e57_161 { 
-	background-color:rgba(217.0000022649765, 217.0000022649765, 217.0000022649765, 1);
-	width:367.0003356933594px;
-	height:47.81038284301758px;
-	position:absolute;
-	left:-0.0002314651501365006px;
-	top:305.1896057128906px;
+.e57_161 {
+  background-color: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
+  width: 367.0003356933594px;
+  height: 47.81038284301758px;
+  position: absolute;
+  left: -0.0002314651501365006px;
+  top: 305.1896057128906px;
 
-	text-align: right;
-	font-size: large;
-	border: none;
+  text-align: right;
+  font-size: large;
+  border: none;
 }
-.e57_162 { 
-	color:rgba(0, 0, 0, 1);
-	width:191.1769561767578px;
-	height:27.88939094543457px;
-	position:absolute;
-	left:167.89907836914062px;
-	top:15.936798095703125px;
-	font-family:Itim;
-	text-align:right;
-	font-size:28px;
-	letter-spacing:0;
+.e57_162 {
+  color: rgba(0, 0, 0, 1);
+  width: 191.1769561767578px;
+  height: 27.88939094543457px;
+  position: absolute;
+  left: 167.89907836914062px;
+  top: 15.936798095703125px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 28px;
+  letter-spacing: 0;
 }
-.e57_163 { 
-	color:rgba(0, 0, 0, 1);
-	width:118.86650085449219px;
-	height:20.717832565307617px;
-	position:absolute;
-	left:239.71409606933594px;
-	top:71.715576171875px;
-	font-family:Itim;
-	text-align:right;
-	font-size:20px;
-	letter-spacing:0;
-
+.e57_163 {
+  color: rgba(0, 0, 0, 1);
+  width: 118.86650085449219px;
+  height: 20.717832565307617px;
+  position: absolute;
+  left: 239.71409606933594px;
+  top: 71.715576171875px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0;
 }
-.e57_164 { 
-	color:rgba(0, 0, 0, 1);
-	width:269px;
-	height:21px;
-	position:absolute;
-	left:90px;
-	top:120px;
-	font-family:Itim;
-	text-align:right;
-	font-size:20px;
-	letter-spacing:0;
+.e57_164 {
+  color: rgba(0, 0, 0, 1);
+  width: 269px;
+  height: 21px;
+  position: absolute;
+  left: 90px;
+  top: 120px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0;
 }
-.e57_165 { 
-	color:rgba(0, 0, 0, 1);
-	width:288px;
-	height:21px;
-	position:absolute;
-	left:71px;
-	top:169px;
-	font-family:Itim;
-	text-align:right;
-	font-size:20px;
-	letter-spacing:0;
+.e57_165 {
+  color: rgba(0, 0, 0, 1);
+  width: 288px;
+  height: 21px;
+  position: absolute;
+  left: 71px;
+  top: 169px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0;
 }
-.e57_166 { 
-	color:rgba(0, 0, 0, 1);
-	width:118.86650085449219px;
-	height:20.717832565307617px;
-	position:absolute;
-	left:240.2093963623047px;
-	top:217.53724670410156px;
-	font-family:Itim;
-	text-align:right;
-	font-size:20px;
-	letter-spacing:0;
+.e57_166 {
+  color: rgba(0, 0, 0, 1);
+  width: 118.86650085449219px;
+  height: 20.717832565307617px;
+  position: absolute;
+  left: 240.2093963623047px;
+  top: 217.53724670410156px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0;
 }
-.e57_167 { 
-	color:rgba(0, 0, 0, 1);
-	width:118.86650085449219px;
-	height:20.717832565307617px;
-	position:absolute;
-	left:240.2093963623047px;
-	top:266.14447021484375px;
-	font-family:Itim;
-	text-align:right;
-	font-size:20px;
-	letter-spacing:0;
+.e57_167 {
+  color: rgba(0, 0, 0, 1);
+  width: 118.86650085449219px;
+  height: 20.717832565307617px;
+  position: absolute;
+  left: 240.2093963623047px;
+  top: 266.14447021484375px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0;
 }
-.e57_168 { 
-	color:rgba(0, 0, 0, 1);
-	width:118.86650085449219px;
-	height:20.717832565307617px;
-	position:absolute;
-	left:240.2093963623047px;
-	top:314.7516784667969px;
-	font-family:Itim;
-	text-align:right;
-	font-size:20px;
-	letter-spacing:0;
+.e57_168 {
+  color: rgba(0, 0, 0, 1);
+  width: 118.86650085449219px;
+  height: 20.717832565307617px;
+  position: absolute;
+  left: 240.2093963623047px;
+  top: 314.7516784667969px;
+  font-family: Itim;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0;
 }
-
 
 .Leftcategoties {
 	width: 198px;
@@ -687,6 +741,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .textJewellery {
 	color: rgba(0, 0, 0, 1);
@@ -776,6 +831,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .textTextile {
 	color: rgba(0, 0, 0, 1);
@@ -815,6 +871,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .TextArt {
 	color: rgba(0, 0, 0, 1);
@@ -856,6 +913,7 @@
 	border-bottom-right-radius: 23px;
 	cursor: pointer;
 	border:none;
+	font-size: 32px;
   }
   .TextDigital {
 	color: rgba(0, 0, 0, 1);
@@ -871,144 +929,161 @@
 	cursor: pointer;
   }
 
-
 /* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
 /* 124 */
-.dropbtn_myBell { 
-	box-shadow:0px 0px 10px rgba(0, 0, 0, 0.25);
-	border-radius:500px;
-	background-color:rgba(255, 255, 255, 1);
-	width:47px;
-	height:47px;
-	position:absolute;
-	left:0px;
-	top:0px;
+.dropbtn_myBell {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 500px;
+  background-color: rgba(255, 255, 255, 1);
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
-.bell_logo{
-	height: 26px;
-	width: 26px;
-	background-image:url(images/bell_logo.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	/* margin: auto; */
-	position:absolute;
-	left:10px;
-	top:11px;
-	/* grid-area:span; */
+.bell_logo {
+  height: 26px;
+  width: 26px;
+  background-image: url(images/bell_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  /* grid-area:span; */
 }
 
 .dropbtn_myBell {
-	background-color:rgba(255, 255, 255, 1);
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn_myBell:hover, .dropbtn_myBell:focus {
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown_bell {
-	position: relative;
-	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropDown_myBell {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right:-50px;
-	top: 47px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropDown_myBell a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropDown_myBell a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 
-  /* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
+/* Dropdown button on hover & focus */
+.dropbtn_myBell:hover,
+.dropbtn_myBell:focus {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
+}
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown_bell {
+  position: relative;
+  display: inline-block;
+}
 
-  /* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
-.person_logo{
-	height: 26px;
-	width: 26px;
-	background-image:url(images/person_logo.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-	/* margin: auto; */
-	position:absolute;
-	left:10px;
-	top:11px;
-	/* grid-area:span; */
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myBell {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: -50px;
+  top: 47px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myBell a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myBell a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
+.person_logo {
+  height: 26px;
+  width: 26px;
+  background-image: url(images/person_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  /* grid-area:span; */
 }
 
 .dropbtn_myPerson {
-	background-color:rgba(255, 255, 255, 1);
-	color: white;
-	padding: 16px;
-	font-size: 16px;
-	border: none;
-	cursor: pointer;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn_myPerson:hover, .dropbtn_myPerson:focus {
-	background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437);
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown_person {
-	position: relative;
-	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropDown_myPerson {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
-	right:-50px;
-	top: 47px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropDown_myPerson a {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropDown_myPerson a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn_myPerson:hover,
+.dropbtn_myPerson:focus {
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown_person {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropDown_myPerson {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: -50px;
+  top: 47px;
+}
+
+/* Links inside the dropdown */
+.dropDown_myPerson a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropDown_myPerson a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
 
 /* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
-
 
 .e58_31 {
   overflow: hidden;
