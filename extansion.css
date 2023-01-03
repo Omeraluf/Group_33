@@ -1,3 +1,4 @@
+
 .e58_31 {
 	overflow: hidden;
 	border: 1px solid rgba(0, 0, 0, 1);
@@ -24,11 +25,13 @@
 	top: 0px;
 }
 
+
 .e57_117 {
 	border: 0px solid rgba(0, 0, 0, 1);
 }
 
 .e57_118 {
+
 	box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
 	width: 219px;
 	height: 102px;
@@ -44,7 +47,9 @@
 	background-size: cover;
 }
 
+
 .e57_119 {
+
 	width: 193px;
 	height: 47px;
 	position: absolute;
@@ -52,7 +57,9 @@
 	top: 33px;
 }
 
+
 .e57_120 {
+
 	width: 47px;
 	height: 47px;
 	position: absolute;
@@ -60,8 +67,10 @@
 	top: 0px;
 }
 
+
 /* e57_121 */
 .dropbtn_myPerson {
+
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 	border-radius: 500px;
 	background-color: rgba(255, 255, 255, 1);
@@ -72,7 +81,9 @@
 	top: 0px;
 }
 
+
 .e57_122 {
+
 	background-color: rgba(0, 0, 0, 1);
 	width: 20px;
 	height: 20px;
@@ -81,7 +92,9 @@
 	top: 13px;
 }
 
+
 .e57_123 {
+
 	width: 47px;
 	height: 47px;
 	position: absolute;
@@ -89,7 +102,21 @@
 	top: 0px;
 }
 
+
 .e57_125 {
+
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 500px;
+	background-color: rgba(255, 255, 255, 1);
+	width: 47px;
+	height: 47px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.e244_12 {
+
 	background-color: rgba(0, 0, 0, 1);
 	width: 20px;
 	height: 23.625px;
@@ -98,13 +125,16 @@
 	top: 12.25px;
 }
 
+
 .e57_126 {
+
 	width: 47px;
 	height: 47px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
 }
+
 
 /* background-color:rgba(100.56154310703278, 206.12500101327896, 91.38210967183113, 0.6600000262260437); */
 /* The green colour^ */
@@ -241,6 +271,7 @@
 }
 
 .e57_132 {
+
 	width: 429px;
 	height: 43px;
 	position: absolute;
@@ -248,7 +279,9 @@
 	top: 35px;
 }
 
+
 .e57_133 {
+
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color: rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
 	width: 429px;
@@ -262,15 +295,18 @@
 	border-bottom-right-radius: 10px;
 
 
+
 }
 
 .e57_134 {
 	/* background-color:rgba(0, 0, 0, 1); */
+
 	width: 20px;
 	height: 17.575000762939453px;
 	position: absolute;
 	left: 14.933547019958496px;
 	top: 12px;
+
 	background-image: url(images/search_logo.png);
 	background-size: 20px;
 	background-repeat: no-repeat;
@@ -280,6 +316,7 @@
 }
 
 .e57_135 {
+
 	color: rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
 	width: 54.30379867553711px;
 	height: 15px;
@@ -291,6 +328,7 @@
 	font-size: 12px;
 	letter-spacing: 0;
 }
+
 
 /* .e57_136 { 
 	width:198px;
@@ -692,6 +730,7 @@
 
 
 .Leftcategoties {
+
 	width: 198px;
 	height: 588px;
 	position: absolute;
@@ -699,7 +738,9 @@
 	top: 153px;
 }
 
+
 .Jewelleryback {
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -707,12 +748,14 @@
 	top: 504px;
 }
 
+
 .Jewellery {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background-color: rgba(245.43749392032623,
 			245.43749392032623,
 			245.43749392032623,
 			1);
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -733,6 +776,7 @@
 }
 
 .textJewellery {
+
 	color: rgba(0, 0, 0, 1);
 	width: 150.3141326904297px;
 	height: 39px;
@@ -748,6 +792,7 @@
 }
 
 .Photographyback {
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -761,6 +806,7 @@
 			245.43749392032623,
 			245.43749392032623,
 			1);
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -781,6 +827,7 @@
 }
 
 .textPhotography {
+
 	color: rgba(0, 0, 0, 1);
 	width: 195px;
 	height: 36px;
@@ -791,11 +838,13 @@
 	text-align: center;
 	font-size: 30px;
 	letter-spacing: 0;
+
 	cursor: pointer;
 	/* border:none; */
 }
 
 .Textileback {
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -810,6 +859,7 @@
 			245.43749392032623,
 			245.43749392032623,
 			1);
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -819,11 +869,13 @@
 	border-top-right-radius: 23px;
 	border-bottom-left-radius: 23px;
 	border-bottom-right-radius: 23px;
+
 	cursor: pointer;
 	border: none;
 }
 
 .textTextile {
+
 	color: rgba(0, 0, 0, 1);
 	width: 102.6282730102539px;
 	height: 39px;
@@ -843,6 +895,7 @@
 	left: 0px;
 	top: 125px;
 }
+
 
 .Art {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -864,6 +917,7 @@
 }
 
 .TextArt {
+
 	color: rgba(0, 0, 0, 1);
 	width: 48.722511291503906px;
 	height: 39px;
@@ -878,11 +932,13 @@
 }
 
 .Digitalback {
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
+
 	cursor: pointer;
 }
 
@@ -892,6 +948,7 @@
 			245.43749392032623,
 			245.43749392032623,
 			1);
+
 	width: 198px;
 	height: 84px;
 	position: absolute;
@@ -912,6 +969,7 @@
 }
 
 .TextDigital {
+
 	color: rgba(0, 0, 0, 1);
 	width: 98.48167419433594px;
 	height: 39px;
@@ -922,6 +980,7 @@
 	text-align: center;
 	font-size: 32px;
 	letter-spacing: 0;
+
 	cursor: pointer;
 }
 
@@ -1158,6 +1217,7 @@
 	margin: 0 auto;
 	padding: 0 auto;
 	font-size: 18px;
+
 }
 
 .e244_53 {

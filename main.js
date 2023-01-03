@@ -18,6 +18,7 @@ if (DrWHBtn !== null) {
     window.location.assign("./main.html");
     //ADD the right file
   });
+
 }
 
 
@@ -53,6 +54,7 @@ if (DrWHBtn !== null) {
 // }
 
 
+
 function dropDownCartBtn() {
   document.getElementById("dropDown_myCart").classList.toggle("show");
 }
@@ -71,6 +73,7 @@ if (cartBtn_myCart !== null) {
   cartBtn_myCart.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./myCart.html");
+
   })
 }
 
@@ -190,6 +193,67 @@ if (myPerson_newItemReq !== null) {
 //         }
 //     }
 // }
+
+// function dropDownCartBtn() {
+//   document.getElementById("dropDown_myCart").classList.toggle("show");
+// }
+// // Links
+// const cartBtn_myCart = document.getElementById("e57_156_1");
+// cartBtn_myCart.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.assign("./loginPage.html");
+// });
+
+// // Bell Button
+// function dropDownBellBtn() {
+//   document.getElementById("dropDown_myBell").classList.toggle("show");
+// }
+// // Links
+// const cartBtn_myBell = document.getElementById("e57_156_2");
+// cartBtn_myBell.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.assign("./nextPage.html");
+// });
+
+// // Person Button
+// function dropDownPersonBtn() {
+//   document.getElementById("dropDown_myPerson").classList.toggle("show");
+// }
+// // Links
+// const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
+// cartBtn_myPerson.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.assign("./loginPage.html");
+// });
+
+//probably erase this
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+
 
 // function dropDownCartBtn() {
 //   document.getElementById("dropDown_myCart").classList.toggle("show");
@@ -448,6 +512,7 @@ let gold = {
   MKT: "0018",
   MaxQuantity: 30,
 };
+
 let cutter = {
   category: "Jewllery",
   name: "cutter",
@@ -562,6 +627,7 @@ if (btnGoProUp !== null) {
       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`; //TODO #1 20 to GoPro.quantity
       GoPro.quantity--;
     }
+
   });
 }
 
@@ -796,9 +862,11 @@ if (btnUp !== null) {
     ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
     } Color: all`; //TODO #1 20 to canvas.quantity
     searchProductPop.quantity--; //TODO #2 block the -number option
+
   });
   //}
 }
+
 const btnUpGeneral = document.getElementById(`plus${AlltheProducts}`);
 console.log(btnUp);
 // console.log(searchProductPop.quantity);
@@ -812,12 +880,15 @@ if (btnUp !== null) {
     //show the button from click on plus
     document.getElementById(`amount${searchProductPop}`).textContent =
       ++HowMany;
+
     console.log(HowMany);
     CartProduct.push(searchProductPop); //Add to the cart
     console.log(CartProduct);
     document.getElementById(
+
       `Description${searchProductPop}`
     ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
+
     } Color: all`; //TODO #1 20 to canvas.quantity
     //searchProductPop.quantity--; //TODO #2 block the -number option
   });
