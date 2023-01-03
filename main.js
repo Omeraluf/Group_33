@@ -12,12 +12,13 @@ if (DrWHBtn !== null) {
 }
 
 
-if(DrWHBtn !== null){
-DrWHBtn.addEventListener("click", (e) =>{
+if (DrWHBtn !== null) {
+  DrWHBtn.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./main.html");
-  //ADD the right file
-});
+    //ADD the right file
+  });
+
 }
 
 
@@ -53,121 +54,206 @@ DrWHBtn.addEventListener("click", (e) =>{
 // }
 
 
-function dropDownCartBtn(){
-    document.getElementById("dropDown_myCart").classList.toggle("show");
-}
-    // Links
-  //   const cartBtn_myCart = document.getElementById("e57_156_1");     //this if for the "eglon" - its just moving you to the login page, care cause it's the same const name
-  //                                                                    // as the 2nd button "myCart"
-  //   if(cartBtn_myCart !== null){
-  //   cartBtn_myCart.addEventListener("click", (e)=>{
-  //       e.preventDefault();
-  //       window.location.assign("./loginPage.html");
-  //   })
-  // }
 
-  const cartBtn_myCart = document.getElementById("myCart");
-  if(cartBtn_myCart !== null){
-  cartBtn_myCart.addEventListener("click", (e)=>{
-      e.preventDefault();
-      window.location.assign("./myCart.html");
+function dropDownCartBtn() {
+  document.getElementById("dropDown_myCart").classList.toggle("show");
+}
+// Links
+//   const cartBtn_myCart = document.getElementById("e57_156_1");     //this if for the "eglon" - its just moving you to the login page, care cause it's the same const name
+//                                                                    // as the 2nd button "myCart"
+//   if(cartBtn_myCart !== null){
+//   cartBtn_myCart.addEventListener("click", (e)=>{
+//       e.preventDefault();
+//       window.location.assign("./loginPage.html");
+//   })
+// }
+
+const cartBtn_myCart = document.getElementById("myCart");
+if (cartBtn_myCart !== null) {
+  cartBtn_myCart.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./myCart.html");
+
   })
 }
 
 // Bell Button
-function dropDownBellBtn(){
-    document.getElementById("dropDown_myBell").classList.toggle("show");
+function dropDownBellBtn() {
+  document.getElementById("dropDown_myBell").classList.toggle("show");
 }
-    // Links
-    const cartBtn_myBell = document.getElementById("e57_156_2");
-    if(cartBtn_myBell !== null){
-    cartBtn_myBell.addEventListener("click", (e)=>{
-        e.preventDefault();
-        window.location.assign("./nextPage.html");
-    })
-  }
+// Links
+const cartBtn_myBell = document.getElementById("e57_156_2");
+if (cartBtn_myBell !== null) {
+  cartBtn_myBell.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./nextPage.html");
+  })
+}
 
 // Person Button
-function dropDownPersonBtn(){
-    document.getElementById("dropDown_myPerson").classList.toggle("show");
+function dropDownPersonBtn() {
+  document.getElementById("dropDown_myPerson").classList.toggle("show");
 }
-  // Links
-    // Log out button
-    const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
-    if(logOutBtn_myPerson !== null){
-    logOutBtn_myPerson.addEventListener("click", (e)=>{
-        e.preventDefault();
-        window.location.assign("./loginPage.html");
-    })}
+// Links
+// Log out button
+const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
+if (logOutBtn_myPerson !== null) {
+  logOutBtn_myPerson.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./loginPage.html");
+  })
+}
 
-    const myPerson_myProfile = document.getElementById("myProfile"); //change this
-    if(myPerson_myProfile !== null){
-      myPerson_myProfile.addEventListener("click", (e)=>{
-          e.preventDefault();
-          window.location.assign("./myProfile.html");
-      })}
+const myPerson_myProfile = document.getElementById("myProfile"); //change this
+if (myPerson_myProfile !== null) {
+  myPerson_myProfile.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./myProfile.html");
+  })
+}
 
-    const myPerson_messageBox = document.getElementById("messageBox"); //change this
-    if(myPerson_messageBox !== null){
-      myPerson_messageBox.addEventListener("click", (e)=>{
-          e.preventDefault();
-          window.location.assign("./messageBox.html");
-      })}
+const myPerson_messageBox = document.getElementById("messageBox"); //change this
+if (myPerson_messageBox !== null) {
+  myPerson_messageBox.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./messageBox.html");
+  })
+}
 
-    const myPerson_helpSupport = document.getElementById("help_support"); //change this
-    if(myPerson_helpSupport !== null){
-      myPerson_helpSupport.addEventListener("click", (e)=>{
-          e.preventDefault();
-          window.location.assign("./help_support.html");
-      })}
+const myPerson_helpSupport = document.getElementById("help_support"); //change this
+if (myPerson_helpSupport !== null) {
+  myPerson_helpSupport.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./help_support.html");
+  })
+}
 
-      const myPerson_reportStudent = document.getElementById("reportStudent"); //change this
-    if(myPerson_reportStudent !== null){
-      myPerson_reportStudent.addEventListener("click", (e)=>{
-          e.preventDefault();
-          window.location.assign("./reportStudent.html");
-      })}
+const myPerson_reportStudent = document.getElementById("reportStudent"); //change this
+if (myPerson_reportStudent !== null) {
+  myPerson_reportStudent.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./reportStudent.html");
+  })
+}
 
-      const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
-    if(myPerson_reportTeacher !== null){
-      myPerson_reportTeacher.addEventListener("click", (e)=>{
-          e.preventDefault();
-          window.location.assign("./reportTeacher.html");
-      })}
+const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
+if (myPerson_reportTeacher !== null) {
+  myPerson_reportTeacher.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./reportTeacher.html");
+  })
+}
 
-      const myPerson_reportStorageKeeper = document.getElementById("reportStorageKeeper"); //change this
-    if(myPerson_reportStorageKeeper !== null){
-      myPerson_reportStorageKeeper.addEventListener("click", (e)=>{
-          e.preventDefault();
-          window.location.assign("./reportStorageKeeper.html");
-      })}
+const myPerson_reportStorageKeeper = document.getElementById("reportStorageKeeper"); //change this
+if (myPerson_reportStorageKeeper !== null) {
+  myPerson_reportStorageKeeper.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./reportStorageKeeper.html");
+  })
+}
 
-    //probably erase this
-        // window.onclick = function(event){
-        //     if(!event.target.matches('.dropbtn')){
-        //         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-        //         var i;
-        //         for(i = 0; i < dropdowns.length; i++){
-        //             var openDropdown = dropdowns[i];
-        //             if(openDropdown.classList.contains('shows')){
-        //                 openDropdown.classList.remove('show');
-        //             }
-        //         }
-        //     }
-        // }
+const myPerson_extansion = document.getElementById("extansion"); //change this
+if (myPerson_extansion !== null) {
+  myPerson_extansion.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./extansion.html");
+  })
+}
+const myPerson_newItemReq = document.getElementById("newItemReq"); //change this
+if (myPerson_newItemReq !== null) {
+  myPerson_newItemReq.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./newItemReq.html");
+  })
+}
 
-        // window.onclick = function(event){
-        //     if(!event.target.matches('.dropbtn')){
-        //         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-        //         var i;
-        //         for(i = 0; i < dropdowns.length; i++){
-        //             var openDropdown = dropdowns[i];
-        //             if(openDropdown.classList.contains('shows')){
-        //                 openDropdown.classList.remove('show');
-        //             }
-        //         }
-        //     }
-        // }
+//probably erase this
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+// function dropDownCartBtn() {
+//   document.getElementById("dropDown_myCart").classList.toggle("show");
+// }
+// // Links
+// const cartBtn_myCart = document.getElementById("e57_156_1");
+// cartBtn_myCart.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.assign("./loginPage.html");
+// });
+
+// // Bell Button
+// function dropDownBellBtn() {
+//   document.getElementById("dropDown_myBell").classList.toggle("show");
+// }
+// // Links
+// const cartBtn_myBell = document.getElementById("e57_156_2");
+// cartBtn_myBell.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.assign("./nextPage.html");
+// });
+
+// // Person Button
+// function dropDownPersonBtn() {
+//   document.getElementById("dropDown_myPerson").classList.toggle("show");
+// }
+// // Links
+// const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
+// cartBtn_myPerson.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.assign("./loginPage.html");
+// });
+
+//probably erase this
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+// window.onclick = function(event){
+//     if(!event.target.matches('.dropbtn')){
+//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
+//         var i;
+//         for(i = 0; i < dropdowns.length; i++){
+//             var openDropdown = dropdowns[i];
+//             if(openDropdown.classList.contains('shows')){
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// }
+
+
 
 // function dropDownCartBtn() {
 //   document.getElementById("dropDown_myCart").classList.toggle("show");
@@ -426,6 +512,7 @@ let gold = {
   MKT: "0018",
   MaxQuantity: 30,
 };
+
 let cutter = {
   category: "Jewllery",
   name: "cutter",
@@ -540,6 +627,7 @@ if (btnGoProUp !== null) {
       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`; //TODO #1 20 to GoPro.quantity
       GoPro.quantity--;
     }
+
   });
 }
 
@@ -557,25 +645,25 @@ if (btnGoProUp !== null) {
 //         "DescriptionGoPro"
 //       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`;  //TODO #1 20 to GoPro.quantity
 //       GoPro.quantity--;                                                       //TODO #2 block the -number option 
-      
+
 //   });
 // }}
 
 //if there is something in the cart from this product
 
-if(btnGoProUp !== null){
-btnGoProDown.addEventListener("click", function () {
-  if (HowMany > 0) {
-    document.getElementById("amountGoPro").textContent = --HowMany;
-    console.log(GoPro.quantity);
-    CartProduct.pop("GoPro");
-    console.log(HowMany);
-    document.getElementById(
-      "DescriptionGoPro"
-    ).textContent = `מצלמת GoPro Available: ${GoPro.quantity + 1} Color: Black`;
-    GoPro.quantity++;
-  }
-});
+if (btnGoProUp !== null) {
+  btnGoProDown.addEventListener("click", function () {
+    if (HowMany > 0) {
+      document.getElementById("amountGoPro").textContent = --HowMany;
+      console.log(GoPro.quantity);
+      CartProduct.pop("GoPro");
+      console.log(HowMany);
+      document.getElementById(
+        "DescriptionGoPro"
+      ).textContent = `מצלמת GoPro Available: ${GoPro.quantity + 1} Color: Black`;
+      GoPro.quantity++;
+    }
+  });
 };
 
 
@@ -705,8 +793,7 @@ if (btnGoProDown !== null) {
       console.log(HowMany);
       document.getElementById(
         "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${
-        GoPro.quantity + 1
+      ).textContent = `מצלמת GoPro Available: ${GoPro.quantity + 1
       } Color: Black`;
       GoPro.quantity++;
     }
@@ -772,13 +859,14 @@ if (btnUp !== null) {
     console.log(CartProduct);
     document.getElementById(
       `Description${searchProductPop}`
-    ).textContent = ` ${searchProductPop} Available: ${
-      100 - HowMany
+    ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
     } Color: all`; //TODO #1 20 to canvas.quantity
     searchProductPop.quantity--; //TODO #2 block the -number option
+
   });
   //}
 }
+
 const btnUpGeneral = document.getElementById(`plus${AlltheProducts}`);
 console.log(btnUp);
 // console.log(searchProductPop.quantity);
@@ -792,13 +880,15 @@ if (btnUp !== null) {
     //show the button from click on plus
     document.getElementById(`amount${searchProductPop}`).textContent =
       ++HowMany;
+
     console.log(HowMany);
     CartProduct.push(searchProductPop); //Add to the cart
     console.log(CartProduct);
     document.getElementById(
+
       `Description${searchProductPop}`
-    ).textContent = ` ${searchProductPop} Available: ${
-      100 - HowMany
+    ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
+
     } Color: all`; //TODO #1 20 to canvas.quantity
     //searchProductPop.quantity--; //TODO #2 block the -number option
   });
