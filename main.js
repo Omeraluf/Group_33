@@ -67,7 +67,14 @@ function dropDownCartBtn() {
 //       window.location.assign("./loginPage.html");
 //   })
 // }
+const btn_order_status = document.getElementById("order_status");
+if (btn_order_status !== null) {
+  btn_order_status.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./order_status.html");
 
+  })
+}
 const cartBtn_myCart = document.getElementById("myCart");
 if (cartBtn_myCart !== null) {
   cartBtn_myCart.addEventListener("click", (e) => {
