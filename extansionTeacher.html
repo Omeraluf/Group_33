@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="extansion.css">
+    <link rel="stylesheet" href="extansionTeacher.css">
 
     <style>
         /*
@@ -169,27 +169,28 @@
             </div>
         </form>
         <!-- yuval's catagories -->
-        <div class="e244_53"></div>
-        <div class=send_req>
-            <div class="Send">
-                <input type="submit" value="Send" id="Send">
+        <form id="sendReqForm">
+            <div class="e244_53"></div>
+            <div class=send_req>
+                <div class="send_reqTeacher" id="SendBtnTeacher">
+                    <input type="submit" value="Send">
+                </div>
             </div>
-        </div>
 
-        <div class=e249_68>
-            <input type="text" class="extansion" placeholder="reason for extansion..">
-            <span class="e249_66">: סיבת הארכה</span>
-        </div>
-        <div class=e245_64>
-            <input type="text" class="NumOfExtansions" placeholder="0">
-            <span class="e245_60">: מספר הארכות למוצר</span>
+            <div class=e249_68>
+                <input type="text" class="extansion" placeholder="reason for extansion.." name="TeachersReason">
+                <span class="e249_66">: סיבת הארכה</span>
+            </div>
+            <div class=e245_64>
+                <input type="text" class="NumOfExtansions" placeholder="0" name="NumOfExtansions">
+                <span class="e245_60">: מספר הארכות למוצר</span>
 
-        </div>
-        <div class=e245_63>
-            <input type="text" class="Mkt_num" placeholder="MKT..">
-            <span class="e245_58">: מק”ט המוצר</span>
-        </div>
-
+            </div>
+            <div class=e245_63>
+                <input type="text" class="Mkt_num" placeholder="MKT.." name="TeachersMKT">
+                <span class="e245_58">: מק”ט המוצר</span>
+            </div>
+        </form>
     </div>
     <script defer src="main.js"></script>
 </body>
