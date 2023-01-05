@@ -62,7 +62,14 @@ function dropDownCartBtn() {
 //       window.location.assign("./loginPage.html");
 //   })
 // }
+const btn_order_status = document.getElementById("order_status");
+if (btn_order_status !== null) {
+  btn_order_status.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./order_status.html");
 
+  })
+}
 const cartBtn_myCart = document.getElementById("myCart");
 if (cartBtn_myCart !== null) {
   cartBtn_myCart.addEventListener("click", (e) => {
@@ -162,153 +169,6 @@ if (myPerson_newItemReq !== null) {
     window.location.assign("./newItemReq.html");
   });
 }
-
-//probably erase this
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// function dropDownCartBtn() {
-//   document.getElementById("dropDown_myCart").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myCart = document.getElementById("e57_156_1");
-// cartBtn_myCart.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-// // Bell Button
-// function dropDownBellBtn() {
-//   document.getElementById("dropDown_myBell").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myBell = document.getElementById("e57_156_2");
-// cartBtn_myBell.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./nextPage.html");
-// });
-
-// // Person Button
-// function dropDownPersonBtn() {
-//   document.getElementById("dropDown_myPerson").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
-// cartBtn_myPerson.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-//probably erase this
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// function dropDownCartBtn() {
-//   document.getElementById("dropDown_myCart").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myCart = document.getElementById("e57_156_1");
-// cartBtn_myCart.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-// // Bell Button
-// function dropDownBellBtn() {
-//   document.getElementById("dropDown_myBell").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myBell = document.getElementById("e57_156_2");
-// cartBtn_myBell.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./nextPage.html");
-// });
-
-// // Person Button
-// function dropDownPersonBtn() {
-//   document.getElementById("dropDown_myPerson").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
-// cartBtn_myPerson.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-//probably erase this
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Omer's part
 
 //window.location.assign();
 //Yuval's part                                                                                              //@@@@@ CHANGE THE LINKS @@@@@@@@
@@ -589,6 +449,214 @@ if (searchProductPop !== null) {
   document.getElementById(`${searchProductPop}`).style.border =
     "dashed rgb(40, 192, 53)";
 }
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscar's try for extansion Student local storage....
+let messagesArray = [];
+
+class messagesCLS {
+  studentName = null;
+  MKT = null;
+  teacherName = null;
+  reason = null;
+
+  constructor(studentName, MKT, teacherName, reason) {
+    this.studentName = studentName;
+    this.MKT = MKT;
+    this.teacherName = teacherName;
+    this.reason = reason;
+  }
+};
+
+const sendBtn = document.getElementById("Send");
+if (sendBtn !== null) {
+  sendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    let mktNumber = extansionForm.MKTNumber.value;  // mkt number value
+    let teacherName = extansionForm.TeacherName.value; // teacher name
+    let reasonContent = extansionForm.extansionReason.value;  // reason for extension
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    //console.log(userNameFromLS);
+    const messages = userNameFromLS[0].username + reasonContent + teacherName + mktNumber;
+    // console.log(typeof (userNameFromLS[0].username));
+    // console.log(typeof (mktNumber));
+    let nameOfStudent = userNameFromLS[0].username;
+    let messagesOBJ = new messagesCLS(nameOfStudent, mktNumber, teacherName, reasonContent);
+    console.log(userNameFromLS[0].username);
+    //console.log(userNameFromLS);
+    messagesArray.push(messagesOBJ);
+    window.localStorage.setItem("messgesForSKFromStudent", JSON.stringify(messagesArray));
+
+    console.log(messagesOBJ);
+    // alert(
+    //   "Checking if extension sent: " +
+    //   reasonContent +
+    //   " + " +
+    //   teacherName +
+    //   " + " +
+    //   mktNumber + messages
+    // );
+    alert(
+      "Checking if messages sent: " + messages
+    );
+
+  });
+}
+
+let showMSGsBtn = document.getElementById("showMSGS");
+if (showMSGsBtn !== null) {
+  showMSGsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = JSON.parse(localStorage.getItem("messgesForSKFromStudent"));
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("messgesForSKFromStudent") !== null) {
+      document.getElementById("messagesShownExtentionStudent").innerHTML = ` name: ${temp[0].studentName} <br> MKT: ${temp[0].MKT} <br> Teacher name: ${temp[0].teacherName} <br> Reason for extension: ${temp[0].reason}`
+
+    }
+
+
+  });
+}
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try ends
+
+
+
+
+// //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscar try for extansion teacher 
+
+class messagesFromTeacherCLS {
+  TeacherName = null;
+  MKT = null;
+  numberOfextensions = 0;
+  reason = null;
+
+  constructor(TeacherName, MKT, numberOfextensions, reason) {
+    this.TeacherName = TeacherName;
+    this.MKT = MKT;
+    this.numberOfextensions = numberOfextensions;
+    this.reason = reason;
+  }
+};
+
+const sendReqBtn = document.getElementById("SendBtnTeacher");
+if (sendReqBtn !== null) {      //dont work!!!! continue from here
+  sendReqBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    let mktNumber = sendReqForm.TeachersMKT.value;  // mkt number value
+    const exetensionsNumber = sendReqForm.NumOfExtansions.value; // teacher name
+    let reasonContent = sendReqForm.TeachersReason.value;  // reason for extension
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    //console.log(userNameFromLS);
+    let messages = userNameFromLS[0].username + reasonContent + exetentionsNumber + mktNumber;
+    console.log(typeof (mktNumber));
+    let nameOfteacher = userNameFromLS[0].username;
+    let messagesTeacherOBJ = new messagesFromTeacherCLS(nameOfteacher, mktNumber, exetensionsNumber, reasonContent);
+    messagesArray.push(messagesTeacherOBJ);
+    window.localStorage.setItem("messgesForSKfromTeacher", JSON.stringify(messagesArray));
+
+    console.log(messagesTeacherOBJ);
+    // alert(
+    //   "Checking if extension sent: " +
+    //   reasonContent +
+    //   " + " +
+    //   teacherName +
+    //   " + " +
+    //   mktNumber + messages
+    // );
+    alert(
+      "Checking if messages sent: " + messages
+    );
+
+  });
+}
+
+showMSGsBtn = document.getElementById("showMSGS");
+if (showMSGsBtn !== null) {
+  showMSGsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = JSON.parse(localStorage.getItem("messgesForSKfromTeacher"));
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("messgesForSKfromTeacher") !== null) {
+      document.getElementById("messagesShownExtentionTeacher").innerHTML = ` name: ${temp[0].TeacherName} <br> MKT: ${temp[0].MKT} <br>  Number of extensions: ${temp[0].numberOfextensions} <br> Reason for extension: ${temp[0].reason}`
+
+    }
+
+
+  });
+}
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try ends
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try for new item
+class newItemCLS {
+  teacherName = null;
+  itemName = null;
+  link = null;
+  reason = null;
+
+  constructor(teacherName, itemName, link, reason) {
+    this.teacherName = teacherName;
+    this.itemName = itemName;
+    this.link = link;
+    this.reason = reason;
+  }
+};
+
+const newItemBtn = document.getElementById("SendBtnNewItem");
+if (newItemBtn !== null) {      //dont work!!!! continue from here
+  newItemBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    let itemName = newItemForm.nameOfItem.value;  // mkt number value
+    const link = newItemForm.itemLink.value; // teacher name
+    let reasonContent = newItemForm.ReasonOfReq.value;  // reason for extension
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    let messages = userNameFromLS[0].username + itemName + link + reasonContent;
+    console.log(userNameFromLS[0].username);
+    //console.log(typeof (mktNumber));
+    const nameOfteacher = userNameFromLS[0].username;
+    console.log(nameOfteacher);
+    console.log(typeof (nameOfteacher));
+    let newItemOBJ = new newItemCLS(nameOfteacher, itemName, link, reasonContent);
+    messagesArray.push(newItemOBJ);
+    //console.log(newItemOBJ.TeacherName);
+    window.localStorage.setItem("messgesForSKNewItem", JSON.stringify(messagesArray)); // change array to new ones for every send btn
+
+    console.log(newItemOBJ);
+    // alert(
+    //   "Checking if extension sent: " +
+    //   reasonContent +
+    //   " + " +
+    //   teacherName +
+    //   " + " +
+    //   mktNumber + messages
+    // );
+    alert(
+      "Checking if messages sent: " + messages
+    );
+
+  });
+}
+
+showMSGsBtn = document.getElementById("showMSGS");
+if (showMSGsBtn !== null) {
+  showMSGsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = JSON.parse(localStorage.getItem("messgesForSKNewItem"));
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("messgesForSKNewItem") !== null) {
+      document.getElementById("messagesShownNewitem").innerHTML = ` name: ${temp[0].teacherName} <br> Item Name: ${temp[0].itemName} <br>  Link:  ${temp[0].link} <br> Reason for the new item: ${temp[0].reason}`
+
+    }
+
+
+  });
+}
+
 //to delete this item from local storage to be able to select to the cart other things
 window.localStorage.removeItem("searchProduct");
 
@@ -635,12 +703,13 @@ if (btnGoProUp !== null) {
         "DescriptionGoPro"
       ).textContent = `מצלמת GoPro Available: ${
         20 - HowManyGoPro
-      } Color: Black`; //TODO #1 20 to GoPro.quantity
+      } Color: Black`; 
       GoPro.quantity--;
     }
   });
 }
 
+//if there is something in the cart from this product
 if (btnGoProDown !== null) {
   btnGoProDown.addEventListener("click", function () {
     if (HowManyGoPro > 0) {
@@ -1232,6 +1301,7 @@ if (btnfabricUp !== null) {
   });
 }
 
+
 //if there is something in the cart from this product
 if (btnfabricDown !== null) {
   console.log("hello");
@@ -1512,237 +1582,7 @@ if (btnshoeOnCart !== null) {
           "outputfromcart"
         ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
       });
-      //report student
-
-      document.getElementById(
-        "report_quantity_1"
-      ).textContent = `${VideoCamera.quantity}`;
-      document.getElementById(
-        "report_name_1"
-      ).textContent = `${VideoCamera.name}`;
-      document.getElementById(
-        "report_mkt_1"
-      ).textContent = `${VideoCamera.MKT}`;
-
-      document.getElementById(
-        "report_quantity_2"
-      ).textContent = `${CarCamera.quantity}`;
-      document.getElementById(
-        "report_name_2"
-      ).textContent = `${CarCamera.name}`;
-      document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
-
-      document.getElementById(
-        "report_quantity_3"
-      ).textContent = `${tripodCamera.quantity}`;
-      document.getElementById(
-        "report_name_3"
-      ).textContent = `${tripodCamera.name}`;
-      document.getElementById(
-        "report_mkt_3"
-      ).textContent = `${tripodCamera.MKT}`;
-
-      document.getElementById(
-        "report_quantity_4"
-      ).textContent = `${Umbrella.quantity}`;
-      document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
-      document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
-
-      document.getElementById(
-        "report_quantity_5"
-      ).textContent = `${GoPro.quantity}`;
-      document.getElementById("report_name_5").textContent = `${GoPro.name}`;
-      document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
-
-      document.getElementById(
-        "report_quantity_6"
-      ).textContent = `${ipads.quantity}`;
-      document.getElementById("report_name_6").textContent = `${ipads.name}`;
-      document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
-
-      document.getElementById(
-        "report_quantity_7"
-      ).textContent = `${MacBook.quantity}`;
-      document.getElementById("report_name_7").textContent = `${MacBook.name}`;
-      document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
-
-      document.getElementById(
-        "report_quantity_8"
-      ).textContent = `${ApplePencil.quantity}`;
-      document.getElementById(
-        "report_name_8"
-      ).textContent = `${ApplePencil.name}`;
-      document.getElementById(
-        "report_mkt_8"
-      ).textContent = `${ApplePencil.MKT}`;
-
-      document.getElementById(
-        "report_quantity_9"
-      ).textContent = `${LEDbourd.quantity}`;
-      document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
-      document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
-
-      document.getElementById(
-        "report_quantity_10"
-      ).textContent = `${canvas.quantity}`;
-      document.getElementById("report_name_10").textContent = `${canvas.name}`;
-      document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
-
-      document.getElementById(
-        "report_quantity_11"
-      ).textContent = `${brush.quantity}`;
-      document.getElementById("report_name_11").textContent = `${brush.name}`;
-      document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
-
-      document.getElementById(
-        "report_quantity_12"
-      ).textContent = `${faberCastell.quantity}`;
-      document.getElementById(
-        "report_name_12"
-      ).textContent = `${faberCastell.name}`;
-      document.getElementById(
-        "report_mkt_12"
-      ).textContent = `${faberCastell.MKT}`;
-
-      document.getElementById(
-        "report_quantity_13"
-      ).textContent = `${paint.quantity}`;
-      document.getElementById("report_name_13").textContent = `${paint.name}`;
-      document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
-
-      document.getElementById(
-        "report_quantity_14"
-      ).textContent = `${sewingMechine.quantity}`;
-      document.getElementById(
-        "report_name_14"
-      ).textContent = `${sewingMechine.name}`;
-      document.getElementById(
-        "report_mkt_14"
-      ).textContent = `${sewingMechine.MKT}`;
-
-      document.getElementById(
-        "report_quantity_15"
-      ).textContent = `${fabric.quantity}`;
-      document.getElementById("report_name_15").textContent = `${fabric.name}`;
-      document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
-
-      document.getElementById(
-        "report_quantity_16"
-      ).textContent = `${tapeMessures.quantity}`;
-      document.getElementById(
-        "report_name_16"
-      ).textContent = `${tapeMessures.name}`;
-      document.getElementById(
-        "report_mkt_16"
-      ).textContent = `${tapeMessures.MKT}`;
-
-      document.getElementById(
-        "report_quantity_17"
-      ).textContent = `${manniqen.quantity}`;
-      document.getElementById(
-        "report_name_17"
-      ).textContent = `${manniqen.name}`;
-      document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
-
-      document.getElementById(
-        "report_quantity_18"
-      ).textContent = `${silver.quantity}`;
-      document.getElementById("report_name_18").textContent = `${silver.name}`;
-      document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
-
-      document.getElementById(
-        "report_quantity_19"
-      ).textContent = `${gold.quantity}`;
-      document.getElementById("report_name_19").textContent = `${gold.name}`;
-      document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
-
-      document.getElementById(
-        "report_quantity_20"
-      ).textContent = `${cutter.quantity}`;
-      document.getElementById("report_name_20").textContent = `${cutter.name}`;
-      document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
-
-      document.getElementById(
-        "report_quantity_21"
-      ).textContent = `${welder.quantity}`;
-      document.getElementById("report_name_21").textContent = `${welder.name}`;
-      document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
-
-      document.getElementById(
-        "report_quantity_22"
-      ).textContent = `${stretcher.quantity}`;
-      document.getElementById(
-        "report_name_22"
-      ).textContent = `${stretcher.name}`;
-      document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
-
-      //report storageKeeper addons
-      document.getElementById(
-        "report_quantity_max_1"
-      ).textContent = `${VideoCamera.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_2"
-      ).textContent = `${CarCamera.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_3"
-      ).textContent = `${tripodCamera.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_4"
-      ).textContent = `${Umbrella.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_5"
-      ).textContent = `${GoPro.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_6"
-      ).textContent = `${ipads.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_7"
-      ).textContent = `${MacBook.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_8"
-      ).textContent = `${ApplePencil.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_9"
-      ).textContent = `${LEDbourd.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_10"
-      ).textContent = `${canvas.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_11"
-      ).textContent = `${brush.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_12"
-      ).textContent = `${faberCastell.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_13"
-      ).textContent = `${paint.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_14"
-      ).textContent = `${sewingMechine.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_15"
-      ).textContent = `${fabric.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_16"
-      ).textContent = `${tapeMessures.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_17"
-      ).textContent = `${manniqen.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_18"
-      ).textContent = `${silver.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_19"
-      ).textContent = `${gold.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_20"
-      ).textContent = `${cutter.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_21"
-      ).textContent = `${welder.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_22"
-      ).textContent = `${stretcher.MaxQuantity}`;
+    
 
       //report student
 
@@ -1978,3 +1818,4 @@ if (btnshoeOnCart !== null) {
     }
   }
 }
+
