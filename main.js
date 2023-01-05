@@ -18,6 +18,7 @@ if (DrWHBtn !== null) {
     window.location.assign("./main.html");
     //ADD the right file
   });
+
 }
 
 
@@ -53,6 +54,7 @@ if (DrWHBtn !== null) {
 // }
 
 
+
 function dropDownCartBtn() {
   document.getElementById("dropDown_myCart").classList.toggle("show");
 }
@@ -71,6 +73,7 @@ if (cartBtn_myCart !== null) {
   cartBtn_myCart.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./myCart.html");
+
   })
 }
 
@@ -163,7 +166,6 @@ if (myPerson_newItemReq !== null) {
     window.location.assign("./newItemReq.html");
   })
 }
-
 
 //window.location.assign();
 //Yuval's part                                                                                              //@@@@@ CHANGE THE LINKS @@@@@@@@
@@ -360,6 +362,7 @@ let gold = {
   MKT: "0018",
   MaxQuantity: 30,
 };
+
 let cutter = {
   category: "Jewllery",
   name: "cutter",
@@ -474,6 +477,7 @@ if (btnGoProUp !== null) {
       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`; //TODO #1 20 to GoPro.quantity
       GoPro.quantity--;
     }
+
   });
 }
 
@@ -916,9 +920,11 @@ if (btnUp !== null) {
     ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
     } Color: all`; //TODO #1 20 to canvas.quantity
     searchProductPop.quantity--; //TODO #2 block the -number option
+
   });
   //}
 }
+
 const btnUpGeneral = document.getElementById(`plus${AlltheProducts}`);
 console.log(btnUp);
 // console.log(searchProductPop.quantity);
@@ -932,12 +938,15 @@ if (btnUp !== null) {
     //show the button from click on plus
     document.getElementById(`amount${searchProductPop}`).textContent =
       ++HowMany;
+
     console.log(HowMany);
     CartProduct.push(searchProductPop); //Add to the cart
     console.log(CartProduct);
     document.getElementById(
+
       `Description${searchProductPop}`
     ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
+
     } Color: all`; //TODO #1 20 to canvas.quantity
     //searchProductPop.quantity--; //TODO #2 block the -number option
   });
