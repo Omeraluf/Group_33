@@ -169,220 +169,220 @@
   letter-spacing: 0;
 }
 .Leftcategoties {
-	width: 198px;
-	height: 588px;
-	position: absolute;
-	left: 19px;
-	top: 153px;
-  }
-  .Jewelleryback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 504px;
-  }
-  .Jewellery {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(0, 0, 0, 0.25);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .textJewellery {
-	color: rgba(0, 0, 0, 1);
-	width: 150.3141326904297px;
-	height: 39px;
-	position: absolute;
-	left: 23.842931747436523px;
-	top: 22px;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-	cursor: pointer;
-	/* font-family: 'Courier New', Courier, monospace;  */
-	/* CHANGE the font */
-  }
-  .Photographyback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 375px;
-  }
-  .Photography {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	
-	color: rgba(0, 0, 0, 1);
-	font-family: Inter;
-	text-align: center;
-	font-size: 30px;
-	letter-spacing: 0;
-  }
-  .textPhotography {
-	color: rgba(0, 0, 0, 1);
-	width: 195px;
-	height: 36px;
-	position: absolute;
-	left: 2px;
-	top: 24px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 30px;
-	letter-spacing: 0;
-	cursor: pointer;
-	/* border:none; */
-  }
-  .Textileback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 250px;
-	cursor: pointer;
-  }
-  .Textile {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .textTextile {
-	color: rgba(0, 0, 0, 1);
-	width: 102.6282730102539px;
-	height: 39px;
-	position: absolute;
-	left: 49.75916290283203px;
-	top: 22px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-  }
-  .Artback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 125px;
-  }
-  .Art {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .TextArt {
-	color: rgba(0, 0, 0, 1);
-	width: 48.722511291503906px;
-	height: 39px;
-	position: absolute;
-	left: 74.63874053955078px;
-	top: 23px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-	cursor: pointer;
-  }
-  .Digitalback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	cursor: pointer;
-  }
-  .Digital {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 198px;
+  height: 588px;
+  position: absolute;
+  left: 19px;
+  top: 153px;
+}
+.Jewelleryback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 504px;
+}
+.Jewellery {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.textJewellery {
+  color: rgba(0, 0, 0, 1);
+  width: 150.3141326904297px;
+  height: 39px;
+  position: absolute;
+  left: 23.842931747436523px;
+  top: 22px;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  cursor: pointer;
+  /* font-family: 'Courier New', Courier, monospace;  */
+  /* CHANGE the font */
+}
+.Photographyback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 375px;
+}
+.Photography {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .TextDigital {
-	color: rgba(0, 0, 0, 1);
-	width: 98.48167419433594px;
-	height: 39px;
-	position: absolute;
-	left: 49.75916290283203px;
-	top: 23px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-	cursor: pointer;
-  }
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+.textPhotography {
+  color: rgba(0, 0, 0, 1);
+  width: 195px;
+  height: 36px;
+  position: absolute;
+  left: 2px;
+  top: 24px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0;
+  cursor: pointer;
+  /* border:none; */
+}
+.Textileback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 250px;
+  cursor: pointer;
+}
+.Textile {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.textTextile {
+  color: rgba(0, 0, 0, 1);
+  width: 102.6282730102539px;
+  height: 39px;
+  position: absolute;
+  left: 49.75916290283203px;
+  top: 22px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+}
+.Artback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 125px;
+}
+.Art {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.TextArt {
+  color: rgba(0, 0, 0, 1);
+  width: 48.722511291503906px;
+  height: 39px;
+  position: absolute;
+  left: 74.63874053955078px;
+  top: 23px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.Digitalback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.Digital {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.TextDigital {
+  color: rgba(0, 0, 0, 1);
+  width: 98.48167419433594px;
+  height: 39px;
+  position: absolute;
+  left: 49.75916290283203px;
+  top: 23px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
 .e260_38 {
   width: 791px;
   height: 635px;
@@ -412,7 +412,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.e260_48 {
+.Descriptionstrecher {
   color: rgba(0, 0, 0, 1);
   width: 68px;
   height: 60px;
@@ -493,7 +493,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.e260_71 {
+.Descriptionwelder {
   color: rgba(0, 0, 0, 1);
   width: 69px;
   height: 60px;
@@ -574,7 +574,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.e260_41 {
+.Descriptionsilver {
   color: rgba(0, 0, 0, 1);
   width: 72px;
   height: 60px;
@@ -655,7 +655,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.e260_55 {
+.Descriptiongold {
   color: rgba(0, 0, 0, 1);
   width: 69px;
   height: 60px;
@@ -736,7 +736,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.e260_62 {
+.Descriptioncutter {
   color: rgba(0, 0, 0, 1);
   width: 69px;
   height: 60px;
@@ -815,7 +815,6 @@
   left: 1412px;
   top: 996px;
 }
-
 
 /* 3 Buttons - Start */
 
@@ -1134,8 +1133,6 @@
 }
 
 /* @@@@@@@@@@@@@@@@@@@@ BELL @@@@@@@@@@@@@@@@@@@@@@@ */
-
-
 
 /* design of multiple choises */
 .e57_155 {

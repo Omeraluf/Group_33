@@ -194,7 +194,7 @@
   top: 69px;
   opacity: 0;
 }
-.choosehowmanyUmbrella :hover {
+.choosehowmanyUmbrella:hover {
   opacity: 100;
 }
 
@@ -512,7 +512,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.e177_50 {
+.DescriptiontripodCamera {
   color: rgba(0, 0, 0, 1);
   width: 178px;
   height: 60px;
@@ -523,6 +523,56 @@
   text-align: left;
   font-size: 12px;
   letter-spacing: 0;
+}
+.choosehowmanytripodCamera {
+  width: 145px;
+  height: 77px;
+  position: absolute;
+  left: 36px;
+  top: 69px;
+  opacity: 0;
+}
+.choosehowmanytripodCamera:hover {
+  opacity: 100;
+}
+
+.minustripodCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 37px;
+  height: 54px;
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.amounttripodCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 42px;
+  height: 69px;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+}
+.plustripodCamera {
+  color: rgba(255, 255, 255, 1);
+  width: 40px;
+  height: 53px;
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 0;
+  cursor: pointer;
 }
 .e177_51 {
   color: rgba(0, 0, 0, 1);
@@ -886,217 +936,217 @@
 /* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
 
 .Leftcategoties {
-	width: 198px;
-	height: 588px;
-	position: absolute;
-	left: 19px;
-	top: 153px;
-  }
-  .Jewelleryback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 504px;
-  }
-  .Jewellery {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .textJewellery {
-	color: rgba(0, 0, 0, 1);
-	width: 150.3141326904297px;
-	height: 39px;
-	position: absolute;
-	left: 23.842931747436523px;
-	top: 22px;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-	cursor: pointer;
-	/* font-family: 'Courier New', Courier, monospace;  */
-	/* CHANGE the font */
-  }
-  .Photographyback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 375px;
-  }
-  .Photography {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(0, 0, 0, 0.25);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	
-	color: rgba(0, 0, 0, 1);
-	font-family: Inter;
-	text-align: center;
-	font-size: 30px;
-	letter-spacing: 0;
-  }
-  .textPhotography {
-	color: rgba(0, 0, 0, 1);
-	width: 195px;
-	height: 36px;
-	position: absolute;
-	left: 2px;
-	top: 24px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 30px;
-	letter-spacing: 0;
-	cursor: pointer;
-	/* border:none; */
-  }
-  .Textileback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 250px;
-	cursor: pointer;
-  }
-  .Textile {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .textTextile {
-	color: rgba(0, 0, 0, 1);
-	width: 102.6282730102539px;
-	height: 39px;
-	position: absolute;
-	left: 49.75916290283203px;
-	top: 22px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-  }
-  .Artback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 125px;
-  }
-  .Art {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .TextArt {
-	color: rgba(0, 0, 0, 1);
-	width: 48.722511291503906px;
-	height: 39px;
-	position: absolute;
-	left: 74.63874053955078px;
-	top: 23px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-	cursor: pointer;
-  }
-  .Digitalback {
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	cursor: pointer;
-  }
-  .Digital {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color: rgba(
-	  245.43749392032623,
-	  245.43749392032623,
-	  245.43749392032623,
-	  1
-	);
-	width: 198px;
-	height: 84px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	border-top-left-radius: 23px;
-	border-top-right-radius: 23px;
-	border-bottom-left-radius: 23px;
-	border-bottom-right-radius: 23px;
-	cursor: pointer;
-	border:none;
-	font-size: 32px;
-  }
-  .TextDigital {
-	color: rgba(0, 0, 0, 1);
-	width: 98.48167419433594px;
-	height: 39px;
-	position: absolute;
-	left: 49.75916290283203px;
-	top: 23px;
-	font-family: Inter;
-	text-align: center;
-	font-size: 32px;
-	letter-spacing: 0;
-	cursor: pointer;
-  }
+  width: 198px;
+  height: 588px;
+  position: absolute;
+  left: 19px;
+  top: 153px;
+}
+.Jewelleryback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 504px;
+}
+.Jewellery {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.textJewellery {
+  color: rgba(0, 0, 0, 1);
+  width: 150.3141326904297px;
+  height: 39px;
+  position: absolute;
+  left: 23.842931747436523px;
+  top: 22px;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  cursor: pointer;
+  /* font-family: 'Courier New', Courier, monospace;  */
+  /* CHANGE the font */
+}
+.Photographyback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 375px;
+}
+.Photography {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+
+  color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+.textPhotography {
+  color: rgba(0, 0, 0, 1);
+  width: 195px;
+  height: 36px;
+  position: absolute;
+  left: 2px;
+  top: 24px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0;
+  cursor: pointer;
+  /* border:none; */
+}
+.Textileback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 250px;
+  cursor: pointer;
+}
+.Textile {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.textTextile {
+  color: rgba(0, 0, 0, 1);
+  width: 102.6282730102539px;
+  height: 39px;
+  position: absolute;
+  left: 49.75916290283203px;
+  top: 22px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+}
+.Artback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 125px;
+}
+.Art {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.TextArt {
+  color: rgba(0, 0, 0, 1);
+  width: 48.722511291503906px;
+  height: 39px;
+  position: absolute;
+  left: 74.63874053955078px;
+  top: 23px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.Digitalback {
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.Digital {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
+  width: 198px;
+  height: 84px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.TextDigital {
+  color: rgba(0, 0, 0, 1);
+  width: 98.48167419433594px;
+  height: 39px;
+  position: absolute;
+  left: 49.75916290283203px;
+  top: 23px;
+  font-family: Inter;
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0;
+  cursor: pointer;
+}
