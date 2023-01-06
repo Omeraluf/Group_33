@@ -204,6 +204,7 @@ needs to check about the:
 	height: 110%;
 	position:absolute;
 	transition:0.3s;
+	cursor:pointer;
 }
 .e58_24 { 
 	color:rgba(255, 255, 255, 1);
@@ -371,6 +372,7 @@ needs to check about the:
 	height: 110%;
 	position:absolute;
 	transition:0.3s;
+	cursor:pointer;
 }
 
 .e58_14 { 
@@ -397,5 +399,25 @@ needs to check about the:
 	height: 25px;
 	position:relative;
 	top:-20px;
+	left:5px;
 
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+	color: rgba(106.58203125, 167.5230547785759, 239.0625, 1);
+	border:1px;
+	cursor:pointer;
+
+}
+
+.forgot_password:hover{	
+	/* added by Omer - @not finished@ - needs to be centered*/
+	width: 101%;
+	height: 101%;
+	/* top:-20px;
+	left:5px; */
+	/* position:absolute; */
+	transition:0.3s;
+	cursor:pointer;
 }

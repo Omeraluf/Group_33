@@ -1,30 +1,4 @@
-
 "use strict";
-
-var account1 = {
-  username: "daniel",
-  password: "1234",
-  role: "student",
-};
-
-var account2 = {
-  username: "omer",
-  password: "1111",
-  role: "teacher",
-};
-
-var account3 = {
-  username: "yonah",
-  password: "1996",
-  role: "storage_keeper",
-};
-
-
-var users = [account1, account2, account3]; // let caused problems, changed to var
-
-//let storageusers;
-const loginForm = document.getElementById("login_form");
-const loginButton = document.getElementById("login_form_submit");
 
 const usersss = [];
 
@@ -40,15 +14,43 @@ class userss {
   }
 }
 
-//using localstorage
-//accounts = [];
-
-// setLocalSrorage();
-// {
-//   localStorage.setItem("account", JSON.stringify(users));
-// }
 let storageusers;
 
+storageusers = new userss("daniel","1234","student");
+usersss.push(storageusers);
+storageusers = new userss("omer","1111","teacher");
+usersss.push(storageusers);
+storageusers = new userss("yonah","1996","storage_keeper");
+usersss.push(storageusers);
+
+function save(data) {   //yuval's function
+  if (window.localStorage.getItem("accountRegistered") === null) {
+    window.localStorage.setItem("accountRegistered", "[]");
+  }
+  var old_data = JSON.parse(localStorage.getItem("accountRegistered"));
+  // Push the new data (whether it be an object or anything else) onto the array
+  old_data.push(data);
+  localStorage.setItem("accountRegistered", JSON.stringify(old_data));
+                                        //make sure it works in the log in from localstorage before it looks in usersss
+}
+
+
+let data_temp = window.localStorage.getItem("accountRegistered");
+if(!data_temp){
+  window.localStorage.setItem("accountRegistered", JSON.stringify(usersss));
+}
+
+
+// ## alerts of 3 default users ##
+// for(let i=0;i<3;i++){
+//   alert(usersss[i].username +" "+ usersss[i].password +" "+ usersss[i].role)
+// }
+
+//let storageusers;
+const loginForm = document.getElementById("login_form");
+const loginButton = document.getElementById("login_form_submit");
+
+let data = JSON.parse(window.localStorage.getItem("accountRegistered")); //data contains all the localstorage
 
 if(loginButton != null)
 {
@@ -56,72 +58,27 @@ if(loginButton != null)
     e.preventDefault(); //from a website describing what it does - "Clicking on a "Submit" button, prevent it from submitting a form"
     const username = loginForm.username.value;
     const password = loginForm.password.value;
-    // const varName = <form>.<nameSpesificInput>.value;
-    //yuval try
-    //   for (
-    let i = 0;
+    
+    // alert(data[0].username);  // do we need data?
 
-    //     i < usersss.length;
-    //     i++ //can be done like python too, but good!
-    //   ) {
-    let data = JSON.parse(window.localStorage.getItem("account"));
-    //alert(`${username} and ${password}`); //put in comment when done
-    console.log(data);
-    //check if there are something in the local storage
-    if (!data) return;
-    usersss[i] = data;
-    //console.log(userss[i]," i is: ",i);
-    usersss[i].forEach((User) => {
-      console.log("userrr",User);
-      if(!User) return;
-      if ((username.toLowerCase() === User.username.toLowerCase()) && (password === User.password)
-      ) {
-        // alert("You have successfully logged in.");
-        location.replace("./main.html");
-        
-      }
-      
-    });
-  
-    for (
-      let i = 0;
-      i < users.length;
-      i++ //can be done like python too, but good!
-    ) {
-      // alert(users[i].username + " and " + users[i].password); //put in comment when done
-      if (
-        username.toLowerCase() === users[i].username.toLowerCase() &&
-        password === users[i].password
-      ) {
-        //added "username.toLowerCase()"
-        alert("You have successfully logged in.1");
+    data = JSON.parse(window.localStorage.getItem("accountRegistered"));
+    for(let i = 0; i < data.length; i++){
+      // alert(data.length);
+      // alert("usersss[i]: " + data[i].username);
+
+      if ((username.toLowerCase() === data[i].username.toLowerCase()) && (password === data[i].password)) {
+        alert("You have successfully logged in.");
+        window.localStorage.setItem("accountsLoggedIn", JSON.stringify(data[i]));
         location.replace("./main.html");
         break;
+        
       }
-
+      if(i== data.length-1){
+        alert("Username or password are incorrect, try again");
+        break;
+      }
     }
   
-    //omer :
-    //   for (
-    //     let i = 0;
-    //     i < users.length;
-    //     i++ //can be done like python too, but good!
-    //   ) {
-    //     alert(users[i].username + " and " + users[i].password); //put in comment when done
-    //     if (
-    //       username.toLowerCase() === users[i].username.toLowerCase() &&
-    //       password === users[i].password
-    //     ) {
-    //       //added "username.toLowerCase()"
-    //       alert("You have successfully logged in.");
-    //       location.replace("./main.html"); // DOUBLE '\\' in every path! *this is important* // change by your own comp
-    //       break; //if for some reason it didn't work
-    //       // location.reload();
-    //     } else {
-    //       //loginErrorMsg.style.opacity = 1;
-    //       if (i == users.length - 1) alert("You have failed to log in.");
-    //     }
-    //   }
   });
 }
 
@@ -129,57 +86,36 @@ if(loginButton != null)
 //register button
 const registerForm = document.getElementById("register_form");
 const registerButton = document.getElementById("register_form_submit");
-
 if(registerButton != null)
 {
   registerButton.addEventListener("click", (e) => {
     e.preventDefault();
+    data = JSON.parse(window.localStorage.getItem("accountRegistered"));
     const usernameRegister = registerForm.username_register.value;
     const passwordRegister = registerForm.password_register.value;
   
     const roleRegister = registerForm.role.value;
   
-    // const roleRegister = document.querySelectorAll('input[name="role"]');
-    // const btn = document.querySelector('#btn');
-  
-    alert(
-      "Checking if username: " +
-        usernameRegister +
-        " + " +
-        passwordRegister +
-        " + " +
-        roleRegister
-    );
-  
+    // alert("Checking if username: " +usernameRegister +" + " +passwordRegister +" + " +roleRegister);
+    // alert(data.length); // only 3, need to be 4 after register 1 user
+
     let registerForFlag = 0;
-    for (var accounts in users) {
+    for (var accounts in data) {
       // alert(accounts + "/" + users.length);
-      if (
-        usernameRegister.toLowerCase() == users[accounts].username.toLowerCase()
-      )
+      // alert("usernameRegister.toLowerCase(): " +" + "+ usernameRegister.toLowerCase() +" + "+ "usersss[accounts].username.toLowerCase()"+" + "+
+      // data[accounts].username.toLowerCase()+" + "+"two with the same name")
+
+      // alert("user and user and flag:"+usernameRegister.toLowerCase() + data[accounts].username.toLowerCase() + registerForFlag)
+      if (usernameRegister.toLowerCase() == data[accounts].username.toLowerCase()){
         registerForFlag = 1;
+      }
     }
     if (registerForFlag == 0) {
-      // @@@@@@@ needs to make infinite accounts @@@@@@@@
-      const account_new = {
-        username: String(usernameRegister),
-        password: String(passwordRegister),
-        role: String(roleRegister),
-      };
-      // users.push(account_new);
+      
       storageusers = new userss(usernameRegister, passwordRegister, roleRegister);
-      usersss.push(storageusers);
-      //local storage to put info in
-      window.localStorage.setItem("account", JSON.stringify(usersss));
-  
-      alert(users.length); //working
-      // alert(
-      //   users[users.length - 1].username +
-      //     " " +
-      //     users[users.length - 1].password +
-      //     " " +
-      //     users[users.length - 1].role
-      // ); // working
+      save(storageusers);
+      alert("User registered successfully");
+
     } else {
       alert("Name is already taken, chose another one");
     }
@@ -195,14 +131,14 @@ if(forgotPass != null)
 {
   forgotPass.addEventListener("click",(e) =>{
     e.preventDefault();
-    alert("press forgot password");
+    // alert("press forgot password");
     location.replace("./forgot password.html");
 
 })
 }
 
 
-const forgotPas = document.getElementById("forgotPas");
+const forgotPas = document.getElementsByClassName("forgotPas"); //By class, not ID
 const forgotButton = document.getElementById("forgot_pass_submit");
 if(forgotPas != null)
 {
@@ -210,39 +146,40 @@ if(forgotPas != null)
   forgotButton.addEventListener("click",(e) =>{
     e.preventDefault();
     alert("press ready");
+    
+    const usernameForgot = forgotPas.username_pass.value; //The username
+    const newPass = forgotPas.new_password.value;         //The password
+    let i =0;
+    
+    // alert(`${usernameForgot} and ${newPass}`); //put in comment when done
 
-    const usernameForgot = forgotPas.username_pass.value;
-  const newPass = forgotPas.new_password.value;
-  let i =0;
-  //let data = JSON.parse(window.localStorage.getItem("account")); 
-  alert(`${usernameForgot} and ${newPass}`); //put in comment when done
-  usersss[i] = JSON.parse(window.localStorage.getItem("account"));
-  usersss[i].forEach((User) => {
-  console.log("in forgot pass",User);
-  if (usernameForgot.toLowerCase() === User.username.toLowerCase())
-   {
-    User.username = usernameForgot;
-    User.password = newPass;
-    //maybe remove
-    //usersss.push(storageusers);
-    //local storage to put info in
-    localStorage.setItem("account", JSON.stringify(usersss));
-    alert("You have successfully changed the password.");
-    location.replace("./main.html");
+    data = JSON.parse(window.localStorage.getItem("accountRegistered"));
+    for(let i = 0; i < data.length; i++){
 
-  }
+      // alert("in forgot pass: " + data[i].username);
 
-    //location.replace("./loginPage.html");
-  })
+      if (usernameForgot.toLowerCase() === data[i].username.toLowerCase() ) {
+        let roleTemp = data[i].role;
+        storageusers = new userss(usernameForgot, newPass, roleTemp);
+        // alert("1.Data[i]: " + data[i].username + data[i].password);
+        data = data.filter(person => person.username != usernameForgot);  //remove 1 item from the array
+        // alert(data.length);
+        data.push(storageusers);
+        localStorage.setItem("accountRegistered", JSON.stringify(data));
+        location.replace("./loginPage.html");
+        break;
+      }
+
+      if(i == data.length-1){
+        alert("Try again with a real username");
+        location.replace("./loginPage.html");
+        break;
+      }
+    }
+    
 })
-
-
 }
   
-
-//unit tests
-
-
-// generateText = (namey, age) => {
-//   return "${namey} (${age} years old)";
-//};
+//Omer's problems:
+// 1. after new user register, and log out - user erase from local storage
+// 1. solution - maybe can we combine loginpage & main ?

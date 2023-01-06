@@ -1,6 +1,15 @@
 "use strict";
-//Dr.WH button
+//myProfile elements
+  const profile_logo_shown = document.getElementById("profile_logo");
+  let accountLoggedIn = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+  if (profile_logo_shown !== null) {
+  document.getElementById("myProfileName").textContent = `${accountLoggedIn.username}`;
+  document.getElementById("myProfilePassword").textContent = `${accountLoggedIn.password}`;
+  document.getElementById("myProfileRole").textContent = `${accountLoggedIn.role}`;
+  // document.getElementById("myProfileName").innerHTML = `${accountLoggedIn.username + "Also working"}`;
+  }
 
+//Dr.WH button
 const DrWHBtn = document.getElementById("drWHpic");
 
 if (DrWHBtn !== null) {
@@ -101,6 +110,7 @@ const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
 if (logOutBtn_myPerson !== null) {
   logOutBtn_myPerson.addEventListener("click", (e) => {
     e.preventDefault();
+    window.localStorage.removeItem('accountLoggedIn');
     window.location.assign("./loginPage.html");
   });
 }
@@ -133,16 +143,30 @@ const myPerson_reportStudent = document.getElementById("reportStudent"); //chang
 if (myPerson_reportStudent !== null) {
   myPerson_reportStudent.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./reportStudent.html");
-  });
+
+    if(accountLoggedIn.role == 'student'){
+      window.location.assign("./reportStudent.html");
+    }
+    else{
+      alert("You have no access for that report");
+    }
+  })
+
 }
 
 const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
 if (myPerson_reportTeacher !== null) {
   myPerson_reportTeacher.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./reportTeacher.html");
-  });
+
+    if(accountLoggedIn.role == 'teacher'){
+      window.location.assign("./reportTeacher.html");
+    }
+    else{
+      alert("You have no access for that report");
+    }
+  })
+
 }
 
 const myPerson_reportStorageKeeper = document.getElementById(
@@ -151,23 +175,49 @@ const myPerson_reportStorageKeeper = document.getElementById(
 if (myPerson_reportStorageKeeper !== null) {
   myPerson_reportStorageKeeper.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./reportStorageKeeper.html");
-  });
+
+    if(accountLoggedIn.role == 'storage_keeper'){
+      window.location.assign("./reportStorageKeeper.html");
+    }
+    else{
+      alert("You have no access for that report");
+    }
+  })
+
 }
 
 const myPerson_extansion = document.getElementById("extansion"); //change this
 if (myPerson_extansion !== null) {
   myPerson_extansion.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./extansion.html");
-  });
+
+    if(accountLoggedIn.role == 'student'){
+      window.location.assign("./extansion.html");
+    }
+    else{
+      if(accountLoggedIn.role == 'teacher'){
+        window.location.assign("./extansionTeacher.html");
+      }
+      else{
+        alert("You have no access for that section");
+      }
+    }
+  })
+
 }
 const myPerson_newItemReq = document.getElementById("newItemReq"); //change this
 if (myPerson_newItemReq !== null) {
   myPerson_newItemReq.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./newItemReq.html");
-  });
+
+    if(accountLoggedIn.role == 'teacher'){
+      window.location.assign("./newItemReq.html");
+    }
+    else{
+      alert("You have no access for that section");
+    }
+  })
+
 }
 
 //window.location.assign();
