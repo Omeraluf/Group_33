@@ -525,14 +525,14 @@ if (sendBtn !== null) {
     let mktNumber = extansionForm.MKTNumber.value;  // mkt number value
     let teacherName = extansionForm.TeacherName.value; // teacher name
     let reasonContent = extansionForm.extansionReason.value;  // reason for extension
-    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
     //console.log(userNameFromLS);
-    const messages = userNameFromLS[0].username + reasonContent + teacherName + mktNumber;
+    const messages = userNameFromLS.username + reasonContent + teacherName + mktNumber;
     // console.log(typeof (userNameFromLS[0].username));
     // console.log(typeof (mktNumber));
-    let nameOfStudent = userNameFromLS[0].username;
+    let nameOfStudent = userNameFromLS.username;
     let messagesOBJ = new messagesCLS(nameOfStudent, mktNumber, teacherName, reasonContent);
-    console.log(userNameFromLS[0].username);
+    console.log(userNameFromLS.username);
     //console.log(userNameFromLS);
     messagesArray.push(messagesOBJ);
     window.localStorage.setItem("messgesForSKFromStudent", JSON.stringify(messagesArray));
@@ -597,11 +597,12 @@ if (sendReqBtn !== null) {      //dont work!!!! continue from here
     let mktNumber = sendReqForm.TeachersMKT.value;  // mkt number value
     const exetensionsNumber = sendReqForm.NumOfExtansions.value; // teacher name
     let reasonContent = sendReqForm.TeachersReason.value;  // reason for extension
-    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    alert(userNameFromLS.username);
     //console.log(userNameFromLS);
-    let messages = userNameFromLS[0].username + reasonContent + exetentionsNumber + mktNumber;
+    let messages = userNameFromLS.username + reasonContent + exetensionsNumber + mktNumber;
     console.log(typeof (mktNumber));
-    let nameOfteacher = userNameFromLS[0].username;
+    let nameOfteacher = userNameFromLS.username;
     let messagesTeacherOBJ = new messagesFromTeacherCLS(nameOfteacher, mktNumber, exetensionsNumber, reasonContent);
     messagesArray.push(messagesTeacherOBJ);
     window.localStorage.setItem("messgesForSKfromTeacher", JSON.stringify(messagesArray));
@@ -664,11 +665,11 @@ if (newItemBtn !== null) {      //dont work!!!! continue from here
     let itemName = newItemForm.nameOfItem.value;  // mkt number value
     const link = newItemForm.itemLink.value; // teacher name
     let reasonContent = newItemForm.ReasonOfReq.value;  // reason for extension
-    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
-    let messages = userNameFromLS[0].username + itemName + link + reasonContent;
-    console.log(userNameFromLS[0].username);
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    let messages = userNameFromLS.username + itemName + link + reasonContent;
+    console.log(userNameFromLS.username);
     //console.log(typeof (mktNumber));
-    const nameOfteacher = userNameFromLS[0].username;
+    const nameOfteacher = userNameFromLS.username;
     console.log(nameOfteacher);
     console.log(typeof (nameOfteacher));
     let newItemOBJ = new newItemCLS(nameOfteacher, itemName, link, reasonContent);
@@ -731,7 +732,14 @@ function deletetheitem(data) {
   }
   var old_data = JSON.parse(localStorage.getItem("cart"));
   // Push the new data (whether it be an object or anything else) onto the array
-  old_data.pop(data);
+  // old_data.pop(data);  //old one, works with pop only
+  // old_data = old_data.filter(product => product != data);  //remove 1 item from the array
+
+  let index = old_data.indexOf(data);
+  if (index > -1) {
+    old_data.splice(index, 1);
+  }
+
   localStorage.setItem("cart", JSON.stringify(old_data));
 }
 
@@ -1609,6 +1617,7 @@ if (btnshoeOnCart !== null) {
       );
     }
   });
+}
   const btnclearTheCart = document.getElementById("clearThecart");
   if (btnclearTheCart !== null) {
     btnclearTheCart.addEventListener("click", function (e) {
@@ -1632,240 +1641,255 @@ if (btnshoeOnCart !== null) {
           "outputfromcart"
         ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
       });
-    
-
-      //report student
-
-      document.getElementById(
-        "report_quantity_1"
-      ).textContent = `${VideoCamera.quantity}`;
-      document.getElementById(
-        "report_name_1"
-      ).textContent = `${VideoCamera.name}`;
-      document.getElementById(
-        "report_mkt_1"
-      ).textContent = `${VideoCamera.MKT}`;
-
-      document.getElementById(
-        "report_quantity_2"
-      ).textContent = `${CarCamera.quantity}`;
-      document.getElementById(
-        "report_name_2"
-      ).textContent = `${CarCamera.name}`;
-      document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
-
-      document.getElementById(
-        "report_quantity_3"
-      ).textContent = `${tripodCamera.quantity}`;
-      document.getElementById(
-        "report_name_3"
-      ).textContent = `${tripodCamera.name}`;
-      document.getElementById(
-        "report_mkt_3"
-      ).textContent = `${tripodCamera.MKT}`;
-
-      document.getElementById(
-        "report_quantity_4"
-      ).textContent = `${Umbrella.quantity}`;
-      document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
-      document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
-
-      document.getElementById(
-        "report_quantity_5"
-      ).textContent = `${GoPro.quantity}`;
-      document.getElementById("report_name_5").textContent = `${GoPro.name}`;
-      document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
-
-      document.getElementById(
-        "report_quantity_6"
-      ).textContent = `${ipads.quantity}`;
-      document.getElementById("report_name_6").textContent = `${ipads.name}`;
-      document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
-
-      document.getElementById(
-        "report_quantity_7"
-      ).textContent = `${MacBook.quantity}`;
-      document.getElementById("report_name_7").textContent = `${MacBook.name}`;
-      document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
-
-      document.getElementById(
-        "report_quantity_8"
-      ).textContent = `${ApplePencil.quantity}`;
-      document.getElementById(
-        "report_name_8"
-      ).textContent = `${ApplePencil.name}`;
-      document.getElementById(
-        "report_mkt_8"
-      ).textContent = `${ApplePencil.MKT}`;
-
-      document.getElementById(
-        "report_quantity_9"
-      ).textContent = `${LEDbourd.quantity}`;
-      document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
-      document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
-
-      document.getElementById(
-        "report_quantity_10"
-      ).textContent = `${canvas.quantity}`;
-      document.getElementById("report_name_10").textContent = `${canvas.name}`;
-      document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
-
-      document.getElementById(
-        "report_quantity_11"
-      ).textContent = `${brush.quantity}`;
-      document.getElementById("report_name_11").textContent = `${brush.name}`;
-      document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
-
-      document.getElementById(
-        "report_quantity_12"
-      ).textContent = `${faberCastell.quantity}`;
-      document.getElementById(
-        "report_name_12"
-      ).textContent = `${faberCastell.name}`;
-      document.getElementById(
-        "report_mkt_12"
-      ).textContent = `${faberCastell.MKT}`;
-
-      document.getElementById(
-        "report_quantity_13"
-      ).textContent = `${paint.quantity}`;
-      document.getElementById("report_name_13").textContent = `${paint.name}`;
-      document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
-
-      document.getElementById(
-        "report_quantity_14"
-      ).textContent = `${sewingMechine.quantity}`;
-      document.getElementById(
-        "report_name_14"
-      ).textContent = `${sewingMechine.name}`;
-      document.getElementById(
-        "report_mkt_14"
-      ).textContent = `${sewingMechine.MKT}`;
-
-      document.getElementById(
-        "report_quantity_15"
-      ).textContent = `${fabric.quantity}`;
-      document.getElementById("report_name_15").textContent = `${fabric.name}`;
-      document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
-
-      document.getElementById(
-        "report_quantity_16"
-      ).textContent = `${tapeMessures.quantity}`;
-      document.getElementById(
-        "report_name_16"
-      ).textContent = `${tapeMessures.name}`;
-      document.getElementById(
-        "report_mkt_16"
-      ).textContent = `${tapeMessures.MKT}`;
-
-      document.getElementById(
-        "report_quantity_17"
-      ).textContent = `${manniqen.quantity}`;
-      document.getElementById(
-        "report_name_17"
-      ).textContent = `${manniqen.name}`;
-      document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
-
-      document.getElementById(
-        "report_quantity_18"
-      ).textContent = `${silver.quantity}`;
-      document.getElementById("report_name_18").textContent = `${silver.name}`;
-      document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
-
-      document.getElementById(
-        "report_quantity_19"
-      ).textContent = `${gold.quantity}`;
-      document.getElementById("report_name_19").textContent = `${gold.name}`;
-      document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
-
-      document.getElementById(
-        "report_quantity_20"
-      ).textContent = `${cutter.quantity}`;
-      document.getElementById("report_name_20").textContent = `${cutter.name}`;
-      document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
-
-      document.getElementById(
-        "report_quantity_21"
-      ).textContent = `${welder.quantity}`;
-      document.getElementById("report_name_21").textContent = `${welder.name}`;
-      document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
-
-      document.getElementById(
-        "report_quantity_22"
-      ).textContent = `${stretcher.quantity}`;
-      document.getElementById(
-        "report_name_22"
-      ).textContent = `${stretcher.name}`;
-      document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
-
-      //report storageKeeper addons
-      document.getElementById(
-        "report_quantity_max_1"
-      ).textContent = `${VideoCamera.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_2"
-      ).textContent = `${CarCamera.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_3"
-      ).textContent = `${tripodCamera.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_4"
-      ).textContent = `${Umbrella.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_5"
-      ).textContent = `${GoPro.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_6"
-      ).textContent = `${ipads.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_7"
-      ).textContent = `${MacBook.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_8"
-      ).textContent = `${ApplePencil.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_9"
-      ).textContent = `${LEDbourd.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_10"
-      ).textContent = `${canvas.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_11"
-      ).textContent = `${brush.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_12"
-      ).textContent = `${faberCastell.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_13"
-      ).textContent = `${paint.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_14"
-      ).textContent = `${sewingMechine.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_15"
-      ).textContent = `${fabric.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_16"
-      ).textContent = `${tapeMessures.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_17"
-      ).textContent = `${manniqen.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_18"
-      ).textContent = `${silver.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_19"
-      ).textContent = `${gold.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_20"
-      ).textContent = `${cutter.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_21"
-      ).textContent = `${welder.MaxQuantity}`;
-      document.getElementById(
-        "report_quantity_max_22"
-      ).textContent = `${stretcher.MaxQuantity}`;
     }
   }
-}
 
+
+//report student
+const reportStudentNotNull = document.getElementById("reportStudentNotNull");
+if(reportStudentNotNull != null){}
+document.getElementById(
+  "report_quantity_1"
+).textContent = `${VideoCamera.quantity}`;
+document.getElementById(
+  "report_name_1"
+).textContent = `${VideoCamera.name}`;
+document.getElementById(
+  "report_mkt_1"
+).textContent = `${VideoCamera.MKT}`;
+
+document.getElementById(
+  "report_quantity_2"
+).textContent = `${CarCamera.quantity}`;
+document.getElementById(
+  "report_name_2"
+).textContent = `${CarCamera.name}`;
+document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
+
+document.getElementById(
+  "report_quantity_3"
+).textContent = `${tripodCamera.quantity}`;
+document.getElementById(
+  "report_name_3"
+).textContent = `${tripodCamera.name}`;
+document.getElementById(
+  "report_mkt_3"
+).textContent = `${tripodCamera.MKT}`;
+
+document.getElementById(
+  "report_quantity_4"
+).textContent = `${Umbrella.quantity}`;
+document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
+document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
+
+document.getElementById(
+  "report_quantity_5"
+).textContent = `${GoPro.quantity}`;
+document.getElementById("report_name_5").textContent = `${GoPro.name}`;
+document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
+
+document.getElementById(
+  "report_quantity_6"
+).textContent = `${ipads.quantity}`;
+document.getElementById("report_name_6").textContent = `${ipads.name}`;
+document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
+
+document.getElementById(
+  "report_quantity_7"
+).textContent = `${MacBook.quantity}`;
+document.getElementById("report_name_7").textContent = `${MacBook.name}`;
+document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
+
+document.getElementById(
+  "report_quantity_8"
+).textContent = `${ApplePencil.quantity}`;
+document.getElementById(
+  "report_name_8"
+).textContent = `${ApplePencil.name}`;
+document.getElementById(
+  "report_mkt_8"
+).textContent = `${ApplePencil.MKT}`;
+
+document.getElementById(
+  "report_quantity_9"
+).textContent = `${LEDbourd.quantity}`;
+document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
+document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
+
+document.getElementById(
+  "report_quantity_10"
+).textContent = `${canvas.quantity}`;
+document.getElementById("report_name_10").textContent = `${canvas.name}`;
+document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
+
+document.getElementById(
+  "report_quantity_11"
+).textContent = `${brush.quantity}`;
+document.getElementById("report_name_11").textContent = `${brush.name}`;
+document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
+
+document.getElementById(
+  "report_quantity_12"
+).textContent = `${faberCastell.quantity}`;
+document.getElementById(
+  "report_name_12"
+).textContent = `${faberCastell.name}`;
+document.getElementById(
+  "report_mkt_12"
+).textContent = `${faberCastell.MKT}`;
+
+document.getElementById(
+  "report_quantity_13"
+).textContent = `${paint.quantity}`;
+document.getElementById("report_name_13").textContent = `${paint.name}`;
+document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
+
+document.getElementById(
+  "report_quantity_14"
+).textContent = `${sewingMechine.quantity}`;
+document.getElementById(
+  "report_name_14"
+).textContent = `${sewingMechine.name}`;
+document.getElementById(
+  "report_mkt_14"
+).textContent = `${sewingMechine.MKT}`;
+
+document.getElementById(
+  "report_quantity_15"
+).textContent = `${fabric.quantity}`;
+document.getElementById("report_name_15").textContent = `${fabric.name}`;
+document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
+
+document.getElementById(
+  "report_quantity_16"
+).textContent = `${tapeMessures.quantity}`;
+document.getElementById(
+  "report_name_16"
+).textContent = `${tapeMessures.name}`;
+document.getElementById(
+  "report_mkt_16"
+).textContent = `${tapeMessures.MKT}`;
+
+document.getElementById(
+  "report_quantity_17"
+).textContent = `${manniqen.quantity}`;
+document.getElementById(
+  "report_name_17"
+).textContent = `${manniqen.name}`;
+document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
+
+document.getElementById(
+  "report_quantity_18"
+).textContent = `${silver.quantity}`;
+document.getElementById("report_name_18").textContent = `${silver.name}`;
+document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
+
+document.getElementById(
+  "report_quantity_19"
+).textContent = `${gold.quantity}`;
+document.getElementById("report_name_19").textContent = `${gold.name}`;
+document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
+
+document.getElementById(
+  "report_quantity_20"
+).textContent = `${cutter.quantity}`;
+document.getElementById("report_name_20").textContent = `${cutter.name}`;
+document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
+
+document.getElementById(
+  "report_quantity_21"
+).textContent = `${welder.quantity}`;
+document.getElementById("report_name_21").textContent = `${welder.name}`;
+document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
+
+document.getElementById(
+  "report_quantity_22"
+).textContent = `${stretcher.quantity}`;
+document.getElementById(
+  "report_name_22"
+).textContent = `${stretcher.name}`;
+document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
+
+//
+
+//report storageKeeper addons
+const reportStorageKeeperNotNull = document.getElementById("reportStorageKeeperNotNull");
+if(reportStorageKeeperNotNull != null){}
+document.getElementById(
+  "report_quantity_max_1"
+).textContent = `${VideoCamera.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_2"
+).textContent = `${CarCamera.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_3"
+).textContent = `${tripodCamera.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_4"
+).textContent = `${Umbrella.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_5"
+).textContent = `${GoPro.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_6"
+).textContent = `${ipads.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_7"
+).textContent = `${MacBook.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_8"
+).textContent = `${ApplePencil.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_9"
+).textContent = `${LEDbourd.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_10"
+).textContent = `${canvas.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_11"
+).textContent = `${brush.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_12"
+).textContent = `${faberCastell.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_13"
+).textContent = `${paint.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_14"
+).textContent = `${sewingMechine.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_15"
+).textContent = `${fabric.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_16"
+).textContent = `${tapeMessures.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_17"
+).textContent = `${manniqen.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_18"
+).textContent = `${silver.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_19"
+).textContent = `${gold.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_20"
+).textContent = `${cutter.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_21"
+).textContent = `${welder.MaxQuantity}`;
+document.getElementById(
+  "report_quantity_max_22"
+).textContent = `${stretcher.MaxQuantity}`;
+
+//report Teacher
+
+const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
+if (reportTeacherNotNull !== null) {
+
+  if (localStorage.getItem("cart") !== null) {
+    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
+      localStorage.getItem("cart")
+    );
+  }
+}

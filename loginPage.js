@@ -140,7 +140,7 @@ if(forgotPass != null)
 
 const forgotPas = document.getElementsByClassName("forgotPas"); //By class, not ID
 const forgotButton = document.getElementById("forgot_pass_submit");
-if(forgotPas != null)
+if(forgotPas != null && forgotButton != null)
 {
   
   forgotButton.addEventListener("click",(e) =>{
