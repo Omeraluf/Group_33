@@ -398,7 +398,7 @@ needs to check about the:
 .forgot_password{
 	height: 25px;
 	position:relative;
-	top:-20px;
+	top:-18px;
 	left:5px;
 
 	border-top-left-radius:50px;
@@ -406,15 +406,13 @@ needs to check about the:
 	border-bottom-left-radius:50px;
 	border-bottom-right-radius:50px;
 	color: rgba(106.58203125, 167.5230547785759, 239.0625, 1);
-	border:1px;
+	border:none;
 	cursor:pointer;
 
 }
 
 .forgot_password:hover{	
 	/* added by Omer - @not finished@ - needs to be centered*/
-	width: 101%;
-	height: 101%;
 	/* top:-20px;
 	left:5px; */
 	/* position:absolute; */
