@@ -20,16 +20,13 @@ if (DrWHBtn !== null) {
   });
 }
 
-
 if (DrWHBtn !== null) {
   DrWHBtn.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./main.html");
     //ADD the right file
   });
-
 }
-
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Omer's part
 
@@ -62,8 +59,6 @@ if (DrWHBtn !== null) {
 //     }
 // }
 
-
-
 function dropDownCartBtn() {
   document.getElementById("dropDown_myCart").classList.toggle("show");
 }
@@ -76,14 +71,20 @@ function dropDownCartBtn() {
 //       window.location.assign("./loginPage.html");
 //   })
 // }
+const btn_order_status = document.getElementById("order_status");
+if (btn_order_status !== null) {
+  btn_order_status.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./order_status.html");
 
+  })
+}
 const cartBtn_myCart = document.getElementById("myCart");
 if (cartBtn_myCart !== null) {
   cartBtn_myCart.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./myCart.html");
-
-  })
+  });
 }
 
 // Bell Button
@@ -96,7 +97,7 @@ if (cartBtn_myBell !== null) {
   cartBtn_myBell.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./nextPage.html");
-  })
+  });
 }
 
 // Person Button
@@ -111,7 +112,7 @@ if (logOutBtn_myPerson !== null) {
     e.preventDefault();
     window.localStorage.removeItem('accountLoggedIn');
     window.location.assign("./loginPage.html");
-  })
+  });
 }
 
 const myPerson_myProfile = document.getElementById("myProfile"); //change this
@@ -119,7 +120,7 @@ if (myPerson_myProfile !== null) {
   myPerson_myProfile.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./myProfile.html");
-  })
+  });
 }
 
 const myPerson_messageBox = document.getElementById("messageBox"); //change this
@@ -127,7 +128,7 @@ if (myPerson_messageBox !== null) {
   myPerson_messageBox.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./messageBox.html");
-  })
+  });
 }
 
 const myPerson_helpSupport = document.getElementById("help_support"); //change this
@@ -135,13 +136,14 @@ if (myPerson_helpSupport !== null) {
   myPerson_helpSupport.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./help_support.html");
-  })
+  });
 }
 
 const myPerson_reportStudent = document.getElementById("reportStudent"); //change this
 if (myPerson_reportStudent !== null) {
   myPerson_reportStudent.addEventListener("click", (e) => {
     e.preventDefault();
+
     if(accountLoggedIn.role == 'student'){
       window.location.assign("./reportStudent.html");
     }
@@ -149,12 +151,14 @@ if (myPerson_reportStudent !== null) {
       alert("You have no access for that report");
     }
   })
+
 }
 
 const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
 if (myPerson_reportTeacher !== null) {
   myPerson_reportTeacher.addEventListener("click", (e) => {
     e.preventDefault();
+
     if(accountLoggedIn.role == 'teacher'){
       window.location.assign("./reportTeacher.html");
     }
@@ -162,12 +166,16 @@ if (myPerson_reportTeacher !== null) {
       alert("You have no access for that report");
     }
   })
+
 }
 
-const myPerson_reportStorageKeeper = document.getElementById("reportStorageKeeper"); //change this
+const myPerson_reportStorageKeeper = document.getElementById(
+  "reportStorageKeeper"
+); //change this
 if (myPerson_reportStorageKeeper !== null) {
   myPerson_reportStorageKeeper.addEventListener("click", (e) => {
     e.preventDefault();
+
     if(accountLoggedIn.role == 'storage_keeper'){
       window.location.assign("./reportStorageKeeper.html");
     }
@@ -175,12 +183,14 @@ if (myPerson_reportStorageKeeper !== null) {
       alert("You have no access for that report");
     }
   })
+
 }
 
 const myPerson_extansion = document.getElementById("extansion"); //change this
 if (myPerson_extansion !== null) {
   myPerson_extansion.addEventListener("click", (e) => {
     e.preventDefault();
+
     if(accountLoggedIn.role == 'student'){
       window.location.assign("./extansion.html");
     }
@@ -193,11 +203,13 @@ if (myPerson_extansion !== null) {
       }
     }
   })
+
 }
 const myPerson_newItemReq = document.getElementById("newItemReq"); //change this
 if (myPerson_newItemReq !== null) {
   myPerson_newItemReq.addEventListener("click", (e) => {
     e.preventDefault();
+
     if(accountLoggedIn.role == 'teacher'){
       window.location.assign("./newItemReq.html");
     }
@@ -205,157 +217,8 @@ if (myPerson_newItemReq !== null) {
       alert("You have no access for that section");
     }
   })
+
 }
-
-//probably erase this
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// function dropDownCartBtn() {
-//   document.getElementById("dropDown_myCart").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myCart = document.getElementById("e57_156_1");
-// cartBtn_myCart.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-// // Bell Button
-// function dropDownBellBtn() {
-//   document.getElementById("dropDown_myBell").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myBell = document.getElementById("e57_156_2");
-// cartBtn_myBell.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./nextPage.html");
-// });
-
-// // Person Button
-// function dropDownPersonBtn() {
-//   document.getElementById("dropDown_myPerson").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
-// cartBtn_myPerson.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-//probably erase this
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-
-
-// function dropDownCartBtn() {
-//   document.getElementById("dropDown_myCart").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myCart = document.getElementById("e57_156_1");
-// cartBtn_myCart.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-// // Bell Button
-// function dropDownBellBtn() {
-//   document.getElementById("dropDown_myBell").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myBell = document.getElementById("e57_156_2");
-// cartBtn_myBell.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./nextPage.html");
-// });
-
-// // Person Button
-// function dropDownPersonBtn() {
-//   document.getElementById("dropDown_myPerson").classList.toggle("show");
-// }
-// // Links
-// const cartBtn_myPerson = document.getElementById("e57_156_3"); //change this
-// cartBtn_myPerson.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   window.location.assign("./loginPage.html");
-// });
-
-//probably erase this
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myBell");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-// window.onclick = function(event){
-//     if(!event.target.matches('.dropbtn')){
-//         var dropdowns = document.getElementsByClassName("dropDown_myCart");
-//         var i;
-//         for(i = 0; i < dropdowns.length; i++){
-//             var openDropdown = dropdowns[i];
-//             if(openDropdown.classList.contains('shows')){
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// }
-
-
-//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Omer's part
 
 //window.location.assign();
 //Yuval's part                                                                                              //@@@@@ CHANGE THE LINKS @@@@@@@@
@@ -364,9 +227,6 @@ const btnArt = document.getElementById("Art");
 const btnTextile = document.getElementById("Textile");
 const btnPhotography = document.getElementById("Photography");
 const btnJewellery = document.getElementById("Jewellery");
-
-
-
 
 if (btnDigital !== null) {
   btnDigital.addEventListener("click", (e) => {
@@ -384,7 +244,6 @@ if (btnTextile !== null) {
 }
 if (btnPhotography !== null) {
   btnPhotography.addEventListener("click", (e) => {
-
     e.preventDefault();
     window.location.assign("./addPhotograpy.html");
     //ADD the right file
@@ -405,15 +264,9 @@ if (btnArt !== null) {
   });
 }
 
-
-
-
-
-
 // GoPro in cart - element
 // copied from Yuvals - addPhotography.js
 
-let CartProduct = [];
 let VideoCamera = {
   category: "photography",
   name: "VideoCamera",
@@ -462,7 +315,6 @@ let MacBook = {
   quantity: 3,
   MaxQuantity: 3,
   MKT: "0006",
-
 };
 
 let ApplePencil = {
@@ -575,7 +427,6 @@ let stretcher = {
   MaxQuantity: 10,
 };
 
-
 const JewlleryProduct = [silver, gold, cutter, welder, stretcher];
 const TextileProduct = [sewingMechine, fabric, tapeMessures, manniqen];
 const ArtProduct = [canvas, brush, faberCastell, paint];
@@ -626,11 +477,11 @@ if (btnSearch !== null) {
             flag = 1;
           }
           if (product.category === "Textile") {
-            //add the link to Textile
+            window.location.assign("./addTextile.html");
             flag = 1;
           }
           if (product.category === "Jewllery") {
-            //add the link to Jewllery
+            window.location.assign("./addJewellery.html");
             flag = 1;
           }
         }
@@ -642,14 +493,249 @@ if (btnSearch !== null) {
   });
 }
 
-//when we search the right product will popout
+//when we search ,the right product will popout
 let searchProductPop = JSON.parse(window.localStorage.getItem("searchProduct"));
 if (searchProductPop !== null) {
   document.getElementById(`${searchProductPop}`).style.border =
     "dashed rgb(40, 192, 53)";
 }
 
-let HowMany = 0;
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscar's try for extansion Student local storage....
+let messagesArray = [];
+
+class messagesCLS {
+  studentName = null;
+  MKT = null;
+  teacherName = null;
+  reason = null;
+
+  constructor(studentName, MKT, teacherName, reason) {
+    this.studentName = studentName;
+    this.MKT = MKT;
+    this.teacherName = teacherName;
+    this.reason = reason;
+  }
+};
+
+const sendBtn = document.getElementById("Send");
+if (sendBtn !== null) {
+  sendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    let mktNumber = extansionForm.MKTNumber.value;  // mkt number value
+    let teacherName = extansionForm.TeacherName.value; // teacher name
+    let reasonContent = extansionForm.extansionReason.value;  // reason for extension
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    //console.log(userNameFromLS);
+    const messages = userNameFromLS[0].username + reasonContent + teacherName + mktNumber;
+    // console.log(typeof (userNameFromLS[0].username));
+    // console.log(typeof (mktNumber));
+    let nameOfStudent = userNameFromLS[0].username;
+    let messagesOBJ = new messagesCLS(nameOfStudent, mktNumber, teacherName, reasonContent);
+    console.log(userNameFromLS[0].username);
+    //console.log(userNameFromLS);
+    messagesArray.push(messagesOBJ);
+    window.localStorage.setItem("messgesForSKFromStudent", JSON.stringify(messagesArray));
+
+    console.log(messagesOBJ);
+    // alert(
+    //   "Checking if extension sent: " +
+    //   reasonContent +
+    //   " + " +
+    //   teacherName +
+    //   " + " +
+    //   mktNumber + messages
+    // );
+    alert(
+      "Checking if messages sent: " + messages
+    );
+
+  });
+}
+
+let showMSGsBtn = document.getElementById("showMSGS");
+if (showMSGsBtn !== null) {
+  showMSGsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = JSON.parse(localStorage.getItem("messgesForSKFromStudent"));
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("messgesForSKFromStudent") !== null) {
+      document.getElementById("messagesShownExtentionStudent").innerHTML = ` name: ${temp[0].studentName} <br> MKT: ${temp[0].MKT} <br> Teacher name: ${temp[0].teacherName} <br> Reason for extension: ${temp[0].reason}`
+
+    }
+
+
+  });
+}
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try ends
+
+
+
+
+// //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscar try for extansion teacher 
+
+class messagesFromTeacherCLS {
+  TeacherName = null;
+  MKT = null;
+  numberOfextensions = 0;
+  reason = null;
+
+  constructor(TeacherName, MKT, numberOfextensions, reason) {
+    this.TeacherName = TeacherName;
+    this.MKT = MKT;
+    this.numberOfextensions = numberOfextensions;
+    this.reason = reason;
+  }
+};
+
+const sendReqBtn = document.getElementById("SendBtnTeacher");
+if (sendReqBtn !== null) {      //dont work!!!! continue from here
+  sendReqBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    let mktNumber = sendReqForm.TeachersMKT.value;  // mkt number value
+    const exetensionsNumber = sendReqForm.NumOfExtansions.value; // teacher name
+    let reasonContent = sendReqForm.TeachersReason.value;  // reason for extension
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    //console.log(userNameFromLS);
+    let messages = userNameFromLS[0].username + reasonContent + exetentionsNumber + mktNumber;
+    console.log(typeof (mktNumber));
+    let nameOfteacher = userNameFromLS[0].username;
+    let messagesTeacherOBJ = new messagesFromTeacherCLS(nameOfteacher, mktNumber, exetensionsNumber, reasonContent);
+    messagesArray.push(messagesTeacherOBJ);
+    window.localStorage.setItem("messgesForSKfromTeacher", JSON.stringify(messagesArray));
+
+    console.log(messagesTeacherOBJ);
+    // alert(
+    //   "Checking if extension sent: " +
+    //   reasonContent +
+    //   " + " +
+    //   teacherName +
+    //   " + " +
+    //   mktNumber + messages
+    // );
+    alert(
+      "Checking if messages sent: " + messages
+    );
+
+  });
+}
+
+showMSGsBtn = document.getElementById("showMSGS");
+if (showMSGsBtn !== null) {
+  showMSGsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = JSON.parse(localStorage.getItem("messgesForSKfromTeacher"));
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("messgesForSKfromTeacher") !== null) {
+      document.getElementById("messagesShownExtentionTeacher").innerHTML = ` name: ${temp[0].TeacherName} <br> MKT: ${temp[0].MKT} <br>  Number of extensions: ${temp[0].numberOfextensions} <br> Reason for extension: ${temp[0].reason}`
+
+    }
+
+
+  });
+}
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try ends
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try for new item
+class newItemCLS {
+  teacherName = null;
+  itemName = null;
+  link = null;
+  reason = null;
+
+  constructor(teacherName, itemName, link, reason) {
+    this.teacherName = teacherName;
+    this.itemName = itemName;
+    this.link = link;
+    this.reason = reason;
+  }
+};
+
+const newItemBtn = document.getElementById("SendBtnNewItem");
+if (newItemBtn !== null) {      //dont work!!!! continue from here
+  newItemBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("hello");
+    let itemName = newItemForm.nameOfItem.value;  // mkt number value
+    const link = newItemForm.itemLink.value; // teacher name
+    let reasonContent = newItemForm.ReasonOfReq.value;  // reason for extension
+    let userNameFromLS = JSON.parse(window.localStorage.getItem("account"));
+    let messages = userNameFromLS[0].username + itemName + link + reasonContent;
+    console.log(userNameFromLS[0].username);
+    //console.log(typeof (mktNumber));
+    const nameOfteacher = userNameFromLS[0].username;
+    console.log(nameOfteacher);
+    console.log(typeof (nameOfteacher));
+    let newItemOBJ = new newItemCLS(nameOfteacher, itemName, link, reasonContent);
+    messagesArray.push(newItemOBJ);
+    //console.log(newItemOBJ.TeacherName);
+    window.localStorage.setItem("messgesForSKNewItem", JSON.stringify(messagesArray)); // change array to new ones for every send btn
+
+    console.log(newItemOBJ);
+    // alert(
+    //   "Checking if extension sent: " +
+    //   reasonContent +
+    //   " + " +
+    //   teacherName +
+    //   " + " +
+    //   mktNumber + messages
+    // );
+    alert(
+      "Checking if messages sent: " + messages
+    );
+
+  });
+}
+
+showMSGsBtn = document.getElementById("showMSGS");
+if (showMSGsBtn !== null) {
+  showMSGsBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = JSON.parse(localStorage.getItem("messgesForSKNewItem"));
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("messgesForSKNewItem") !== null) {
+      document.getElementById("messagesShownNewitem").innerHTML = ` name: ${temp[0].teacherName} <br> Item Name: ${temp[0].itemName} <br>  Link:  ${temp[0].link} <br> Reason for the new item: ${temp[0].reason}`
+
+    }
+
+
+  });
+}
+
+//to delete this item from local storage to be able to select to the cart other things
+window.localStorage.removeItem("searchProduct");
+
+//ass products to cart-when we switch bwtween html its delete the cart
+let CartProduct = [];
+//localStorage.setItem("intocart", JSON.stringify(CartProduct));
+
+//function to save diffrenet product in the same cart
+function save(data) {
+  if (window.localStorage.getItem("cart") === null) {
+    window.localStorage.setItem("cart", "[]");
+  }
+  var old_data = JSON.parse(localStorage.getItem("cart"));
+  // Push the new data (whether it be an object or anything else) onto the array
+  old_data.push(data);
+  localStorage.setItem("cart", JSON.stringify(old_data));
+}
+//its not the best solution but it remove the last thing that got into the cart
+function deletetheitem(data) {
+  if (window.localStorage.getItem("cart") === null) {
+    window.localStorage.setItem("cart", "[]");
+  }
+  var old_data = JSON.parse(localStorage.getItem("cart"));
+  // Push the new data (whether it be an object or anything else) onto the array
+  old_data.pop(data);
+  localStorage.setItem("cart", JSON.stringify(old_data));
+}
+
+let HowManyGoPro = 0;
 const btnGoProUp = document.getElementById("plusGoPro");
 const btnGoProDown = document.getElementById("minusGoPro");
 //select product and amount
@@ -658,217 +744,75 @@ if (btnGoProUp !== null) {
   btnGoProUp.addEventListener("click", (e) => {
     e.preventDefault();
     if (GoPro.quantity > 0) {
-      document.getElementById("amountGoPro").textContent = ++HowMany;
-      console.log(HowMany);
+      document.getElementById("amountGoPro").textContent = ++HowManyGoPro;
+      console.log(HowManyGoPro);
       CartProduct.push("GoPro"); //Add to the cart
+      save("GoPro");
       console.log(CartProduct);
       document.getElementById(
         "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`; //TODO #1 20 to GoPro.quantity
+      ).textContent = `מצלמת GoPro Available: ${
+        20 - HowManyGoPro
+      } Color: Black`; 
       GoPro.quantity--;
     }
-
   });
 }
 
-
-// //check if the pruduct available
-// if (GoPro.quantity > 0) {
-//   if(btnGoProUp !== null){
-//     btnGoProUp.addEventListener("click", function () {
-//       //show the button from click on plus
-//       document.getElementById("amountGoPro").textContent = ++HowMany;
-//       console.log(HowMany);
-//       CartProduct.push("GoPro"); //Add to the cart
-//       console.log(CartProduct);
-//       document.getElementById(
-//         "DescriptionGoPro"
-//       ).textContent = `מצלמת GoPro Available: ${20 - HowMany} Color: Black`;  //TODO #1 20 to GoPro.quantity
-//       GoPro.quantity--;                                                       //TODO #2 block the -number option 
-
-//   });
-// }}
-
-//if there is something in the cart from this product
-
-if (btnGoProUp !== null) {
-  btnGoProDown.addEventListener("click", function () {
-    if (HowMany > 0) {
-      document.getElementById("amountGoPro").textContent = --HowMany;
-      console.log(GoPro.quantity);
-      CartProduct.pop("GoPro");
-      console.log(HowMany);
-      document.getElementById(
-        "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${GoPro.quantity + 1} Color: Black`;
-      GoPro.quantity++;
-    }
-  });
-};
-
-
-//report student
-
-document.getElementById("report_quantity_1").textContent = `${VideoCamera.quantity}`;
-document.getElementById("report_name_1").textContent = `${VideoCamera.name}`;
-document.getElementById("report_mkt_1").textContent = `${VideoCamera.MKT}`;
-
-document.getElementById("report_quantity_2").textContent = `${CarCamera.quantity}`;
-document.getElementById("report_name_2").textContent = `${CarCamera.name}`;
-document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
-
-document.getElementById("report_quantity_3").textContent = `${tripodCamera.quantity}`;
-document.getElementById("report_name_3").textContent = `${tripodCamera.name}`;
-document.getElementById("report_mkt_3").textContent = `${tripodCamera.MKT}`;
-
-document.getElementById("report_quantity_4").textContent = `${Umbrella.quantity}`;
-document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
-document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
-
-document.getElementById("report_quantity_5").textContent = `${GoPro.quantity}`;
-document.getElementById("report_name_5").textContent = `${GoPro.name}`;
-document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
-
-document.getElementById("report_quantity_6").textContent = `${ipads.quantity}`;
-document.getElementById("report_name_6").textContent = `${ipads.name}`;
-document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
-
-document.getElementById("report_quantity_7").textContent = `${MacBook.quantity}`;
-document.getElementById("report_name_7").textContent = `${MacBook.name}`;
-document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
-
-document.getElementById("report_quantity_8").textContent = `${ApplePencil.quantity}`;
-document.getElementById("report_name_8").textContent = `${ApplePencil.name}`;
-document.getElementById("report_mkt_8").textContent = `${ApplePencil.MKT}`;
-
-document.getElementById("report_quantity_9").textContent = `${LEDbourd.quantity}`;
-document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
-document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
-
-document.getElementById("report_quantity_10").textContent = `${canvas.quantity}`;
-document.getElementById("report_name_10").textContent = `${canvas.name}`;
-document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
-
-document.getElementById("report_quantity_11").textContent = `${brush.quantity}`;
-document.getElementById("report_name_11").textContent = `${brush.name}`;
-document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
-
-document.getElementById("report_quantity_12").textContent = `${faberCastell.quantity}`;
-document.getElementById("report_name_12").textContent = `${faberCastell.name}`;
-document.getElementById("report_mkt_12").textContent = `${faberCastell.MKT}`;
-
-document.getElementById("report_quantity_13").textContent = `${paint.quantity}`;
-document.getElementById("report_name_13").textContent = `${paint.name}`;
-document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
-
-document.getElementById("report_quantity_14").textContent = `${sewingMechine.quantity}`;
-document.getElementById("report_name_14").textContent = `${sewingMechine.name}`;
-document.getElementById("report_mkt_14").textContent = `${sewingMechine.MKT}`;
-
-document.getElementById("report_quantity_15").textContent = `${fabric.quantity}`;
-document.getElementById("report_name_15").textContent = `${fabric.name}`;
-document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
-
-document.getElementById("report_quantity_16").textContent = `${tapeMessures.quantity}`;
-document.getElementById("report_name_16").textContent = `${tapeMessures.name}`;
-document.getElementById("report_mkt_16").textContent = `${tapeMessures.MKT}`;
-
-document.getElementById("report_quantity_17").textContent = `${manniqen.quantity}`;
-document.getElementById("report_name_17").textContent = `${manniqen.name}`;
-document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
-
-document.getElementById("report_quantity_18").textContent = `${silver.quantity}`;
-document.getElementById("report_name_18").textContent = `${silver.name}`;
-document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
-
-document.getElementById("report_quantity_19").textContent = `${gold.quantity}`;
-document.getElementById("report_name_19").textContent = `${gold.name}`;
-document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
-
-document.getElementById("report_quantity_20").textContent = `${cutter.quantity}`;
-document.getElementById("report_name_20").textContent = `${cutter.name}`;
-document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
-
-document.getElementById("report_quantity_21").textContent = `${welder.quantity}`;
-document.getElementById("report_name_21").textContent = `${welder.name}`;
-document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
-
-document.getElementById("report_quantity_22").textContent = `${stretcher.quantity}`;
-document.getElementById("report_name_22").textContent = `${stretcher.name}`;
-document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
-
-
-//report storageKeeper addons
-document.getElementById("report_quantity_max_1").textContent = `${VideoCamera.MaxQuantity}`;
-document.getElementById("report_quantity_max_2").textContent = `${CarCamera.MaxQuantity}`;
-document.getElementById("report_quantity_max_3").textContent = `${tripodCamera.MaxQuantity}`;
-document.getElementById("report_quantity_max_4").textContent = `${Umbrella.MaxQuantity}`;
-document.getElementById("report_quantity_max_5").textContent = `${GoPro.MaxQuantity}`;
-document.getElementById("report_quantity_max_6").textContent = `${ipads.MaxQuantity}`;
-document.getElementById("report_quantity_max_7").textContent = `${MacBook.MaxQuantity}`;
-document.getElementById("report_quantity_max_8").textContent = `${ApplePencil.MaxQuantity}`;
-document.getElementById("report_quantity_max_9").textContent = `${LEDbourd.MaxQuantity}`;
-document.getElementById("report_quantity_max_10").textContent = `${canvas.MaxQuantity}`;
-document.getElementById("report_quantity_max_11").textContent = `${brush.MaxQuantity}`;
-document.getElementById("report_quantity_max_12").textContent = `${faberCastell.MaxQuantity}`;
-document.getElementById("report_quantity_max_13").textContent = `${paint.MaxQuantity}`;
-document.getElementById("report_quantity_max_14").textContent = `${sewingMechine.MaxQuantity}`;
-document.getElementById("report_quantity_max_15").textContent = `${fabric.MaxQuantity}`;
-document.getElementById("report_quantity_max_16").textContent = `${tapeMessures.MaxQuantity}`;
-document.getElementById("report_quantity_max_17").textContent = `${manniqen.MaxQuantity}`;
-document.getElementById("report_quantity_max_18").textContent = `${silver.MaxQuantity}`;
-document.getElementById("report_quantity_max_19").textContent = `${gold.MaxQuantity}`;
-document.getElementById("report_quantity_max_20").textContent = `${cutter.MaxQuantity}`;
-document.getElementById("report_quantity_max_21").textContent = `${welder.MaxQuantity}`;
-document.getElementById("report_quantity_max_22").textContent = `${stretcher.MaxQuantity}`;
-
 //if there is something in the cart from this product
 if (btnGoProDown !== null) {
-
   btnGoProDown.addEventListener("click", function () {
-    if (HowMany > 0) {
-      document.getElementById("amountGoPro").textContent = --HowMany;
+    if (HowManyGoPro > 0) {
+      document.getElementById("amountGoPro").textContent = --HowManyGoPro;
       console.log(GoPro.quantity);
       CartProduct.pop("GoPro");
-      console.log(HowMany);
+      deletetheitem("GoPro");
+      console.log(HowManyGoPro);
       document.getElementById(
         "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${GoPro.quantity + 1
+      ).textContent = `מצלמת GoPro Available: ${
+        GoPro.quantity + 1
       } Color: Black`;
       GoPro.quantity++;
     }
   });
 }
-HowMany = 0;
-const btncanvasUp = document.getElementById("pluscanvad");
+
+let HowManycanvas = 0;
+const btncanvasUp = document.getElementById("pluscanvas");
 const btncanvasDown = document.getElementById("minuscanvas");
+//Add to the cart
+
 //select product and amount
 if (btncanvasUp !== null) {
   //check if the pruduct available
-  if (canvas.quantity > 0) {
-    btncanvasUp.addEventListener("click", (e) => {
-      e.preventDefault();
-      //show the button from click on plus
-      document.getElementById("amountcanvas").textContent = ++HowMany;
-      console.log(HowMany);
+  btncanvasUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (canvas.quantity > 0) {
+      document.getElementById("amountcanvas").textContent = ++HowManycanvas;
+      console.log(HowManycanvas);
+      let cart = window.localStorage.getItem("intocart");
+      CartProduct.push(cart);
       CartProduct.push("canvas"); //Add to the cart
+      save("canvas");
       console.log(CartProduct);
       document.getElementById(
         "Descriptioncanvas"
-      ).textContent = ` canvas Available: ${100 - HowMany} Color: Black`; //TODO #1 20 to canvas.quantity
-      canvas.quantity--; //TODO #2 block the -number option
-    });
-  }
+      ).textContent = ` canvas Available: ${100 - HowManycanvas} Color: Black`; //TODO #1 20 to canvas.quantity
+      canvas.quantity--;
+    }
+  });
 }
-
 //if there is something in the cart from this product
-if (btnGoProDown !== null) {
-  btnGoProDown.addEventListener("click", function () {
-    if (HowMany > 0) {
-      document.getElementById("amountcanvas").textContent = --HowMany;
+if (btncanvasDown !== null) {
+  btncanvasDown.addEventListener("click", function () {
+    if (HowManycanvas > 0) {
+      document.getElementById("amountcanvas").textContent = --HowManycanvas;
       console.log(canvas.quantity);
       CartProduct.pop("canvas");
-      console.log(HowMany);
+      deletetheitem("canvas");
+
+      console.log(HowManycanvas);
       document.getElementById(
         "Descriptioncanvas"
       ).textContent = ` canvas Available: ${canvas.quantity + 1} Color: white`;
@@ -876,270 +820,1052 @@ if (btnGoProDown !== null) {
     }
   });
 }
-
-
-//generic way only if we search
-HowMany = 0;
-let amount = "quantity";
-const btnUp = document.getElementById(`plus${searchProductPop}`);
-console.log(btnUp);
-// console.log(searchProductPop.quantity);
-const btnDown = document.getElementById(`minus${searchProductPop}`);
+let HowManyVideoCamera = 0;
+const btnVideoCameraUp = document.getElementById("plusVideoCamera");
+const btnVideoCameraDown = document.getElementById("minusVideoCamera");
 //select product and amount
-if (btnUp !== null) {
+if (btnVideoCameraUp !== null) {
   //check if the pruduct available
-  //if (`${searchProductPop}`.quantity > 0) {
-  btnUp.addEventListener("click", (e) => {
+  btnVideoCameraUp.addEventListener("click", (e) => {
     e.preventDefault();
-    //show the button from click on plus
-    document.getElementById(`amount${searchProductPop}`).textContent =
-      ++HowMany;
-    console.log(HowMany);
-    CartProduct.push(searchProductPop); //Add to the cart
-    console.log(CartProduct);
-    document.getElementById(
-      `Description${searchProductPop}`
-    ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
-    } Color: all`; //TODO #1 20 to canvas.quantity
-    searchProductPop.quantity--; //TODO #2 block the -number option
-
+    if (VideoCamera.quantity > 0) {
+      document.getElementById("amountVideoCamera").textContent =
+        ++HowManyVideoCamera;
+      CartProduct.push("VideoCamera"); //Add to the cart
+      save("VideoCamera");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionVideoCamera"
+      ).textContent = `Video Camera 24MP ו-1080P FHD Available: ${
+        10 - HowManyVideoCamera
+      } Color:
+      Black`;
+      VideoCamera.quantity--;
+    }
   });
-  //}
-}
-
-const btnUpGeneral = document.getElementById(`plus${AlltheProducts}`);
-console.log(btnUp);
-// console.log(searchProductPop.quantity);
-const btnDownGeneral = document.getElementById(`minus${searchProductPop}`);
-//select product and amount
-if (btnUp !== null) {
-  //check if the pruduct available
-  //if (`${searchProductPop}`.quantity > 0) {
-  btnUp.addEventListener("click", (e) => {
-    e.preventDefault();
-    //show the button from click on plus
-    document.getElementById(`amount${searchProductPop}`).textContent =
-      ++HowMany;
-
-    console.log(HowMany);
-    CartProduct.push(searchProductPop); //Add to the cart
-    console.log(CartProduct);
-    document.getElementById(
-
-      `Description${searchProductPop}`
-    ).textContent = ` ${searchProductPop} Available: ${100 - HowMany
-
-    } Color: all`; //TODO #1 20 to canvas.quantity
-    //searchProductPop.quantity--; //TODO #2 block the -number option
-  });
-  //}
 }
 //if there is something in the cart from this product
-// if (btnDown !== null) {
-//   btnDown.addEventListener("click", function () {
-//     if (HowMany > 0) {
-//       document.getElementById(`amount${searchProductPop}`).textContent = --HowMany;
-//       console.log(canvas.quantity);
-//       CartProduct.pop("canvas");
-//       console.log(HowMany);
-//       document.getElementById(
-//         `Descriptio${searchProductPop}`
-//       ).textContent = ` ${searchProductPop} Available: ${canvas.quantity + 1} Color: white`;
-//       canvas.quantity++;
-//     }
-//   });
-// }
+if (btnVideoCameraDown !== null) {
+  btnVideoCameraDown.addEventListener("click", function () {
+    if (HowManyVideoCamera > 0) {
+      document.getElementById("amountVideoCamera").textContent =
+        --HowManyVideoCamera;
+      console.log(VideoCamera.quantity);
+      CartProduct.pop("VideoCamera");
+      deletetheitem("VideoCamera");
+      document.getElementById(
+        "DescriptionVideoCamera"
+      ).textContent = `Video Camera 24MP ו-1080P FHD Available: ${
+        VideoCamera.quantity + 1
+      } Color:
+      Black`;
+      VideoCamera.quantity++;
+    }
+  });
+}
+let HowManyUmbrella = 0;
+const btnUmbrellaUp = document.getElementById("plusUmbrella");
+const btnUmbrellaDown = document.getElementById("minusUmbrella");
+//select product and amount
+if (btnUmbrellaUp !== null) {
+  //check if the pruduct available
+  btnUmbrellaUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (VideoCamera.quantity > 0) {
+      document.getElementById("amountUmbrella").textContent = ++HowManyUmbrella;
+      CartProduct.push("Umbrella"); //Add to the cart
+      save("Umbrella");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionUmbrella"
+      ).textContent = `Umbrella Available: ${5 - HowManyUmbrella} Color: Black`;
+      Umbrella.quantity--;
+    }
+  });
+}
+//if there is something in the cart from this product
+if (btnUmbrellaDown !== null) {
+  btnUmbrellaDown.addEventListener("click", function () {
+    if (HowManyUmbrella > 0) {
+      document.getElementById("amountUmbrella").textContent = --HowManyUmbrella;
+      CartProduct.pop("Umbrella");
+      deletetheitem("Umbrella");
+      document.getElementById(
+        "DescriptionUmbrella"
+      ).textContent = `Umbrella Available: ${
+        Umbrella.quantity + 1
+      }  Color: Black`;
+      Umbrella.quantity++;
+    }
+  });
+}
+let HowManyCarCamera = 0;
+const btnCarCameraUp = document.getElementById("plusCarCamera");
+const btnCarCameraDown = document.getElementById("minusCarCamera");
+//select product and amount
+if (btnCarCameraUp !== null) {
+  //check if the pruduct available
+  btnCarCameraUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (CarCamera.quantity > 0) {
+      document.getElementById("amountCarCamera").textContent =
+        ++HowManyCarCamera;
+      CartProduct.push("CarCamera"); //Add to the cart
+      save("CarCamera");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionCarCamera"
+      ).textContent = `Car Camera K4 
+      Available: ${7 - HowManyCarCamera}
+       Color: Black`;
+      CarCamera.quantity--;
+    }
+  });
+}
 
-//report student
+//if there is something in the cart from this product
+if (btnCarCameraDown !== null) {
+  btnCarCameraDown.addEventListener("click", function () {
+    if (HowManyCarCamera > 0) {
+      document.getElementById("amountCarCamera").textContent =
+        --HowManyCarCamera;
+      CartProduct.pop("CarCamera");
+      deletetheitem("CarCamera");
+      document.getElementById(
+        "DescriptionCarCamera"
+      ).textContent = `Car Camera K4 Available: ${
+        CarCamera.quantity + 1
+      }  Color: Black`;
+      CarCamera.quantity++;
+    }
+  });
+}
+let HowManytripodCamera = 0;
+const btntripodCameraUp = document.getElementById("plustripodCamera");
+const btntripodCameraDown = document.getElementById("minustripodCamera");
+//select product and amount
+if (btntripodCameraUp !== null) {
+  //check if the pruduct available
+  btntripodCameraUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (tripodCamera.quantity > 0) {
+      document.getElementById("amounttripodCamera").textContent =
+        ++HowManytripodCamera;
+      CartProduct.push("tripodCamera"); //Add to the cart
+      save("tripodCamera");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptiontripodCamera"
+      ).textContent = `Tripod Kingjoy VT2500 Available:${
+        50 - HowManytripodCamera
+      } Color: Black`;
+      tripodCamera.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_1"
-).textContent = `${VideoCamera.quantity}`;
-document.getElementById("report_name_1").textContent = `${VideoCamera.name}`;
-document.getElementById("report_mkt_1").textContent = `${VideoCamera.MKT}`;
+//if there is something in the cart from this product
+if (btntripodCameraDown !== null) {
+  console.log("hello");
+  btntripodCameraDown.addEventListener("click", function () {
+    if (HowManytripodCamera > 0) {
+      document.getElementById("amounttripodCamera").textContent =
+        --HowManytripodCamera;
+      CartProduct.pop("tripodCamera");
+      deletetheitem("tripodCamera");
+      document.getElementById(
+        "DescriptiontripodCamera"
+      ).textContent = `Tripod Kingjoy VT2500 Available:${
+        tripodCamera.quantity + 1
+      } Color: Black`;
+      tripodCamera.quantity++;
+    }
+  });
+}
+let HowManypaint = 0;
+const btnpaintUp = document.getElementById("pluspaint");
+const btnpaintDown = document.getElementById("minuspaint");
+//select product and amount
+if (btnpaintUp !== null) {
+  //check if the pruduct available
+  btnpaintUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (paint.quantity > 0) {
+      document.getElementById("amountpaint").textContent = ++HowManypaint;
+      CartProduct.push("paint"); //Add to the cart
+      save("paint");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionpaint"
+      ).textContent = `Paint Available:${200 - HowManypaint}  Color: Black`;
+      paint.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_2"
-).textContent = `${CarCamera.quantity}`;
-document.getElementById("report_name_2").textContent = `${CarCamera.name}`;
-document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
+//if there is something in the cart from this product
+if (btnpaintDown !== null) {
+  console.log("hello");
+  btnpaintDown.addEventListener("click", function () {
+    if (HowManypaint > 0) {
+      document.getElementById("amountpaint").textContent = --HowManypaint;
+      CartProduct.pop("paint");
+      deletetheitem("paint");
+      document.getElementById(
+        "Descriptionpaint"
+      ).textContent = `Paint Available:${paint.quantity + 1} Color: Black`;
+      paint.quantity++;
+    }
+  });
+}
+let HowManybrush = 0;
+const btnbrushUp = document.getElementById("plusbrush");
+const btnbrushDown = document.getElementById("minusbrush");
+//select product and amount
+if (btnbrushUp !== null) {
+  //check if the pruduct available
+  btnbrushUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (brush.quantity > 0) {
+      document.getElementById("amountbrush").textContent = ++HowManybrush;
+      CartProduct.push("brush"); //Add to the cart
+      save("brush");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionbrush"
+      ).textContent = `Brush Available:${100 - HowManybrush}  Color: Black`;
+      brush.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_3"
-).textContent = `${tripodCamera.quantity}`;
-document.getElementById("report_name_3").textContent = `${tripodCamera.name}`;
-document.getElementById("report_mkt_3").textContent = `${tripodCamera.MKT}`;
+//if there is something in the cart from this product
+if (btnbrushDown !== null) {
+  console.log("hello");
+  btnbrushDown.addEventListener("click", function () {
+    if (HowManybrush > 0) {
+      document.getElementById("amountbrush").textContent = --HowManybrush;
+      CartProduct.pop("brush");
+      deletetheitem("brush");
+      document.getElementById(
+        "Descriptionbrush"
+      ).textContent = `Brush Available:${brush.quantity + 1}  Color: Black`;
+      brush.quantity++;
+    }
+  });
+}
+let HowManyfaberCastell = 0;
+const btnfaberCastellUp = document.getElementById("plusfaberCastell");
+const btnfaberCastellDown = document.getElementById("minusfaberCastell");
+//select product and amount
+if (btnfaberCastellUp !== null) {
+  //check if the pruduct available
+  btnfaberCastellUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (faberCastell.quantity > 0) {
+      document.getElementById("amountfaberCastell").textContent =
+        ++HowManyfaberCastell;
+      CartProduct.push("faberCastell"); //Add to the cart
+      save("faberCastell");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionfaberCastell"
+      ).textContent = `Faber castell Available:${
+        70 - HowManyfaberCastell
+      } Color: all`;
+      faberCastell.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_4"
-).textContent = `${Umbrella.quantity}`;
-document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
-document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
+//if there is something in the cart from this product
+if (btnfaberCastellDown !== null) {
+  console.log("hello");
+  btnfaberCastellDown.addEventListener("click", function () {
+    if (HowManyfaberCastell > 0) {
+      document.getElementById("amountfaberCastell").textContent =
+        --HowManyfaberCastell;
+      CartProduct.pop("faberCastell");
+      deletetheitem("faberCastell");
+      document.getElementById(
+        "DescriptionfaberCastell"
+      ).textContent = `Faber castell Available:${
+        faberCastell.quantity + 1
+      } Color: all`;
+      faberCastell.quantity++;
+    }
+  });
+}
+let HowManyLEDBourd = 0;
+const btnLEDBourdUp = document.getElementById("plusLEDBourd");
+const btnLEDBourdDown = document.getElementById("minusLEDBourd");
+//select product and amount
+if (btnLEDBourdUp !== null) {
+  //check if the pruduct available
+  btnLEDBourdUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (LEDbourd.quantity > 0) {
+      document.getElementById("amountLEDBourd").textContent = ++HowManyLEDBourd;
+      CartProduct.push("LEDBourd"); //Add to the cart
+      save("LEDBourd");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionLEDBourd"
+      ).textContent = `ledBord Available:${20 - HowManyLEDBourd} Color: Black`;
+      LEDbourd.quantity--;
+    }
+  });
+}
 
-document.getElementById("report_quantity_5").textContent = `${GoPro.quantity}`;
-document.getElementById("report_name_5").textContent = `${GoPro.name}`;
-document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
+//if there is something in the cart from this product
+if (btnLEDBourdDown !== null) {
+  console.log("hello");
+  btnLEDBourdDown.addEventListener("click", function () {
+    if (HowManyLEDBourd > 0) {
+      document.getElementById("amountLEDBourd").textContent = --HowManyLEDBourd;
+      CartProduct.pop("LEDBourd");
+      deletetheitem("LEDBourd");
+      document.getElementById(
+        "DescriptionLEDBourd"
+      ).textContent = `ledBord Available: ${
+        LEDbourd.quantity + 1
+      } Color: Black`;
+      LEDbourd.quantity++;
+    }
+  });
+}
+let HowManyApplePencil = 0;
+const btnApplePencilUp = document.getElementById("plusApplePencil");
+const btnApplePencilDown = document.getElementById("minusApplePencil");
+//select product and amount
+if (btnApplePencilUp !== null) {
+  //check if the pruduct available
+  btnApplePencilUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (ApplePencil.quantity > 0) {
+      document.getElementById("amountApplePencil").textContent =
+        ++HowManyApplePencil;
+      CartProduct.push("ApplePencil"); //Add to the cart
+      save("ApplePencil");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionApplePencil"
+      ).textContent = `ApplePencil Available: ${
+        50 - HowManyApplePencil
+      } Color: Black`;
+      ApplePencil.quantity--;
+    }
+  });
+}
 
-document.getElementById("report_quantity_6").textContent = `${ipads.quantity}`;
-document.getElementById("report_name_6").textContent = `${ipads.name}`;
-document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
+//if there is something in the cart from this product
+if (btnApplePencilDown !== null) {
+  console.log("hello");
+  btnApplePencilDown.addEventListener("click", function () {
+    if (HowManyApplePencil > 0) {
+      document.getElementById("amountApplePencil").textContent =
+        --HowManyApplePencil;
+      CartProduct.pop("ApplePencil");
+      deletetheitem("ApplePencil");
+      document.getElementById(
+        "DescriptionApplePencil"
+      ).textContent = `ApplePencil Available: ${
+        ApplePencil.quantity + 1
+      } Color: Black`;
+      ApplePencil.quantity++;
+    }
+  });
+}
+let HowManyipads = 0;
+const btnipadsUp = document.getElementById("plusipads");
+const btnipadsDown = document.getElementById("minusipads");
+//select product and amount
+if (btnipadsUp !== null) {
+  //check if the pruduct available
+  btnipadsUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (ipads.quantity > 0) {
+      document.getElementById("amountipads").textContent = ++HowManyipads;
+      CartProduct.push("ipads"); //Add to the cart
+      save("ipads");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionipads"
+      ).textContent = `Ipads Available: ${50 - HowManyipads} Color: Black`;
+      ipads.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_7"
-).textContent = `${MacBook.quantity}`;
-document.getElementById("report_name_7").textContent = `${MacBook.name}`;
-document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
+//if there is something in the cart from this product
+if (btnipadsDown !== null) {
+  console.log("hello");
+  btnipadsDown.addEventListener("click", function () {
+    if (HowManyipads > 0) {
+      document.getElementById("amountipads").textContent = --HowManyipads;
+      CartProduct.pop("ipads");
+      deletetheitem("ipads");
+      document.getElementById(
+        "Descriptionipads"
+      ).textContent = `Ipads Available: ${ipads.quantity + 1} Color: Black`;
+      ipads.quantity++;
+    }
+  });
+}
+let HowManyMcBook = 0;
+const btnMcBookUp = document.getElementById("plusMcBook");
+const btnMcBookDown = document.getElementById("minusMcBook");
+//select product and amount
+if (btnMcBookUp !== null) {
+  //check if the pruduct available
+  btnMcBookUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (MacBook.quantity > 0) {
+      document.getElementById("amountMcBook").textContent = ++HowManyMcBook;
+      CartProduct.push("McBook"); //Add to the cart
+      save("MacBook");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionMcBook"
+      ).textContent = `McBook Available:${50 - HowManyMcBook} Color: Black`;
+      MacBook.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_8"
-).textContent = `${ApplePencil.quantity}`;
-document.getElementById("report_name_8").textContent = `${ApplePencil.name}`;
-document.getElementById("report_mkt_8").textContent = `${ApplePencil.MKT}`;
+//if there is something in the cart from this product
+if (btnMcBookDown !== null) {
+  console.log("hello");
+  btnMcBookDown.addEventListener("click", function () {
+    if (HowManyMcBook > 0) {
+      document.getElementById("amountMcBook").textContent = --HowManyMcBook;
+      CartProduct.pop("McBook");
+      deletetheitem("MacBook");
+      document.getElementById(
+        "DescriptionMcBook"
+      ).textContent = `McBook Available:${MacBook.quantity + 1} Color: Black`;
+      MacBook.quantity++;
+    }
+  });
+}
+let HowManysewingMechine = 0;
+const btnsewingMechineUp = document.getElementById("plussewingMachine");
+const btnsewingMechineDown = document.getElementById("minussewingMachine");
+//select product and amount
+if (btnsewingMechineUp !== null) {
+  //check if the pruduct available
+  btnsewingMechineUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (sewingMechine.quantity > 0) {
+      document.getElementById("amountsewingMachine").textContent =
+        ++HowManysewingMechine;
+      CartProduct.push("sewingMechine"); //Add to the cart
+      save("sewingMechine");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptionsewingMechine"
+      ).textContent = `Sewing machine Available: ${
+        15 - HowManysewingMechine
+      } Color: grey`;
+      sewingMechine.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_9"
-).textContent = `${LEDbourd.quantity}`;
-document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
-document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
+//if there is something in the cart from this product
+if (btnsewingMechineDown !== null) {
+  console.log("hello");
+  btnsewingMechineDown.addEventListener("click", function () {
+    if (HowManysewingMechine > 0) {
+      document.getElementById("amountsewingMachine").textContent =
+        --HowManysewingMechine;
+      CartProduct.pop("sewingMechine");
+      deletetheitem("sewingMechine");
+      document.getElementById(
+        "DescriptionsewingMechine"
+      ).textContent = `Sewing machine Available: ${
+        sewingMechine.quantity + 1
+      } Color: grey`;
+      sewingMechine.quantity++;
+    }
+  });
+}
+let HowManymanniqen = 0;
+const btnmanniqenUp = document.getElementById("plusmanniqen");
+const btnmanniqenDown = document.getElementById("minusmanniqen");
+//select product and amount
+if (btnmanniqenUp !== null) {
+  //check if the pruduct available
+  btnmanniqenUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (manniqen.quantity > 0) {
+      document.getElementById("amountmanniqen").textContent = ++HowManymanniqen;
+      CartProduct.push("manniqen"); //Add to the cart
+      save("manniqen");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionmanniqen"
+      ).textContent = `Manniqen Available:${
+        15 - HowManymanniqen
+      } Color: Black `;
+      manniqen.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_10"
-).textContent = `${canvas.quantity}`;
-document.getElementById("report_name_10").textContent = `${canvas.name}`;
-document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
+//if there is something in the cart from this product
+if (btnmanniqenDown !== null) {
+  console.log("hello");
+  btnmanniqenDown.addEventListener("click", function () {
+    if (HowManymanniqen > 0) {
+      document.getElementById("amountmanniqen").textContent = --HowManymanniqen;
+      CartProduct.pop("manniqen");
+      deletetheitem("manniqen");
+      document.getElementById(
+        "Descriptionmanniqen"
+      ).textContent = `Manniqen Available: ${
+        manniqen.quantity + 1
+      } Color: Black `;
+      manniqen.quantity++;
+    }
+  });
+}
+let HowManyfabric = 0;
+const btnfabricUp = document.getElementById("plusfabric");
+const btnfabricDown = document.getElementById("minusfabric");
+//select product and amount
+if (btnfabricUp !== null) {
+  //check if the pruduct available
+  btnfabricUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (fabric.quantity > 0) {
+      document.getElementById("amountfabric").textContent = ++HowManyfabric;
+      CartProduct.push("fabric"); //Add to the cart
+      save("fabric");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionfabric"
+      ).textContent = `Fabric Available:${100 - HowManyfabric} Color: all`;
+      fabric.quantity--;
+    }
+  });
+}
 
-document.getElementById("report_quantity_11").textContent = `${brush.quantity}`;
-document.getElementById("report_name_11").textContent = `${brush.name}`;
-document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
 
-document.getElementById(
-  "report_quantity_12"
-).textContent = `${faberCastell.quantity}`;
-document.getElementById("report_name_12").textContent = `${faberCastell.name}`;
-document.getElementById("report_mkt_12").textContent = `${faberCastell.MKT}`;
+//if there is something in the cart from this product
+if (btnfabricDown !== null) {
+  console.log("hello");
+  btnfabricDown.addEventListener("click", function () {
+    if (HowManyfabric > 0) {
+      document.getElementById("amountfabric").textContent = --HowManyfabric;
+      CartProduct.pop("fabric");
+      deletetheitem("fabric");
+      document.getElementById(
+        "Descriptionfabric"
+      ).textContent = `Fabric Available:${fabric.quantity + 1} Color: all`;
+      fabric.quantity++;
+    }
+  });
+}
+let HowManytapeMessures = 0;
+const btntapeMessuresUp = document.getElementById("plustapeMessures");
+const btntapeMessuresDown = document.getElementById("minustapeMessures");
+//select product and amount
+if (btntapeMessuresUp !== null) {
+  //check if the pruduct available
+  btntapeMessuresUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (tapeMessures.quantity > 0) {
+      document.getElementById("amounttapeMessures").textContent =
+        ++HowManytapeMessures;
+      CartProduct.push("tapeMessures"); //Add to the cart
+      save("tapeMessures");
+      console.log(CartProduct);
+      document.getElementById(
+        "DescriptiontapeMessures"
+      ).textContent = `Tape messures Available:${
+        200 - HowManytapeMessures
+      } Color: white `;
+      tapeMessures.quantity--;
+    }
+  });
+}
 
-document.getElementById("report_quantity_13").textContent = `${paint.quantity}`;
-document.getElementById("report_name_13").textContent = `${paint.name}`;
-document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
+//if there is something in the cart from this product
+if (btntapeMessuresDown !== null) {
+  console.log("hello");
+  btntapeMessuresDown.addEventListener("click", function () {
+    if (HowManytapeMessures > 0) {
+      document.getElementById("amounttapeMessures").textContent =
+        --HowManytapeMessures;
+      CartProduct.pop("tapeMessures");
+      deletetheitem("tapeMessures");
+      document.getElementById(
+        "DescriptiontapeMessures"
+      ).textContent = `Tape messures Available:${
+        tapeMessures.quantity + 1
+      } Color: white `;
+      tapeMessures.quantity++;
+    }
+  });
+}
+let HowManystrecher = 0;
+const btnstrecherUp = document.getElementById("plusstrecher");
+const btnstrecherDown = document.getElementById("minusstrecher");
+//select product and amount
+if (btnstrecherUp !== null) {
+  //check if the pruduct available
+  btnstrecherUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (stretcher.quantity > 0) {
+      document.getElementById("amountstrecher").textContent = ++HowManystrecher;
+      CartProduct.push("strecher"); //Add to the cart
+      save("stretcher");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionstrecher"
+      ).textContent = `Stretcher Available:${
+        10 - HowManystrecher
+      }  Color: Black`;
+      stretcher.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_14"
-).textContent = `${sewingMechine.quantity}`;
-document.getElementById("report_name_14").textContent = `${sewingMechine.name}`;
-document.getElementById("report_mkt_14").textContent = `${sewingMechine.MKT}`;
+//if there is something in the cart from this product
+if (btnstrecherDown !== null) {
+  console.log("hello");
+  btnstrecherDown.addEventListener("click", function () {
+    if (HowManystrecher > 0) {
+      document.getElementById("amountstrecher").textContent = --HowManystrecher;
+      CartProduct.pop("strecher");
+      deletetheitem("stretcher");
+      document.getElementById(
+        "Descriptionstrecher"
+      ).textContent = `Stretcher Available:${
+        stretcher.quantity + 1
+      } Color: Black`;
+      stretcher.quantity++;
+    }
+  });
+}
+let HowManywelder = 0;
+const btnwelderUp = document.getElementById("pluswelder");
+const btnwelderDown = document.getElementById("minuswelder");
+//select product and amount
+if (btnwelderUp !== null) {
+  //check if the pruduct available
+  btnwelderUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (welder.quantity > 0) {
+      document.getElementById("amountwelder").textContent = ++HowManywelder;
+      CartProduct.push("welder"); //Add to the cart
+      save("welder");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionwelder"
+      ).textContent = `Welder Available:${40 - HowManywelder} Color: Black`;
+      welder.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_15"
-).textContent = `${fabric.quantity}`;
-document.getElementById("report_name_15").textContent = `${fabric.name}`;
-document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
+//if there is something in the cart from this product
+if (btnwelderDown !== null) {
+  console.log("hello");
+  btnwelderDown.addEventListener("click", function () {
+    if (HowManywelder > 0) {
+      document.getElementById("amountwelder").textContent = --HowManywelder;
+      CartProduct.pop("welder");
+      deletetheitem("welder");
+      document.getElementById(
+        "Descriptionwelder"
+      ).textContent = `Welder Available:${welder.quantity + 1} Color: Black`;
+      welder.quantity++;
+    }
+  });
+}
+let HowManysilver = 0;
+const btnsilverUp = document.getElementById("plussilver");
+const btnsilverDown = document.getElementById("minussilver");
+//select product and amount
+if (btnsilverUp !== null) {
+  //check if the pruduct available
+  btnsilverUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (silver.quantity > 0) {
+      document.getElementById("amountsilver").textContent = ++HowManysilver;
+      CartProduct.push("silver"); //Add to the cart
+      save("silver");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptionsilver"
+      ).textContent = `Silver wire Available: ${
+        60 - HowManysilver
+      } Color: silver`;
+      silver.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_16"
-).textContent = `${tapeMessures.quantity}`;
-document.getElementById("report_name_16").textContent = `${tapeMessures.name}`;
-document.getElementById("report_mkt_16").textContent = `${tapeMessures.MKT}`;
+//if there is something in the cart from this product
+if (btnsilverDown !== null) {
+  console.log("hello");
+  btnsilverDown.addEventListener("click", function () {
+    if (HowManysilver > 0) {
+      document.getElementById("amountsilver").textContent = --HowManysilver;
+      CartProduct.pop("silver");
+      deletetheitem("silver");
+      document.getElementById(
+        "Descriptionsilver"
+      ).textContent = `Silver wire Available: ${
+        silver.quantity + 1
+      } Color: silver`;
+      silver.quantity++;
+    }
+  });
+}
+let HowManygold = 0;
+const btngoldUp = document.getElementById("plusgold");
+const btngoldDown = document.getElementById("minusgold");
+//select product and amount
+if (btngoldUp !== null) {
+  //check if the pruduct available
+  btngoldUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (gold.quantity > 0) {
+      document.getElementById("amountgold").textContent = ++HowManygold;
+      CartProduct.push("gold"); //Add to the cart
+      save("gold");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptiongold"
+      ).textContent = `gold wire Available: ${60 - HowManygold} Color: gold`;
+      gold.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_17"
-).textContent = `${manniqen.quantity}`;
-document.getElementById("report_name_17").textContent = `${manniqen.name}`;
-document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
+//if there is something in the cart from this product
+if (btngoldDown !== null) {
+  console.log("hello");
+  btngoldDown.addEventListener("click", function () {
+    if (HowManygold > 0) {
+      document.getElementById("amountgold").textContent = --HowManygold;
+      CartProduct.pop("gold");
+      deletetheitem("gold");
+      document.getElementById(
+        "Descriptiongold"
+      ).textContent = `gold wire Available: ${gold.quantity + 1} Color: gold`;
+      gold.quantity++;
+    }
+  });
+}
+let HowManycutter = 0;
+const btncutterUp = document.getElementById("pluscutter");
+const btncutterDown = document.getElementById("minuscutter");
+//select product and amount
+if (btncutterUp !== null) {
+  //check if the pruduct available
+  btncutterUp.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (cutter.quantity > 0) {
+      document.getElementById("amountcutter").textContent = ++HowManycutter;
+      CartProduct.push("cutter"); //Add to the cart
+      save("cutter");
+      console.log(CartProduct);
+      document.getElementById(
+        "Descriptioncutter"
+      ).textContent = `Cutter Available:${50 - HowManycutter} Color: Black`;
+      cutter.quantity--;
+    }
+  });
+}
 
-document.getElementById(
-  "report_quantity_18"
-).textContent = `${silver.quantity}`;
-document.getElementById("report_name_18").textContent = `${silver.name}`;
-document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
+//if there is something in the cart from this product
+if (btncutterDown !== null) {
+  console.log("hello");
+  btncutterDown.addEventListener("click", function () {
+    if (HowManycutter > 0) {
+      document.getElementById("amountcutter").textContent = --HowManycutter;
+      CartProduct.pop("cutter");
+      deletetheitem("cutter");
+      document.getElementById(
+        "Descriptioncutter"
+      ).textContent = `Cutter Available:${cutter.quantity + 1} Color: Black`;
+      cutter.quantity++;
+    }
+  });
+}
 
-document.getElementById("report_quantity_19").textContent = `${gold.quantity}`;
-document.getElementById("report_name_19").textContent = `${gold.name}`;
-document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
+//alert(JSON.parse(localStorage.getItem("cart")));
+const btnshoeOnCart = document.getElementById("show_what_in_cart");
+if (btnshoeOnCart !== null) {
+  btnshoeOnCart.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (localStorage.getItem("cart") !== null) {
+      document.getElementById("outputfromcart").innerHTML = JSON.parse(
+        localStorage.getItem("cart")
+      );
+    }
+  });
+  const btnclearTheCart = document.getElementById("clearThecart");
+  if (btnclearTheCart !== null) {
+    btnclearTheCart.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.localStorage.removeItem("cart");
+      document.getElementById("outputfromcart").innerHTML = `:מוצרים בעגלה`;
+    });
+    const btnInvite = document.getElementById("invite");
+    if (btnInvite !== null) {
+      btnInvite.addEventListener("click", function (e) {
+        e.preventDefault();
+        window.localStorage.removeItem("cart");
+        // let Role = window.localStorage.getItem("accountLoggedIn");
+        // if (Role.role == student) {
+        //   alert("Please bring back the products in 3 weeks");
+        // }
+        // if (Role.role == teacher) {
+        //   alert("Please bring back the products in 3 days");
+        // }
+        document.getElementById(
+          "outputfromcart"
+        ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
+      });
+    
 
-document.getElementById(
-  "report_quantity_20"
-).textContent = `${cutter.quantity}`;
-document.getElementById("report_name_20").textContent = `${cutter.name}`;
-document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
+      //report student
 
-document.getElementById(
-  "report_quantity_21"
-).textContent = `${welder.quantity}`;
-document.getElementById("report_name_21").textContent = `${welder.name}`;
-document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
+      document.getElementById(
+        "report_quantity_1"
+      ).textContent = `${VideoCamera.quantity}`;
+      document.getElementById(
+        "report_name_1"
+      ).textContent = `${VideoCamera.name}`;
+      document.getElementById(
+        "report_mkt_1"
+      ).textContent = `${VideoCamera.MKT}`;
 
-document.getElementById(
-  "report_quantity_22"
-).textContent = `${stretcher.quantity}`;
-document.getElementById("report_name_22").textContent = `${stretcher.name}`;
-document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
+      document.getElementById(
+        "report_quantity_2"
+      ).textContent = `${CarCamera.quantity}`;
+      document.getElementById(
+        "report_name_2"
+      ).textContent = `${CarCamera.name}`;
+      document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
 
-//report storageKeeper addons
-document.getElementById(
-  "report_quantity_max_1"
-).textContent = `${VideoCamera.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_2"
-).textContent = `${CarCamera.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_3"
-).textContent = `${tripodCamera.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_4"
-).textContent = `${Umbrella.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_5"
-).textContent = `${GoPro.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_6"
-).textContent = `${ipads.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_7"
-).textContent = `${MacBook.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_8"
-).textContent = `${ApplePencil.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_9"
-).textContent = `${LEDbourd.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_10"
-).textContent = `${canvas.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_11"
-).textContent = `${brush.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_12"
-).textContent = `${faberCastell.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_13"
-).textContent = `${paint.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_14"
-).textContent = `${sewingMechine.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_15"
-).textContent = `${fabric.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_16"
-).textContent = `${tapeMessures.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_17"
-).textContent = `${manniqen.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_18"
-).textContent = `${silver.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_19"
-).textContent = `${gold.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_20"
-).textContent = `${cutter.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_21"
-).textContent = `${welder.MaxQuantity}`;
-document.getElementById(
-  "report_quantity_max_22"
-).textContent = `${stretcher.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_3"
+      ).textContent = `${tripodCamera.quantity}`;
+      document.getElementById(
+        "report_name_3"
+      ).textContent = `${tripodCamera.name}`;
+      document.getElementById(
+        "report_mkt_3"
+      ).textContent = `${tripodCamera.MKT}`;
 
+      document.getElementById(
+        "report_quantity_4"
+      ).textContent = `${Umbrella.quantity}`;
+      document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
+      document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
+
+      document.getElementById(
+        "report_quantity_5"
+      ).textContent = `${GoPro.quantity}`;
+      document.getElementById("report_name_5").textContent = `${GoPro.name}`;
+      document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
+
+      document.getElementById(
+        "report_quantity_6"
+      ).textContent = `${ipads.quantity}`;
+      document.getElementById("report_name_6").textContent = `${ipads.name}`;
+      document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
+
+      document.getElementById(
+        "report_quantity_7"
+      ).textContent = `${MacBook.quantity}`;
+      document.getElementById("report_name_7").textContent = `${MacBook.name}`;
+      document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
+
+      document.getElementById(
+        "report_quantity_8"
+      ).textContent = `${ApplePencil.quantity}`;
+      document.getElementById(
+        "report_name_8"
+      ).textContent = `${ApplePencil.name}`;
+      document.getElementById(
+        "report_mkt_8"
+      ).textContent = `${ApplePencil.MKT}`;
+
+      document.getElementById(
+        "report_quantity_9"
+      ).textContent = `${LEDbourd.quantity}`;
+      document.getElementById("report_name_9").textContent = `${LEDbourd.name}`;
+      document.getElementById("report_mkt_9").textContent = `${LEDbourd.MKT}`;
+
+      document.getElementById(
+        "report_quantity_10"
+      ).textContent = `${canvas.quantity}`;
+      document.getElementById("report_name_10").textContent = `${canvas.name}`;
+      document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
+
+      document.getElementById(
+        "report_quantity_11"
+      ).textContent = `${brush.quantity}`;
+      document.getElementById("report_name_11").textContent = `${brush.name}`;
+      document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
+
+      document.getElementById(
+        "report_quantity_12"
+      ).textContent = `${faberCastell.quantity}`;
+      document.getElementById(
+        "report_name_12"
+      ).textContent = `${faberCastell.name}`;
+      document.getElementById(
+        "report_mkt_12"
+      ).textContent = `${faberCastell.MKT}`;
+
+      document.getElementById(
+        "report_quantity_13"
+      ).textContent = `${paint.quantity}`;
+      document.getElementById("report_name_13").textContent = `${paint.name}`;
+      document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
+
+      document.getElementById(
+        "report_quantity_14"
+      ).textContent = `${sewingMechine.quantity}`;
+      document.getElementById(
+        "report_name_14"
+      ).textContent = `${sewingMechine.name}`;
+      document.getElementById(
+        "report_mkt_14"
+      ).textContent = `${sewingMechine.MKT}`;
+
+      document.getElementById(
+        "report_quantity_15"
+      ).textContent = `${fabric.quantity}`;
+      document.getElementById("report_name_15").textContent = `${fabric.name}`;
+      document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
+
+      document.getElementById(
+        "report_quantity_16"
+      ).textContent = `${tapeMessures.quantity}`;
+      document.getElementById(
+        "report_name_16"
+      ).textContent = `${tapeMessures.name}`;
+      document.getElementById(
+        "report_mkt_16"
+      ).textContent = `${tapeMessures.MKT}`;
+
+      document.getElementById(
+        "report_quantity_17"
+      ).textContent = `${manniqen.quantity}`;
+      document.getElementById(
+        "report_name_17"
+      ).textContent = `${manniqen.name}`;
+      document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
+
+      document.getElementById(
+        "report_quantity_18"
+      ).textContent = `${silver.quantity}`;
+      document.getElementById("report_name_18").textContent = `${silver.name}`;
+      document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
+
+      document.getElementById(
+        "report_quantity_19"
+      ).textContent = `${gold.quantity}`;
+      document.getElementById("report_name_19").textContent = `${gold.name}`;
+      document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
+
+      document.getElementById(
+        "report_quantity_20"
+      ).textContent = `${cutter.quantity}`;
+      document.getElementById("report_name_20").textContent = `${cutter.name}`;
+      document.getElementById("report_mkt_20").textContent = `${cutter.MKT}`;
+
+      document.getElementById(
+        "report_quantity_21"
+      ).textContent = `${welder.quantity}`;
+      document.getElementById("report_name_21").textContent = `${welder.name}`;
+      document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
+
+      document.getElementById(
+        "report_quantity_22"
+      ).textContent = `${stretcher.quantity}`;
+      document.getElementById(
+        "report_name_22"
+      ).textContent = `${stretcher.name}`;
+      document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
+
+      //report storageKeeper addons
+      document.getElementById(
+        "report_quantity_max_1"
+      ).textContent = `${VideoCamera.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_2"
+      ).textContent = `${CarCamera.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_3"
+      ).textContent = `${tripodCamera.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_4"
+      ).textContent = `${Umbrella.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_5"
+      ).textContent = `${GoPro.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_6"
+      ).textContent = `${ipads.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_7"
+      ).textContent = `${MacBook.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_8"
+      ).textContent = `${ApplePencil.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_9"
+      ).textContent = `${LEDbourd.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_10"
+      ).textContent = `${canvas.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_11"
+      ).textContent = `${brush.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_12"
+      ).textContent = `${faberCastell.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_13"
+      ).textContent = `${paint.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_14"
+      ).textContent = `${sewingMechine.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_15"
+      ).textContent = `${fabric.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_16"
+      ).textContent = `${tapeMessures.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_17"
+      ).textContent = `${manniqen.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_18"
+      ).textContent = `${silver.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_19"
+      ).textContent = `${gold.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_20"
+      ).textContent = `${cutter.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_21"
+      ).textContent = `${welder.MaxQuantity}`;
+      document.getElementById(
+        "report_quantity_max_22"
+      ).textContent = `${stretcher.MaxQuantity}`;
+    }
+  }
+}
 

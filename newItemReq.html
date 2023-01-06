@@ -119,7 +119,7 @@
                             <a href="#" id="myCart" class="e57_159">העגלה שלי</a>
                             <a href="#" id="#" class="e57_156">הזמנות</a>
                             <a href="#" id="#" class="e57_159">קנסות</a>
-                            <a href="#" id="#" class="e57_156">עוד משהו</a>
+                            <a href="#" id="order_status" class="e57_156">סטטוס הזמנה</a>
                             <!-- @@@@@@@@@@@@@CHANGE THE IDS TO THE LINKS@@@@@@@@@@@@@@@@@@@ -->
                         </div>
                     </div>
@@ -170,26 +170,30 @@
         </form>
         <!-- yuval's catagories -->
         <div>
-            <div class="e244_53"></div>
-            <div class=send_req>
-                <div class="Send">
-                    <input type="submit" value="Send" id="Send">
+            <form id="newItemForm">
+                <div class="e244_53"></div>
+                <div class=send_req>
+                    <div class="Send" id="SendBtnNewItem">
+                        <input type="submit" value="Send">
+                    </div>
                 </div>
-            </div>
 
-            <div class=e249_68>
-                <input type="text" class="ReasonOfReq" placeholder="reason for request.."> <!--  extansion-->
-                <span class="e249_66">:פירוט בקשה </span>
-            </div>
-            <div class=e245_64>
-                <input type="text" class="itemLink" placeholder="Link"> <!--  Teacher name-->
-                <span class="e245_60">: קישור לקניית המוצר</span>
+                <div class=e249_68>
+                    <input type="text" class="ReasonOfReq" placeholder="reason for request.." name="ReasonOfReq">
+                    <!--  extansion-->
+                    <span class="e249_66">:פירוט בקשה </span>
+                </div>
+                <div class=e245_64>
+                    <input type="text" class="itemLink" placeholder="Link" name="itemLink"> <!--  Teacher name-->
+                    <span class="e245_60">: קישור לקניית המוצר</span>
 
-            </div>
-            <div class=e245_63>
-                <input type="text" class="nameOfItem" placeholder="Name of item.."> <!--  Mkt_num-->
-                <span class="e245_58">: שם המוצר</span>
-            </div>
+                </div>
+                <div class=e245_63>
+                    <input type="text" class="nameOfItem" placeholder="Name of item.." name="nameOfItem">
+                    <!--  Mkt_num-->
+                    <span class="e245_58">: שם המוצר</span>
+                </div>
+            </form>
         </div>
 
     </div>
