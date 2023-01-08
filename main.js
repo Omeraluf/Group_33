@@ -1,13 +1,24 @@
 "use strict";
+
+//const stringify = require("fast-json-stable-stringify");
+
 //myProfile elements
-  const profile_logo_shown = document.getElementById("profile_logo");
-  let accountLoggedIn = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
-  if (profile_logo_shown !== null) {
-  document.getElementById("myProfileName").textContent = `${accountLoggedIn.username}`;
-  document.getElementById("myProfilePassword").textContent = `${accountLoggedIn.password}`;
-  document.getElementById("myProfileRole").textContent = `${accountLoggedIn.role}`;
+const profile_logo_shown = document.getElementById("profile_logo");
+let accountLoggedIn = JSON.parse(
+  window.localStorage.getItem("accountsLoggedIn")
+);
+if (profile_logo_shown !== null) {
+  document.getElementById(
+    "myProfileName"
+  ).textContent = `${accountLoggedIn.username}`;
+  document.getElementById(
+    "myProfilePassword"
+  ).textContent = `${accountLoggedIn.password}`;
+  document.getElementById(
+    "myProfileRole"
+  ).textContent = `${accountLoggedIn.role}`;
   // document.getElementById("myProfileName").innerHTML = `${accountLoggedIn.username + "Also working"}`;
-  }
+}
 
 //Dr.WH button
 const DrWHBtn = document.getElementById("drWHpic");
@@ -76,8 +87,7 @@ if (btn_order_status !== null) {
   btn_order_status.addEventListener("click", (e) => {
     e.preventDefault();
     window.location.assign("./order_status.html");
-
-  })
+  });
 }
 const cartBtn_myCart = document.getElementById("myCart");
 if (cartBtn_myCart !== null) {
@@ -87,6 +97,13 @@ if (cartBtn_myCart !== null) {
   });
 }
 
+const cartBtn_shortage = document.getElementById("shortage");
+if (cartBtn_shortage !== null) {
+  cartBtn_shortage.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.assign("./shortage.html");
+  });
+}
 // Bell Button
 function dropDownBellBtn() {
   document.getElementById("dropDown_myBell").classList.toggle("show");
@@ -110,7 +127,7 @@ const logOutBtn_myPerson = document.getElementById("e57_156_3"); //change this
 if (logOutBtn_myPerson !== null) {
   logOutBtn_myPerson.addEventListener("click", (e) => {
     e.preventDefault();
-    window.localStorage.removeItem('accountLoggedIn');
+    window.localStorage.removeItem("accountLoggedIn");
     window.location.assign("./loginPage.html");
   });
 }
@@ -144,14 +161,12 @@ if (myPerson_reportStudent !== null) {
   myPerson_reportStudent.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(accountLoggedIn.role == 'student'){
+    if (accountLoggedIn.role == "student") {
       window.location.assign("./reportStudent.html");
-    }
-    else{
+    } else {
       alert("You have no access for that report");
     }
-  })
-
+  });
 }
 
 const myPerson_reportTeacher = document.getElementById("reportTeacher"); //change this
@@ -159,14 +174,12 @@ if (myPerson_reportTeacher !== null) {
   myPerson_reportTeacher.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(accountLoggedIn.role == 'teacher'){
+    if (accountLoggedIn.role == "teacher") {
       window.location.assign("./reportTeacher.html");
-    }
-    else{
+    } else {
       alert("You have no access for that report");
     }
-  })
-
+  });
 }
 
 const myPerson_reportStorageKeeper = document.getElementById(
@@ -176,14 +189,12 @@ if (myPerson_reportStorageKeeper !== null) {
   myPerson_reportStorageKeeper.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(accountLoggedIn.role == 'storage_keeper'){
+    if (accountLoggedIn.role == "storage_keeper") {
       window.location.assign("./reportStorageKeeper.html");
-    }
-    else{
+    } else {
       alert("You have no access for that report");
     }
-  })
-
+  });
 }
 
 const myPerson_extansion = document.getElementById("extansion"); //change this
@@ -191,33 +202,28 @@ if (myPerson_extansion !== null) {
   myPerson_extansion.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(accountLoggedIn.role == 'student'){
+    if (accountLoggedIn.role == "student") {
       window.location.assign("./extansion.html");
-    }
-    else{
-      if(accountLoggedIn.role == 'teacher'){
+    } else {
+      if (accountLoggedIn.role == "teacher") {
         window.location.assign("./extansionTeacher.html");
-      }
-      else{
+      } else {
         alert("You have no access for that section");
       }
     }
-  })
-
+  });
 }
 const myPerson_newItemReq = document.getElementById("newItemReq"); //change this
 if (myPerson_newItemReq !== null) {
   myPerson_newItemReq.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if(accountLoggedIn.role == 'teacher'){
+    if (accountLoggedIn.role == "teacher") {
       window.location.assign("./newItemReq.html");
-    }
-    else{
+    } else {
       alert("You have no access for that section");
     }
-  })
-
+  });
 }
 
 //window.location.assign();
@@ -515,27 +521,38 @@ class messagesCLS {
     this.teacherName = teacherName;
     this.reason = reason;
   }
-};
+}
 
 const sendBtn = document.getElementById("Send");
 if (sendBtn !== null) {
   sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
     console.log("hello");
-    let mktNumber = extansionForm.MKTNumber.value;  // mkt number value
+    let mktNumber = extansionForm.MKTNumber.value; // mkt number value
     let teacherName = extansionForm.TeacherName.value; // teacher name
-    let reasonContent = extansionForm.extansionReason.value;  // reason for extension
-    let userNameFromLS = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    let reasonContent = extansionForm.extansionReason.value; // reason for extension
+    let userNameFromLS = JSON.parse(
+      window.localStorage.getItem("accountsLoggedIn")
+    );
     //console.log(userNameFromLS);
-    const messages = userNameFromLS.username + reasonContent + teacherName + mktNumber;
+    const messages =
+      userNameFromLS.username + reasonContent + teacherName + mktNumber;
     // console.log(typeof (userNameFromLS[0].username));
     // console.log(typeof (mktNumber));
     let nameOfStudent = userNameFromLS.username;
-    let messagesOBJ = new messagesCLS(nameOfStudent, mktNumber, teacherName, reasonContent);
+    let messagesOBJ = new messagesCLS(
+      nameOfStudent,
+      mktNumber,
+      teacherName,
+      reasonContent
+    );
     console.log(userNameFromLS.username);
     //console.log(userNameFromLS);
     messagesArray.push(messagesOBJ);
-    window.localStorage.setItem("messgesForSKFromStudent", JSON.stringify(messagesArray));
+    window.localStorage.setItem(
+      "messgesForSKFromStudent",
+      JSON.stringify(messagesArray)
+    );
 
     console.log(messagesOBJ);
     // alert(
@@ -546,10 +563,7 @@ if (sendBtn !== null) {
     //   " + " +
     //   mktNumber + messages
     // );
-    alert(
-      "Checking if messages sent: " + messages
-    );
-
+    alert("Checking if messages sent: " + messages);
   });
 }
 
@@ -560,20 +574,16 @@ if (showMSGsBtn !== null) {
     let temp = JSON.parse(localStorage.getItem("messgesForSKFromStudent"));
     //console.log(temp[0].MKT);
     if (localStorage.getItem("messgesForSKFromStudent") !== null) {
-      document.getElementById("messagesShownExtentionStudent").innerHTML = ` name: ${temp[0].studentName} <br> MKT: ${temp[0].MKT} <br> Teacher name: ${temp[0].teacherName} <br> Reason for extension: ${temp[0].reason}`
-
+      document.getElementById(
+        "messagesShownExtentionStudent"
+      ).innerHTML = ` name: ${temp[0].studentName} <br> MKT: ${temp[0].MKT} <br> Teacher name: ${temp[0].teacherName} <br> Reason for extension: ${temp[0].reason}`;
     }
-
-
   });
 }
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try ends
 
-
-
-
-// //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscar try for extansion teacher 
+// //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscar try for extansion teacher
 
 class messagesFromTeacherCLS {
   TeacherName = null;
@@ -587,25 +597,37 @@ class messagesFromTeacherCLS {
     this.numberOfextensions = numberOfextensions;
     this.reason = reason;
   }
-};
+}
 
 const sendReqBtn = document.getElementById("SendBtnTeacher");
-if (sendReqBtn !== null) {      //dont work!!!! continue from here
+if (sendReqBtn !== null) {
+  //dont work!!!! continue from here
   sendReqBtn.addEventListener("click", (e) => {
     e.preventDefault();
     console.log("hello");
-    let mktNumber = sendReqForm.TeachersMKT.value;  // mkt number value
+    let mktNumber = sendReqForm.TeachersMKT.value; // mkt number value
     const exetensionsNumber = sendReqForm.NumOfExtansions.value; // teacher name
-    let reasonContent = sendReqForm.TeachersReason.value;  // reason for extension
-    let userNameFromLS = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    let reasonContent = sendReqForm.TeachersReason.value; // reason for extension
+    let userNameFromLS = JSON.parse(
+      window.localStorage.getItem("accountsLoggedIn")
+    );
     alert(userNameFromLS.username);
     //console.log(userNameFromLS);
-    let messages = userNameFromLS.username + reasonContent + exetensionsNumber + mktNumber;
-    console.log(typeof (mktNumber));
+    let messages =
+      userNameFromLS.username + reasonContent + exetensionsNumber + mktNumber;
+    console.log(typeof mktNumber);
     let nameOfteacher = userNameFromLS.username;
-    let messagesTeacherOBJ = new messagesFromTeacherCLS(nameOfteacher, mktNumber, exetensionsNumber, reasonContent);
+    let messagesTeacherOBJ = new messagesFromTeacherCLS(
+      nameOfteacher,
+      mktNumber,
+      exetensionsNumber,
+      reasonContent
+    );
     messagesArray.push(messagesTeacherOBJ);
-    window.localStorage.setItem("messgesForSKfromTeacher", JSON.stringify(messagesArray));
+    window.localStorage.setItem(
+      "messgesForSKfromTeacher",
+      JSON.stringify(messagesArray)
+    );
 
     console.log(messagesTeacherOBJ);
     // alert(
@@ -616,10 +638,7 @@ if (sendReqBtn !== null) {      //dont work!!!! continue from here
     //   " + " +
     //   mktNumber + messages
     // );
-    alert(
-      "Checking if messages sent: " + messages
-    );
-
+    alert("Checking if messages sent: " + messages);
   });
 }
 
@@ -630,17 +649,14 @@ if (showMSGsBtn !== null) {
     let temp = JSON.parse(localStorage.getItem("messgesForSKfromTeacher"));
     //console.log(temp[0].MKT);
     if (localStorage.getItem("messgesForSKfromTeacher") !== null) {
-      document.getElementById("messagesShownExtentionTeacher").innerHTML = ` name: ${temp[0].TeacherName} <br> MKT: ${temp[0].MKT} <br>  Number of extensions: ${temp[0].numberOfextensions} <br> Reason for extension: ${temp[0].reason}`
-
+      document.getElementById(
+        "messagesShownExtentionTeacher"
+      ).innerHTML = ` name: ${temp[0].TeacherName} <br> MKT: ${temp[0].MKT} <br>  Number of extensions: ${temp[0].numberOfextensions} <br> Reason for extension: ${temp[0].reason}`;
     }
-
-
   });
 }
 
-
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try ends
-
 
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Oscars try for new item
 class newItemCLS {
@@ -655,27 +671,38 @@ class newItemCLS {
     this.link = link;
     this.reason = reason;
   }
-};
+}
 
 const newItemBtn = document.getElementById("SendBtnNewItem");
-if (newItemBtn !== null) {      //dont work!!!! continue from here
+if (newItemBtn !== null) {
+  //dont work!!!! continue from here
   newItemBtn.addEventListener("click", (e) => {
     e.preventDefault();
     console.log("hello");
-    let itemName = newItemForm.nameOfItem.value;  // mkt number value
+    let itemName = newItemForm.nameOfItem.value; // mkt number value
     const link = newItemForm.itemLink.value; // teacher name
-    let reasonContent = newItemForm.ReasonOfReq.value;  // reason for extension
-    let userNameFromLS = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    let reasonContent = newItemForm.ReasonOfReq.value; // reason for extension
+    let userNameFromLS = JSON.parse(
+      window.localStorage.getItem("accountsLoggedIn")
+    );
     let messages = userNameFromLS.username + itemName + link + reasonContent;
     console.log(userNameFromLS.username);
     //console.log(typeof (mktNumber));
     const nameOfteacher = userNameFromLS.username;
     console.log(nameOfteacher);
-    console.log(typeof (nameOfteacher));
-    let newItemOBJ = new newItemCLS(nameOfteacher, itemName, link, reasonContent);
+    console.log(typeof nameOfteacher);
+    let newItemOBJ = new newItemCLS(
+      nameOfteacher,
+      itemName,
+      link,
+      reasonContent
+    );
     messagesArray.push(newItemOBJ);
     //console.log(newItemOBJ.TeacherName);
-    window.localStorage.setItem("messgesForSKNewItem", JSON.stringify(messagesArray)); // change array to new ones for every send btn
+    window.localStorage.setItem(
+      "messgesForSKNewItem",
+      JSON.stringify(messagesArray)
+    ); // change array to new ones for every send btn
 
     console.log(newItemOBJ);
     // alert(
@@ -686,10 +713,7 @@ if (newItemBtn !== null) {      //dont work!!!! continue from here
     //   " + " +
     //   mktNumber + messages
     // );
-    alert(
-      "Checking if messages sent: " + messages
-    );
-
+    alert("Checking if messages sent: " + messages);
   });
 }
 
@@ -700,14 +724,41 @@ if (showMSGsBtn !== null) {
     let temp = JSON.parse(localStorage.getItem("messgesForSKNewItem"));
     //console.log(temp[0].MKT);
     if (localStorage.getItem("messgesForSKNewItem") !== null) {
-      document.getElementById("messagesShownNewitem").innerHTML = ` name: ${temp[0].teacherName} <br> Item Name: ${temp[0].itemName} <br>  Link:  ${temp[0].link} <br> Reason for the new item: ${temp[0].reason}`
-
+      document.getElementById(
+        "messagesShownNewitem"
+      ).innerHTML = ` name: ${temp[0].teacherName} <br> Item Name: ${temp[0].itemName} <br>  Link:  ${temp[0].link} <br> Reason for the new item: ${temp[0].reason}`;
     }
-
-
   });
 }
 
+let BtnshowShortage = document.getElementById("showshortage");
+if (BtnshowShortage !== null) {
+  BtnshowShortage.addEventListener("click", (e) => {
+    e.preventDefault();
+    const localstorageShortage = JSON.parse(
+      window.localStorage.getItem("productShortage")
+    );
+    document.getElementById(
+      "shortage_for_good"
+    ).innerHTML = `החוסרים באתר הם:${localstorageShortage} `;
+  });
+}
+let BtnaddShortage = document.getElementById("addshortage");
+if (BtnaddShortage !== null) {
+  BtnaddShortage.addEventListener("click", (e) => {
+    e.preventDefault();
+    let Role = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    if (Role.role === "storage_keeper") {
+      const newshortagetext = document.getElementById("addshortagebySKForm")
+        .addshortagebySK.value;
+      console.log(newshortagetext);
+      window.localStorage.setItem(
+        "productShortage",
+        JSON.stringify(newshortagetext)
+      );
+    }
+  });
+}
 //to delete this item from local storage to be able to select to the cart other things
 window.localStorage.removeItem("searchProduct");
 
@@ -761,7 +812,7 @@ if (btnGoProUp !== null) {
         "DescriptionGoPro"
       ).textContent = `מצלמת GoPro Available: ${
         20 - HowManyGoPro
-      } Color: Black`; 
+      } Color: Black`;
       GoPro.quantity--;
     }
   });
@@ -1359,7 +1410,6 @@ if (btnfabricUp !== null) {
   });
 }
 
-
 //if there is something in the cart from this product
 if (btnfabricDown !== null) {
   console.log("hello");
@@ -1618,63 +1668,66 @@ if (btnshoeOnCart !== null) {
     }
   });
 }
-  const btnclearTheCart = document.getElementById("clearThecart");
-  if (btnclearTheCart !== null) {
-    btnclearTheCart.addEventListener("click", function (e) {
-      e.preventDefault();
-      window.localStorage.removeItem("cart");
-      document.getElementById("outputfromcart").innerHTML = `:מוצרים בעגלה`;
+const btnclearTheCart = document.getElementById("clearThecart");
+if (btnclearTheCart !== null) {
+  btnclearTheCart.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.localStorage.removeItem("cart");
+    document.getElementById("outputfromcart").innerHTML = `:מוצרים בעגלה`;
+  });
+}
+const btnInvite = document.getElementById("invite");
+if (btnInvite !== null) {
+  btnInvite.addEventListener("click", function (e) {
+    e.preventDefault();
+    //to give the teacher a preference over student
+    let cartProductForchecking = JSON.parse(
+      window.localStorage.getItem("cart")
+    );
+    console.log(cartProductForchecking);
+    let Role = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    cartProductForchecking.forEach((product) => {
+      if (product.quantity <= 3) {
+        if (Role.role === student) {
+          alert(`You can't order ${product}`);
+          deletetheitem(product);
+        }
+      }
     });
-    const btnInvite = document.getElementById("invite");
-    if (btnInvite !== null) {
-      btnInvite.addEventListener("click", function (e) {
-        e.preventDefault();
-        window.localStorage.removeItem("cart");
-        // let Role = window.localStorage.getItem("accountLoggedIn");
-        // if (Role.role == student) {
-        //   alert("Please bring back the products in 3 weeks");
-        // }
-        // if (Role.role == teacher) {
-        //   alert("Please bring back the products in 3 days");
-        // }
-        document.getElementById(
-          "outputfromcart"
-        ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
-      });
+    window.localStorage.removeItem("cart");
+    if (Role.role == "student") {
+      alert("Please bring back the products in 3 weeks");
     }
-  }
-
+    if (Role.role == "teacher") {
+      alert("Please bring back the products in 3 days");
+    }
+    document.getElementById(
+      "outputfromcart"
+    ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
+  });
+}
 
 //report student
 const reportStudentNotNull = document.getElementById("reportStudentNotNull");
-if(reportStudentNotNull != null){}
+if (reportStudentNotNull != null) {
+}
 document.getElementById(
   "report_quantity_1"
 ).textContent = `${VideoCamera.quantity}`;
-document.getElementById(
-  "report_name_1"
-).textContent = `${VideoCamera.name}`;
-document.getElementById(
-  "report_mkt_1"
-).textContent = `${VideoCamera.MKT}`;
+document.getElementById("report_name_1").textContent = `${VideoCamera.name}`;
+document.getElementById("report_mkt_1").textContent = `${VideoCamera.MKT}`;
 
 document.getElementById(
   "report_quantity_2"
 ).textContent = `${CarCamera.quantity}`;
-document.getElementById(
-  "report_name_2"
-).textContent = `${CarCamera.name}`;
+document.getElementById("report_name_2").textContent = `${CarCamera.name}`;
 document.getElementById("report_mkt_2").textContent = `${CarCamera.MKT}`;
 
 document.getElementById(
   "report_quantity_3"
 ).textContent = `${tripodCamera.quantity}`;
-document.getElementById(
-  "report_name_3"
-).textContent = `${tripodCamera.name}`;
-document.getElementById(
-  "report_mkt_3"
-).textContent = `${tripodCamera.MKT}`;
+document.getElementById("report_name_3").textContent = `${tripodCamera.name}`;
+document.getElementById("report_mkt_3").textContent = `${tripodCamera.MKT}`;
 
 document.getElementById(
   "report_quantity_4"
@@ -1682,15 +1735,11 @@ document.getElementById(
 document.getElementById("report_name_4").textContent = `${Umbrella.name}`;
 document.getElementById("report_mkt_4").textContent = `${Umbrella.MKT}`;
 
-document.getElementById(
-  "report_quantity_5"
-).textContent = `${GoPro.quantity}`;
+document.getElementById("report_quantity_5").textContent = `${GoPro.quantity}`;
 document.getElementById("report_name_5").textContent = `${GoPro.name}`;
 document.getElementById("report_mkt_5").textContent = `${GoPro.MKT}`;
 
-document.getElementById(
-  "report_quantity_6"
-).textContent = `${ipads.quantity}`;
+document.getElementById("report_quantity_6").textContent = `${ipads.quantity}`;
 document.getElementById("report_name_6").textContent = `${ipads.name}`;
 document.getElementById("report_mkt_6").textContent = `${ipads.MKT}`;
 
@@ -1703,12 +1752,8 @@ document.getElementById("report_mkt_7").textContent = `${MacBook.MKT}`;
 document.getElementById(
   "report_quantity_8"
 ).textContent = `${ApplePencil.quantity}`;
-document.getElementById(
-  "report_name_8"
-).textContent = `${ApplePencil.name}`;
-document.getElementById(
-  "report_mkt_8"
-).textContent = `${ApplePencil.MKT}`;
+document.getElementById("report_name_8").textContent = `${ApplePencil.name}`;
+document.getElementById("report_mkt_8").textContent = `${ApplePencil.MKT}`;
 
 document.getElementById(
   "report_quantity_9"
@@ -1722,37 +1767,25 @@ document.getElementById(
 document.getElementById("report_name_10").textContent = `${canvas.name}`;
 document.getElementById("report_mkt_10").textContent = `${canvas.MKT}`;
 
-document.getElementById(
-  "report_quantity_11"
-).textContent = `${brush.quantity}`;
+document.getElementById("report_quantity_11").textContent = `${brush.quantity}`;
 document.getElementById("report_name_11").textContent = `${brush.name}`;
 document.getElementById("report_mkt_11").textContent = `${brush.MKT}`;
 
 document.getElementById(
   "report_quantity_12"
 ).textContent = `${faberCastell.quantity}`;
-document.getElementById(
-  "report_name_12"
-).textContent = `${faberCastell.name}`;
-document.getElementById(
-  "report_mkt_12"
-).textContent = `${faberCastell.MKT}`;
+document.getElementById("report_name_12").textContent = `${faberCastell.name}`;
+document.getElementById("report_mkt_12").textContent = `${faberCastell.MKT}`;
 
-document.getElementById(
-  "report_quantity_13"
-).textContent = `${paint.quantity}`;
+document.getElementById("report_quantity_13").textContent = `${paint.quantity}`;
 document.getElementById("report_name_13").textContent = `${paint.name}`;
 document.getElementById("report_mkt_13").textContent = `${paint.MKT}`;
 
 document.getElementById(
   "report_quantity_14"
 ).textContent = `${sewingMechine.quantity}`;
-document.getElementById(
-  "report_name_14"
-).textContent = `${sewingMechine.name}`;
-document.getElementById(
-  "report_mkt_14"
-).textContent = `${sewingMechine.MKT}`;
+document.getElementById("report_name_14").textContent = `${sewingMechine.name}`;
+document.getElementById("report_mkt_14").textContent = `${sewingMechine.MKT}`;
 
 document.getElementById(
   "report_quantity_15"
@@ -1763,19 +1796,13 @@ document.getElementById("report_mkt_15").textContent = `${fabric.MKT}`;
 document.getElementById(
   "report_quantity_16"
 ).textContent = `${tapeMessures.quantity}`;
-document.getElementById(
-  "report_name_16"
-).textContent = `${tapeMessures.name}`;
-document.getElementById(
-  "report_mkt_16"
-).textContent = `${tapeMessures.MKT}`;
+document.getElementById("report_name_16").textContent = `${tapeMessures.name}`;
+document.getElementById("report_mkt_16").textContent = `${tapeMessures.MKT}`;
 
 document.getElementById(
   "report_quantity_17"
 ).textContent = `${manniqen.quantity}`;
-document.getElementById(
-  "report_name_17"
-).textContent = `${manniqen.name}`;
+document.getElementById("report_name_17").textContent = `${manniqen.name}`;
 document.getElementById("report_mkt_17").textContent = `${manniqen.MKT}`;
 
 document.getElementById(
@@ -1784,9 +1811,7 @@ document.getElementById(
 document.getElementById("report_name_18").textContent = `${silver.name}`;
 document.getElementById("report_mkt_18").textContent = `${silver.MKT}`;
 
-document.getElementById(
-  "report_quantity_19"
-).textContent = `${gold.quantity}`;
+document.getElementById("report_quantity_19").textContent = `${gold.quantity}`;
 document.getElementById("report_name_19").textContent = `${gold.name}`;
 document.getElementById("report_mkt_19").textContent = `${gold.MKT}`;
 
@@ -1805,16 +1830,17 @@ document.getElementById("report_mkt_21").textContent = `${welder.MKT}`;
 document.getElementById(
   "report_quantity_22"
 ).textContent = `${stretcher.quantity}`;
-document.getElementById(
-  "report_name_22"
-).textContent = `${stretcher.name}`;
+document.getElementById("report_name_22").textContent = `${stretcher.name}`;
 document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
 
 //
 
 //report storageKeeper addons
-const reportStorageKeeperNotNull = document.getElementById("reportStorageKeeperNotNull");
-if(reportStorageKeeperNotNull != null){}
+const reportStorageKeeperNotNull = document.getElementById(
+  "reportStorageKeeperNotNull"
+);
+if (reportStorageKeeperNotNull != null) {
+}
 document.getElementById(
   "report_quantity_max_1"
 ).textContent = `${VideoCamera.MaxQuantity}`;
@@ -1886,7 +1912,6 @@ document.getElementById(
 
 const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
 if (reportTeacherNotNull !== null) {
-
   if (localStorage.getItem("cart") !== null) {
     document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
       localStorage.getItem("cart")
