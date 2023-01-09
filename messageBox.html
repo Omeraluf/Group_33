@@ -36,9 +36,15 @@
         בתיבת ההודעות תוכל בתור אפסנאי לראות את הבקשות הנשלחות אליך לאישור, לאשר או לדחות אותן.
       </h5>
       <div class="envelope_logo"></div>
-      <!-- <div class="contact_info_seperate_three_row">
-                        
+      <!-- <div class="contact_info_seperate_three_row">       
                     </div> -->
+                    <!--Daniel Changed!-->
+                    <input type="checkbox"  id="order_done" name="order_done" value="" onclick="get_value()"> <!--checked="checked"-->
+                    <label for="order_done" id="message">press if order 1 is ready</label>
+                    <br>
+                    <!--<input type="checkbox"  id="order_done2" name="order_done2" value="" onclick="get_value2()">--> <!--checked="checked"-->
+                    <!--<label for="order_done2" id="message">press if order 2 is ready</label>-->
+      <!--End of DAniel change-->
     </div>
     <div class="e57_117">
 
@@ -126,7 +132,7 @@
               <a href="#" id="myCart" class="e57_159">העגלה שלי</a>
               <a href="#" id="#" class="e57_156">הזמנות</a>
               <a href="#" id="#" class="e57_159">קנסות</a>
-              <a href="#" id="order_status" class="e57_156">סטטוס הזמנה</a>
+              <a href="#" onload="alowing__btn()" id="order_status" class="e57_156">סטטוס הזמנה</a>
               <!-- @@@@@@@@@@@@@CHANGE THE IDS TO THE LINKS@@@@@@@@@@@@@@@@@@@ -->
             </div>
           </div>
@@ -284,6 +290,7 @@
                 
               </form> -->
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@End work -->
+    
   </div>
   <script defer src="main.js"></script>
 </body>

@@ -214,7 +214,8 @@ if(forgotPas != null)
     const usernameForgot = forgotPas.username_pass.value;
   const newPass = forgotPas.new_password.value;
   let i =0;
-  //let data = JSON.parse(window.localStorage.getItem("account")); 
+  //let data1 = JSON.parse(window.localStorage.getItem("account")); 
+  //let data1 = localStorage.getItem("account");
   alert(`${usernameForgot} and ${newPass}`); //put in comment when done
   usersss[i] = JSON.parse(window.localStorage.getItem("account"));
   usersss[i].forEach((User) => {
@@ -223,9 +224,12 @@ if(forgotPas != null)
    {
     User.username = usernameForgot;
     User.password = newPass;
+    User.role = User.role;
     //maybe remove
     //usersss.push(storageusers);
     //local storage to put info in
+    //localStorage.User.password = newPass;
+    //data1[password] = newPass;
     localStorage.setItem("account", JSON.stringify(usersss));
     alert("You have successfully changed the password.");
     location.replace("./main.html");
