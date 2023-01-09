@@ -1643,9 +1643,19 @@ if (btnshoeOnCart !== null) {
       });
     }
   }
+  
+  //report Teacher
+const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
+if (reportTeacherNotNull !== null) {
 
+  if (localStorage.getItem("cart") !== null) {
+    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
+      localStorage.getItem("cart")
+    );
+  }
+}
 
-//report student
+// report student
 const reportStudentNotNull = document.getElementById("reportStudentNotNull");
 if(reportStudentNotNull != null){}
 document.getElementById(
@@ -1810,7 +1820,6 @@ document.getElementById(
 ).textContent = `${stretcher.name}`;
 document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
 
-//
 
 //report storageKeeper addons
 const reportStorageKeeperNotNull = document.getElementById("reportStorageKeeperNotNull");
@@ -1882,14 +1891,5 @@ document.getElementById(
   "report_quantity_max_22"
 ).textContent = `${stretcher.MaxQuantity}`;
 
-//report Teacher
 
-const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
-if (reportTeacherNotNull !== null) {
 
-  if (localStorage.getItem("cart") !== null) {
-    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
-      localStorage.getItem("cart")
-    );
-  }
-}
