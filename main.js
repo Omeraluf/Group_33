@@ -82,6 +82,8 @@ function dropDownCartBtn() {
 //       window.location.assign("./loginPage.html");
 //   })
 // }
+
+//######## order status DANIEL#######
 const btn_order_status = document.getElementById("order_status");
 if (btn_order_status !== null) {
   btn_order_status.addEventListener("click", (e) => {
@@ -89,6 +91,77 @@ if (btn_order_status !== null) {
     window.location.assign("./order_status.html");
   });
 }
+
+let flagmes,arr;
+//let ordersdone =[]; // trying something
+const mes = document.getElementById("order_done");
+const mes2 = document.getElementById("order_done2");
+//for mes
+if(mes!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
+{
+  //alert("in");
+  flagmes=localStorage.setItem('flagmes1',false);
+  //alert(localStorage.getItem('flagmes1'));
+}
+
+//not relevent for now
+//for mes2
+/*if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
+{
+  //alert("in mes 2");
+  let ordersdone =[]; // trying something
+  arr=localStorage.setItem('trying',false);
+  //flagmes=localStorage.setItem('flagmes1',false);
+  //alert(localStorage.getItem('flagmes1'));
+}
+function get_value2(){
+  alert("click");
+  arr=localStorage.setItem('trying',true);
+}*/
+  
+//relevent
+function get_value(){
+  var BrowserName = document.getElementById("message"); //innerhtml for insert maybe wont be necessery
+  //alert("hey checkbox + "+ BrowserName.innerText);
+  //document.getElementById('order_done').innerHTML = BrowserName;
+  flagmes=localStorage.setItem('flagmes1',true);
+  }
+
+
+ 
+  const checkPho = document.getElementById("checkphoto");
+  if(checkPho != null)
+  {
+    checkPho.hidden = true;
+    //const try1 = localStorage.getItem('flagmes1');
+  
+  
+    alert(localStorage.getItem("flagmes1"));
+    if(localStorage.getItem("flagmes1") === "true")
+    {
+      alert("in if figmas1 is true"+ localStorage.getItem('flagmes1'));
+      checkPho.hidden = false;
+      document.getElementById("no_orders").textContent = "ההזמנה אושרה";
+    }
+    //not relevent for now
+    /*if(localStorage.getItem("trying")=== "true")
+    {
+      const addOrder = document.getElementById("orders");
+      const textIn = document.createTextNode('הזמנה 2');
+      addOrder.appendChild(textIn);
+      //addOrder.insertAdjacentText('beforeend',"הזמנה 2");
+      //document.getElementById("orders").innerHTML += "הזמנה 2";
+      const img = document.createElement("img");
+      img.src = "./images/check.png";
+      addOrder.appendChild(img);
+      //addOrder.innerHTML = Image("./images/check.png");
+      //loop of for each which adds the orders number
+    //document.getElementById("add_to_me").innerHTML +=
+           // "<h3>This is the text which has been inserted by JS</h3>"
+    }*/
+    
+}
+//########until here order status DANIEL#######
 const cartBtn_myCart = document.getElementById("myCart");
 if (cartBtn_myCart !== null) {
   cartBtn_myCart.addEventListener("click", (e) => {
