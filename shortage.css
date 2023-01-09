@@ -2,6 +2,7 @@
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 1);
 }
+
 .e58_31 {
   background-color: rgba(255, 255, 255, 1);
   width: 1440px;
@@ -12,6 +13,7 @@
   border-bottom-right-radius: 2px;
   position: absolute;
 }
+
 .e57_117 {
   box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 1);
@@ -21,9 +23,11 @@
   left: 0px;
   top: 0px;
 }
+
 .e57_117 {
   border: 0px solid rgba(0, 0, 0, 1);
 }
+
 .e57_118 {
   box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
   width: 219px;
@@ -39,6 +43,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .e57_119 {
   width: 193px;
   height: 47px;
@@ -46,6 +51,7 @@
   left: 1229px;
   top: 33px;
 }
+
 .e57_120 {
   width: 47px;
   height: 47px;
@@ -53,6 +59,7 @@
   left: 146px;
   top: 0px;
 }
+
 /* e57_121 */
 .dropbtn_myPerson {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -64,6 +71,7 @@
   left: 0px;
   top: 0px;
 }
+
 .e57_122 {
   background-color: rgba(0, 0, 0, 1);
   width: 20px;
@@ -72,6 +80,7 @@
   left: 14px;
   top: 13px;
 }
+
 .e57_123 {
   width: 47px;
   height: 47px;
@@ -88,6 +97,7 @@
   left: 14.125px;
   top: 12.25px;
 }
+
 .e57_126 {
   width: 47px;
   height: 47px;
@@ -197,6 +207,7 @@
   top: 12px;
   /* grid-area:span; */
 }
+
 /* THE ICON */
 .e57_129 {
   width: 88px;
@@ -205,6 +216,7 @@
   left: 749px;
   top: 38px;
 }
+
 .e57_130 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -223,6 +235,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .e57_131 {
   color: rgba(0, 0, 0, 1);
   width: 72px;
@@ -235,6 +248,7 @@
   font-size: 12px;
   letter-spacing: 0;
 }
+
 .e57_132 {
   width: 429px;
   height: 43px;
@@ -242,6 +256,7 @@
   left: 257px;
   top: 35px;
 }
+
 .e57_133 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -274,6 +289,7 @@
   opacity: 30%;
   left: 400px;
 }
+
 .e57_135 {
   color: rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
   width: 54.30379867553711px;
@@ -286,6 +302,7 @@
   font-size: 12px;
   letter-spacing: 0;
 }
+
 /* .e57_136 { 
 	width:198px;
 	height:588px;
@@ -460,6 +477,7 @@
   left: 909px;
   top: 97px;
 }
+
 .e57_153 {
   width: 367.00048828125px;
   height: 353px;
@@ -467,6 +485,7 @@
   left: 0px;
   top: 0px;
 }
+
 .e57_154 {
   background-color: rgba(
     217.0000022649765,
@@ -484,6 +503,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .e57_155 {
   background-color: rgba(
     100.56154310703278,
@@ -508,6 +528,7 @@
   cursor: pointer;
   z-index: 1;
 }
+
 .e57_156 {
   background-color: rgba(
     245.43749392032623,
@@ -529,6 +550,7 @@
   z-index: 1;
   /* add it everywhere! */
 }
+
 .e57_157 {
   background-color: rgba(
     245.43749392032623,
@@ -546,6 +568,7 @@
   font-size: large;
   border: none;
 }
+
 .e57_158 {
   background-color: rgba(
     245.43749392032623,
@@ -563,6 +586,7 @@
   font-size: large;
   border: none;
 }
+
 .e57_159 {
   background-color: rgba(
     217.0000022649765,
@@ -588,6 +612,7 @@
   z-index: 1;
   /* add it everywhere! */
 }
+
 .e57_160 {
   background-color: rgba(
     217.0000022649765,
@@ -605,6 +630,7 @@
   font-size: large;
   border: none;
 }
+
 .e57_161 {
   background-color: rgba(
     217.0000022649765,
@@ -622,6 +648,7 @@
   font-size: large;
   border: none;
 }
+
 .e57_162 {
   color: rgba(0, 0, 0, 1);
   width: 191.1769561767578px;
@@ -634,6 +661,7 @@
   font-size: 28px;
   letter-spacing: 0;
 }
+
 .e57_163 {
   color: rgba(0, 0, 0, 1);
   width: 118.86650085449219px;
@@ -646,6 +674,7 @@
   font-size: 20px;
   letter-spacing: 0;
 }
+
 .e57_164 {
   color: rgba(0, 0, 0, 1);
   width: 269px;
@@ -658,6 +687,7 @@
   font-size: 20px;
   letter-spacing: 0;
 }
+
 .e57_165 {
   color: rgba(0, 0, 0, 1);
   width: 288px;
@@ -670,6 +700,7 @@
   font-size: 20px;
   letter-spacing: 0;
 }
+
 .e57_166 {
   color: rgba(0, 0, 0, 1);
   width: 118.86650085449219px;
@@ -682,6 +713,7 @@
   font-size: 20px;
   letter-spacing: 0;
 }
+
 .e57_167 {
   color: rgba(0, 0, 0, 1);
   width: 118.86650085449219px;
@@ -694,6 +726,7 @@
   font-size: 20px;
   letter-spacing: 0;
 }
+
 .e57_168 {
   color: rgba(0, 0, 0, 1);
   width: 118.86650085449219px;
@@ -714,6 +747,7 @@
   left: 19px;
   top: 153px;
 }
+
 .Jewelleryback {
   width: 198px;
   height: 84px;
@@ -721,6 +755,7 @@
   left: 0px;
   top: 504px;
 }
+
 .Jewellery {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -747,6 +782,7 @@
   font-size: 30px;
   letter-spacing: 0;
 }
+
 .textJewellery {
   color: rgba(0, 0, 0, 1);
   width: 150.3141326904297px;
@@ -761,6 +797,7 @@
   /* font-family: 'Courier New', Courier, monospace;  */
   /* CHANGE the font */
 }
+
 .Photographyback {
   width: 198px;
   height: 84px;
@@ -768,6 +805,7 @@
   left: 0px;
   top: 375px;
 }
+
 .Photography {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -794,6 +832,7 @@
   font-size: 30px;
   letter-spacing: 0;
 }
+
 .textPhotography {
   color: rgba(0, 0, 0, 1);
   width: 195px;
@@ -808,6 +847,7 @@
   cursor: pointer;
   /* border:none; */
 }
+
 .Textileback {
   width: 198px;
   height: 84px;
@@ -816,6 +856,7 @@
   top: 250px;
   cursor: pointer;
 }
+
 .Textile {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -836,6 +877,7 @@
   cursor: pointer;
   border: none;
 }
+
 .textTextile {
   color: rgba(0, 0, 0, 1);
   width: 102.6282730102539px;
@@ -848,6 +890,7 @@
   font-size: 32px;
   letter-spacing: 0;
 }
+
 .Artback {
   width: 198px;
   height: 84px;
@@ -855,6 +898,7 @@
   left: 0px;
   top: 125px;
 }
+
 .Art {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -875,6 +919,7 @@
   cursor: pointer;
   border: none;
 }
+
 .TextArt {
   color: rgba(0, 0, 0, 1);
   width: 48.722511291503906px;
@@ -888,6 +933,7 @@
   letter-spacing: 0;
   cursor: pointer;
 }
+
 .Digitalback {
   width: 198px;
   height: 84px;
@@ -896,6 +942,7 @@
   top: 0px;
   cursor: pointer;
 }
+
 .Digital {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: rgba(
@@ -922,6 +969,7 @@
   font-size: 30px;
   letter-spacing: 0;
 }
+
 .TextDigital {
   color: rgba(0, 0, 0, 1);
   width: 98.48167419433594px;
@@ -1178,58 +1226,34 @@
   padding: 0 auto;
   font-size: 18px;
 }
-
-.envelope_logo {
+.addshortage {
+  left: 410px;
+  top: 160px;
+  position: absolute;
+}
+.addshortagebySK {
+  width: 200px;
   height: 80px;
-  width: 80px;
-  background-image: url(images/delivery_logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* margin: auto; */
-  /* position:absolute; */
-  left: 46%;
-  /* grid-area:span; */
-}
-.outputfromcart {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-.show_what_in_cart {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
-  width: 400px;
-  height: 43px;
+  left: 350px;
+  top: 180px;
   position: absolute;
-  left: 240px;
-  right: 400px;
+}
+.showshortage {
+  left: 410px;
   top: 300px;
-  bottom: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.clearThecart {
-  width: 100px;
-  height: 40px;
   position: absolute;
-  left: 300px;
-  right: 250px;
-  top: 350px;
-  bottom: 20px;
 }
-.invite {
-  width: 100px;
-  height: 40px;
+
+.shortage_for_good {
+  /* text-align: center; */
+  font-family: Arial, Helvetica, sans-serif;
+  left: 350px;
+  top: 320px;
   position: absolute;
-  left: 450px;
-  right: 250px;
-  top: 350px;
-  bottom: 20px;
+}
+
+.shortage_Temporary {
+  font-family: Arial, Helvetica, sans-serif;
+  top: 500px;
+  position: absolute;
 }
