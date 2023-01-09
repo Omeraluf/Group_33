@@ -1771,9 +1771,9 @@ if (btnInvite !== null) {
     if (Role.role == "student") {
       alert("Please bring back the products in 3 weeks");
     }
+  })}
 
-  }
-  
+
   //report Teacher
 const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
 if (reportTeacherNotNull !== null) {
@@ -1783,6 +1783,7 @@ if (reportTeacherNotNull !== null) {
       localStorage.getItem("cart")
     );
   }
+}
 
 //    if (Role.role == "teacher") {
 //      alert("Please bring back the products in 3 days");
@@ -1792,7 +1793,7 @@ if (reportTeacherNotNull !== null) {
 //    ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
 //  });
 
-}
+
 
 // report student
 const reportStudentNotNull = document.getElementById("reportStudentNotNull");
