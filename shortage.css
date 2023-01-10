@@ -298,7 +298,6 @@
 }
 
 /*end search*/
-
 .e57_152 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 367.00048828125px;
@@ -1027,59 +1026,36 @@
   font-size: 18px;
 }
 
-.envelope_logo {
+.addshortage {
+  left: 410px;
+  top: 160px;
+  position: absolute;
+}
+
+.addshortagebySK {
+  width: 200px;
   height: 80px;
-  width: 80px;
-  background-image: url(images/delivery_logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  /* margin: auto; */
-  /* position:absolute; */
-  left: 46%;
-  /* grid-area:span; */
-}
-
-.outputfromcart {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
-.show_what_in_cart {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(245.43749392032623,
-      245.43749392032623,
-      245.43749392032623,
-      1);
-  width: 400px;
-  height: 43px;
+  left: 350px;
+  top: 180px;
   position: absolute;
-  left: 240px;
-  right: 400px;
+}
+
+.showshortage {
+  left: 410px;
   top: 300px;
-  bottom: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  position: absolute;
 }
 
-.clearThecart {
-  width: 100px;
-  height: 40px;
+.shortage_for_good {
+  /* text-align: center; */
+  font-family: Arial, Helvetica, sans-serif;
+  left: 350px;
+  top: 320px;
   position: absolute;
-  left: 300px;
-  right: 250px;
-  top: 350px;
-  bottom: 20px;
 }
 
-.invite {
-  width: 100px;
-  height: 40px;
+.shortage_Temporary {
+  font-family: Arial, Helvetica, sans-serif;
+  top: 500px;
   position: absolute;
-  left: 450px;
-  right: 250px;
-  top: 350px;
-  bottom: 20px;
 }

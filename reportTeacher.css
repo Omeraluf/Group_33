@@ -1104,3 +1104,9 @@
     padding: 0 auto;
     font-size: 18px;
 }
+
+.reportTeacherNotNull{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
