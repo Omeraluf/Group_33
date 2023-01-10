@@ -1,22 +1,33 @@
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 
-  <title>Html Generated</title>
-  <meta name="description" content="Figma htmlGenerator" />
-  <meta name="author" content="The Four Friends" />
-  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet" />
+    <title>Html Generated</title>
+    <meta name="description" content="Figma htmlGenerator" />
+    <meta name="author" content="The Four Friends" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Itim&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="messageBox.css" />
+    <link rel="stylesheet" href="messageBox.css" />
 
-  <style>
-    /*
+    <style>
+      /*
+
                 Figma Background for illustrative/preview purposes only.
                 You can remove this style tag with no consequence
               */
+
 
     body {
       background: #e5e5e5;
@@ -36,13 +47,18 @@
       <!-- <div class="contact_info_seperate_three_row">
                         
                     </div> -->
-      <!--Daniel Changed!-->
-      <input type="checkbox" id="order_done" name="order_done" value="" onclick="get_value()"> <!--checked="checked"-->
-      <label for="order_done" id="message">press if order 1 is ready</label>
-      <br>
-      <!--<input type="checkbox"  id="order_done2" name="order_done2" value="" onclick="get_value2()">-->
-      <!--checked="checked"-->
-      <!--<label for="order_done2" id="message">press if order 2 is ready</label>-->
+     <!--Daniel Changed!-->
+         <div class = "checkboxStudent">
+        <input type="checkbox"  id="order_done" name="order_done" value="" onclick="get_value()"> <!--checked="checked"-->
+        <label for="order_done" id="message">לחץ אם הזמנת סטודנט מוכנה</label>
+         </div>
+         <input type="checkbox"  id="order_canceled" name="order_canceled" value="" onclick="get_cancel()"> <!--checked="checked"-->
+        <label for="order_done2" id="message">לחץ לביטול הזמנה לסטודנט</label>
+        <br>
+        <div class ="checkboxTeacher">
+        <input type="checkbox"  id="order_done2" name="order_done2" value="" onclick="get_value2()"> <!--checked="checked"-->
+        <label for="order_done2" id="message">press if order Teacher is ready</label>
+      </div>
       <!--End of DAniel change-->
       <button class="showMSGS" id="showMSGS">:הצג הודעות</button>
 
@@ -97,8 +113,12 @@
               <a href="#" id="extansion" class="e57_159">בקשת הארכה</a>
               <a href="#" id="newItemReq" class="e57_156">מוצר חדש</a>
               <a href="#" id="e57_156_3" class="e57_159">התנתק</a>
+
             </div>
+            <!-- Omer - Till here -->
+            <!-- Person -->
           </div>
+
           <!-- Omer - Till here -->
           <!-- Person -->
         </div>
@@ -122,17 +142,17 @@
               <a href="#" id="#" class="e57_159">קיבלת מלאי חדש</a>
               <a href="#" id="#" class="e57_156">ברוכים הבאים ל DR.WH</a>
               <!-- @@@@@@@@@@@@@CHANGE THE IDS TO THE LINKS@@@@@@@@@@@@@@@@@@@ -->
-            </div>
-          </div>
+
+            
           <!-- Omer - Till here -->
           <!-- BELL -->
         </div>
 
         <!-- <div  class="e57_125">
 
+
                     
                   </div> -->
-
       </div>
       <div class="e57_126">
         <div class="e57_127">
@@ -155,17 +175,18 @@
           </div>
           <!-- Omer - Till here -->
           <!-- CART -->
+
         </div>
         <div class="e57_128"></div>
       </div>
-    </div>
-    <!-- <div class=e57_129>  useless button
+      <!-- <div class=e57_129>  useless button
 
                 <div  class="e57_130">
                   
                 </div>
                 <span  class="e57_131">home</span>
               </div> -->
+
 
     <form id="SearchBartype">
       <div class="e57_132">
@@ -208,3 +229,4 @@
 </body>
 
 </html>
+

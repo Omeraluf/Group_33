@@ -85,78 +85,106 @@ function dropDownCartBtn() {
 
 //######## order status DANIEL#######
 const btn_order_status = document.getElementById("order_status");
-if (btn_order_status !== null) {
+
+if (btn_order_status != null) {
   btn_order_status.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./order_status.html");
+    let accountRole = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    if(accountRole.role === "student" || accountRole.role === "teacher")
+      window.location.assign("./order_status.html");
   });
 }
 
-let flagmes, arr;
+let flagmes,arr,can;
 //let ordersdone =[]; // trying something
 const mes = document.getElementById("order_done");
+const checkStudent = document.getElementById("checkboxStudent");
+const checkTeacher = document.getElementById("checkboxTeacher");
 const mes2 = document.getElementById("order_done2");
+const cancelAreaStudent = document.getElementById("order_canceled");
+
 //for mes
-if (mes != null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
+if(mes!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
 {
   //alert("in");
-  flagmes = localStorage.setItem('flagmes1', false);
+  flagmes=localStorage.setItem('flagmes1',false);
+  can = localStorage.setItem("cancelMes",false);
   //alert(localStorage.getItem('flagmes1'));
+}
+
+if(cancelAreaStudent!=null && !cancelAreaStudent.ariaChecked) // if we are in messages and the checkbox isnt mark
+{
+  can = localStorage.setItem("cancelMes",false);
 }
 
 //not relevent for now
 //for mes2
-/*if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
+if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
 {
   //alert("in mes 2");
   let ordersdone =[]; // trying something
-  arr=localStorage.setItem('trying',false);
+  arr=localStorage.setItem('flagmes2',false);
+
   //flagmes=localStorage.setItem('flagmes1',false);
   //alert(localStorage.getItem('flagmes1'));
 }
 function get_value2(){
-  alert("click");
-  arr=localStorage.setItem('trying',true);
-}*/
 
+  arr=localStorage.setItem('flagmes2',true);
+}
+  
 //relevent
-function get_value() {
+function get_value(){
   var BrowserName = document.getElementById("message"); //innerhtml for insert maybe wont be necessery
   //alert("hey checkbox + "+ BrowserName.innerText);
   //document.getElementById('order_done').innerHTML = BrowserName;
-  flagmes = localStorage.setItem('flagmes1', true);
-}
-
-
-
-const checkPho = document.getElementById("checkphoto");
-if (checkPho != null) {
-  checkPho.hidden = true;
-  //const try1 = localStorage.getItem('flagmes1');
-
-
-  alert(localStorage.getItem("flagmes1"));
-  if (localStorage.getItem("flagmes1") === "true") {
-    alert("in if figmas1 is true" + localStorage.getItem('flagmes1'));
-    checkPho.hidden = false;
-    document.getElementById("no_orders").textContent = "ההזמנה אושרה";
+  flagmes=localStorage.setItem('flagmes1',true);
+  mes.ariaChecked = true;
   }
-  //not relevent for now
-  /*if(localStorage.getItem("trying")=== "true")
+
+  function get_cancel(){
+    can = localStorage.setItem("cancelMes",true);
+  }
+
+
+ 
+  const checkPho = document.getElementById("checkphoto");
+  if(checkPho != null)
   {
-    const addOrder = document.getElementById("orders");
-    const textIn = document.createTextNode('הזמנה 2');
-    addOrder.appendChild(textIn);
-    //addOrder.insertAdjacentText('beforeend',"הזמנה 2");
-    //document.getElementById("orders").innerHTML += "הזמנה 2";
-    const img = document.createElement("img");
-    img.src = "./images/check.png";
-    addOrder.appendChild(img);
-    //addOrder.innerHTML = Image("./images/check.png");
-    //loop of for each which adds the orders number
-  //document.getElementById("add_to_me").innerHTML +=
-         // "<h3>This is the text which has been inserted by JS</h3>"
-  }*/
+    checkPho.hidden = true;
+    //const try1 = localStorage.getItem('flagmes1');
+  
+  
+    alert(localStorage.getItem("flagmes1"));
+    if(localStorage.getItem("flagmes1") === "true")
+    {
+      checkPho.hidden = false;
+      document.getElementById("no_orders").textContent = "ההזמנה אושרה";
+    }
+    //not relevent for now
+    if(localStorage.getItem("flagmes2")=== "true")
+    {
+      checkPho.hidden = false;
+      document.getElementById("no_orders").textContent = "ההזמנה אושרה";
+
+      //const addOrder = document.getElementById("orders");
+      //const textIn = document.createTextNode('הזמנה 2');
+      //addOrder.appendChild(textIn);
+      //addOrder.insertAdjacentText('beforeend',"הזמנה 2");
+      //document.getElementById("orders").innerHTML += "הזמנה 2";
+      //const img = document.createElement("img");
+      //img.src = "./images/check.png";
+      //addOrder.appendChild(img);
+      //addOrder.innerHTML = Image("./images/check.png");
+      //loop of for each which adds the orders number
+    //document.getElementById("add_to_me").innerHTML +=
+           // "<h3>This is the text which has been inserted by JS</h3>"
+    }
+    if(localStorage.getItem("cancelMes") === "true")
+    {
+      document.getElementById("no_orders").textContent = "הזמנתך לא אושרה";
+    }
+    
 
 }
 //########until here order status DANIEL#######
@@ -215,6 +243,7 @@ let myPerson_messageBox = document.getElementById("messageBox"); //change this
 if (myPerson_messageBox !== null) {
   myPerson_messageBox.addEventListener("click", (e) => {
     e.preventDefault();
+
     if (accountLoggedIn.role == "storage_keeper") {
       window.location.assign("./messageBox.html");
     }
@@ -229,6 +258,7 @@ if (myPerson_messageBox !== null) {
     else {
       alert("You have no access for that report");
     }
+
   });
 }
 
@@ -819,6 +849,7 @@ if (showMSGsBtn !== null) {
 }
 // }
 
+
 function deleteTheMsg(keyNameOfLocalStorage) {
   if (window.localStorage.getItem(keyNameOfLocalStorage) === null) {
     window.localStorage.setItem(keyNameOfLocalStorage, "[]");
@@ -958,9 +989,11 @@ if (BtnaddShortage !== null) {
         "productShortage",
         JSON.stringify(newshortagetext)
       );
+
     }
   });
 }
+
 
 
 
@@ -1018,11 +1051,12 @@ if (btnGoProUp !== null) {
       ).textContent = `מצלמת GoPro Available: ${20 - HowManyGoPro
       } Color: Black`;
       GoPro.quantity--;
+
     }
   });
 }
-
 //if there is something in the cart from this product
+
 if (btnGoProDown !== null) {
   btnGoProDown.addEventListener("click", function () {
     if (HowManyGoPro > 0) {
@@ -1066,6 +1100,7 @@ if (btncanvasUp !== null) {
   });
 }
 //if there is something in the cart from this product
+
 if (btncanvasDown !== null) {
   btncanvasDown.addEventListener("click", function () {
     if (HowManycanvas > 0) {
@@ -1085,6 +1120,7 @@ if (btncanvasDown !== null) {
 let HowManyVideoCamera = 0;
 const btnVideoCameraUp = document.getElementById("plusVideoCamera");
 const btnVideoCameraDown = document.getElementById("minusVideoCamera");
+
 //select product and amount
 if (btnVideoCameraUp !== null) {
   //check if the pruduct available
@@ -1367,6 +1403,7 @@ if (btnLEDBourdUp !== null) {
         "DescriptionLEDBourd"
       ).textContent = `ledBord Available:${20 - HowManyLEDBourd} Color: Black`;
       LEDbourd.quantity--;
+
     }
   });
 }
@@ -1557,6 +1594,7 @@ if (btnmanniqenUp !== null) {
       ).textContent = `Manniqen Available:${15 - HowManymanniqen
       } Color: Black `;
       manniqen.quantity--;
+
     }
   });
 }
@@ -1571,7 +1609,8 @@ if (btnmanniqenDown !== null) {
       deletetheitem("manniqen");
       document.getElementById(
         "Descriptionmanniqen"
-      ).textContent = `Manniqen Available: ${manniqen.quantity + 1
+      ).textContent = `Manniqen Available: ${
+        manniqen.quantity + 1
       } Color: Black `;
       manniqen.quantity++;
     }
@@ -1685,7 +1724,9 @@ if (btnstrecherDown !== null) {
       deletetheitem("stretcher");
       document.getElementById(
         "Descriptionstrecher"
+
       ).textContent = `Stretcher Available:${stretcher.quantity + 1
+
       } Color: Black`;
       stretcher.quantity++;
     }
@@ -1742,7 +1783,10 @@ if (btnsilverUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "Descriptionsilver"
+
       ).textContent = `Silver wire Available: ${60 - HowManysilver
+
+
       } Color: silver`;
       silver.quantity--;
     }
@@ -1759,7 +1803,9 @@ if (btnsilverDown !== null) {
       deletetheitem("silver");
       document.getElementById(
         "Descriptionsilver"
+
       ).textContent = `Silver wire Available: ${silver.quantity + 1
+
       } Color: silver`;
       silver.quantity++;
     }
@@ -2106,15 +2152,3 @@ document.getElementById(
 ).textContent = `${stretcher.MaxQuantity}`;
 
 
-//<<<<<<< Omer's-Branch
-
-//=======
-//const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
-//if (reportTeacherNotNull !== null) {
-//  if (localStorage.getItem("cart") !== null) {
-//    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
-//      localStorage.getItem("cart")
-//    );
-//  }
-//}
-//>>>>>>> main

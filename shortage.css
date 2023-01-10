@@ -143,10 +143,12 @@
 /* Dropdown button on hover & focus */
 .dropbtn_myCart:hover,
 .dropbtn_myCart:focus {
-  background-color: rgba(100.56154310703278,
-      206.12500101327896,
-      91.38210967183113,
-      0.6600000262260437);
+  background-color: rgba(
+    100.56154310703278,
+    206.12500101327896,
+    91.38210967183113,
+    0.6600000262260437
+  );
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -217,10 +219,12 @@
 
 .e57_130 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(245.43749392032623,
-      245.43749392032623,
-      245.43749392032623,
-      1);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
   width: 88px;
   height: 43px;
   position: absolute;
@@ -255,6 +259,7 @@
 
 .e57_133 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   background-color: rgba(245.43749392032623,
       245.43749392032623,
       245.43749392032623,
@@ -269,6 +274,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 
 .Searchbtn {
   /* background-color:rgba(0, 0, 0, 1); */
@@ -297,7 +303,10 @@
   letter-spacing: 0;
 }
 
+
 /*end search*/
+
+
 .e57_152 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 367.00048828125px;
@@ -316,10 +325,12 @@
 }
 
 .e57_154 {
-  background-color: rgba(217.0000022649765,
-      217.0000022649765,
-      217.0000022649765,
-      1);
+  background-color: rgba(
+    217.0000022649765,
+    217.0000022649765,
+    217.0000022649765,
+    1
+  );
   width: 367.0003356933594px;
   height: 353px;
   position: absolute;
@@ -332,10 +343,12 @@
 }
 
 .e57_155 {
+
   background-color: rgba(100.56154310703278,
       206.12500101327896,
       91.38210967183113,
       0.33000001311302185);
+
   /* width:362.5428466796875px;
 	height:46.216705322265625px;
 	position:absolute;
@@ -355,10 +368,12 @@
 }
 
 .e57_156 {
-  background-color: rgba(245.43749392032623,
-      245.43749392032623,
-      245.43749392032623,
-      1);
+  background-color: rgba(
+    245.43749392032623,
+    245.43749392032623,
+    245.43749392032623,
+    1
+  );
   /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
@@ -379,6 +394,7 @@
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
@@ -391,10 +407,12 @@
 }
 
 .e57_158 {
+
   background-color: rgba(245.43749392032623,
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
@@ -407,10 +425,12 @@
 }
 
 .e57_159 {
+
   background-color: rgba(217.0000022649765,
       217.0000022649765,
       217.0000022649765,
       1);
+
   /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
@@ -431,10 +451,12 @@
 }
 
 .e57_160 {
+
   background-color: rgba(217.0000022649765,
       217.0000022649765,
       217.0000022649765,
       1);
+
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
@@ -447,10 +469,12 @@
 }
 
 .e57_161 {
+
   background-color: rgba(217.0000022649765,
       217.0000022649765,
       217.0000022649765,
       1);
+
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
@@ -571,10 +595,12 @@
 
 .Jewellery {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   background-color: rgba(245.43749392032623,
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 198px;
   height: 84px;
   position: absolute;
@@ -619,10 +645,12 @@
 
 .Photography {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   background-color: rgba(245.43749392032623,
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 198px;
   height: 84px;
   position: absolute;
@@ -672,6 +700,7 @@
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 198px;
   height: 84px;
   position: absolute;
@@ -712,6 +741,7 @@
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 198px;
   height: 84px;
   position: absolute;
@@ -754,6 +784,7 @@
       245.43749392032623,
       245.43749392032623,
       1);
+
   width: 198px;
   height: 84px;
   position: absolute;
@@ -825,10 +856,12 @@
 /* Dropdown button on hover & focus */
 .dropbtn_myBell:hover,
 .dropbtn_myBell:focus {
+
   background-color: rgba(100.56154310703278,
       206.12500101327896,
       91.38210967183113,
       0.6600000262260437);
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -895,10 +928,12 @@
 /* Dropdown button on hover & focus */
 .dropbtn_myPerson:hover,
 .dropbtn_myPerson:focus {
+
   background-color: rgba(100.56154310703278,
       206.12500101327896,
       91.38210967183113,
       0.6600000262260437);
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -1058,4 +1093,4 @@
   font-family: Arial, Helvetica, sans-serif;
   top: 500px;
   position: absolute;
-}
+
