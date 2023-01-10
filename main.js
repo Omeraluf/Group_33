@@ -94,18 +94,26 @@ if (btn_order_status != null) {
   });
 }
 
-let flagmes,arr;
+let flagmes,can;
 //let ordersdone =[]; // trying something
 const mes = document.getElementById("order_done");
 const checkStudent = document.getElementById("checkboxStudent");
 const checkTeacher = document.getElementById("checkboxTeacher");
 const mes2 = document.getElementById("order_done2");
+const cancelAreaStudent = document.getElementById("order_canceled");
+
 //for mes
 if(mes!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
 {
   //alert("in");
   flagmes=localStorage.setItem('flagmes1',false);
+  can = localStorage.setItem("cancelMes",false);
   //alert(localStorage.getItem('flagmes1'));
+}
+
+if(cancelAreaStudent!=null && !cancelAreaStudent.ariaChecked) // if we are in messages and the checkbox isnt mark
+{
+  can = localStorage.setItem("cancelMes",false);
 }
 
 //not relevent for now
@@ -129,6 +137,10 @@ function get_value(){
   //document.getElementById('order_done').innerHTML = BrowserName;
   flagmes=localStorage.setItem('flagmes1',true);
   mes.ariaChecked = true;
+  }
+
+  function get_cancel(){
+    can = localStorage.setItem("cancelMes",true);
   }
 
 
@@ -164,6 +176,10 @@ function get_value(){
       //loop of for each which adds the orders number
     //document.getElementById("add_to_me").innerHTML +=
            // "<h3>This is the text which has been inserted by JS</h3>"
+    }
+    if(localStorage.getItem("cancelMes") === "true")
+    {
+      document.getElementById("no_orders").textContent = "הזמנתך לא אושרה";
     }
     
 }
