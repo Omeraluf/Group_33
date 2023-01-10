@@ -85,16 +85,20 @@ function dropDownCartBtn() {
 
 //######## order status DANIEL#######
 const btn_order_status = document.getElementById("order_status");
-if (btn_order_status !== null) {
+if (btn_order_status != null) {
   btn_order_status.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./order_status.html");
+    let accountRole = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    if(accountRole.role === "student" || accountRole.role === "teacher")
+      window.location.assign("./order_status.html");
   });
 }
 
 let flagmes,arr;
 //let ordersdone =[]; // trying something
 const mes = document.getElementById("order_done");
+const checkStudent = document.getElementById("checkboxStudent");
+const checkTeacher = document.getElementById("checkboxTeacher");
 const mes2 = document.getElementById("order_done2");
 //for mes
 if(mes!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
@@ -106,18 +110,17 @@ if(mes!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt
 
 //not relevent for now
 //for mes2
-/*if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
+if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
 {
   //alert("in mes 2");
   let ordersdone =[]; // trying something
-  arr=localStorage.setItem('trying',false);
+  arr=localStorage.setItem('flagmes2',false);
   //flagmes=localStorage.setItem('flagmes1',false);
   //alert(localStorage.getItem('flagmes1'));
 }
 function get_value2(){
-  alert("click");
-  arr=localStorage.setItem('trying',true);
-}*/
+  arr=localStorage.setItem('flagmes2',true);
+}
   
 //relevent
 function get_value(){
@@ -125,6 +128,7 @@ function get_value(){
   //alert("hey checkbox + "+ BrowserName.innerText);
   //document.getElementById('order_done').innerHTML = BrowserName;
   flagmes=localStorage.setItem('flagmes1',true);
+  mes.ariaChecked = true;
   }
 
 
@@ -139,26 +143,28 @@ function get_value(){
     alert(localStorage.getItem("flagmes1"));
     if(localStorage.getItem("flagmes1") === "true")
     {
-      alert("in if figmas1 is true"+ localStorage.getItem('flagmes1'));
       checkPho.hidden = false;
       document.getElementById("no_orders").textContent = "ההזמנה אושרה";
     }
     //not relevent for now
-    /*if(localStorage.getItem("trying")=== "true")
+    if(localStorage.getItem("flagmes2")=== "true")
     {
-      const addOrder = document.getElementById("orders");
-      const textIn = document.createTextNode('הזמנה 2');
-      addOrder.appendChild(textIn);
+      checkPho.hidden = false;
+      document.getElementById("no_orders").textContent = "ההזמנה אושרה";
+
+      //const addOrder = document.getElementById("orders");
+      //const textIn = document.createTextNode('הזמנה 2');
+      //addOrder.appendChild(textIn);
       //addOrder.insertAdjacentText('beforeend',"הזמנה 2");
       //document.getElementById("orders").innerHTML += "הזמנה 2";
-      const img = document.createElement("img");
-      img.src = "./images/check.png";
-      addOrder.appendChild(img);
+      //const img = document.createElement("img");
+      //img.src = "./images/check.png";
+      //addOrder.appendChild(img);
       //addOrder.innerHTML = Image("./images/check.png");
       //loop of for each which adds the orders number
     //document.getElementById("add_to_me").innerHTML +=
            // "<h3>This is the text which has been inserted by JS</h3>"
-    }*/
+    }
     
 }
 //########until here order status DANIEL#######
@@ -1770,9 +1776,12 @@ if (btnInvite !== null) {
     window.localStorage.removeItem("cart");
     if (Role.role == "student") {
       alert("Please bring back the products in 3 weeks");
+      
+      //checkStudent.style.opacity = 100;
     }
     if (Role.role == "teacher") {
       alert("Please bring back the products in 3 days");
+      //checkTeacher.style.opacity = 100;
     }
     document.getElementById(
       "outputfromcart"
