@@ -170,6 +170,7 @@ if(forgotPas != null && forgotButton != null)
         break;
       }
 
+
       if(i == data.length-1){
         alert("Try again with a real username");
         location.replace("./loginPage.html");

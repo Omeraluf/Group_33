@@ -21,9 +21,12 @@
   left: 0px;
   top: 0px;
 }
+
 .e57_117 {
   border: 0px solid rgba(0, 0, 0, 1);
 }
+
+
 .e57_118 {
   box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.25);
   width: 219px;
@@ -39,12 +42,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .e57_119 {
   width: 193px;
   height: 47px;
   position: absolute;
   left: 1229px;
   top: 33px;
+
 }
 .e57_120 {
   width: 47px;
@@ -52,7 +57,17 @@
   position: absolute;
   left: 146px;
   top: 0px;
+
 }
+
+.e57_120 {
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  left: 146px;
+  top: 0px;
+}
+
 /* e57_121 */
 .dropbtn_myPerson {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -64,6 +79,7 @@
   left: 0px;
   top: 0px;
 }
+
 .e57_122 {
   background-color: rgba(0, 0, 0, 1);
   width: 20px;
@@ -72,6 +88,7 @@
   left: 14px;
   top: 13px;
 }
+
 .e57_123 {
   width: 47px;
   height: 47px;
@@ -88,6 +105,7 @@
   left: 14.125px;
   top: 12.25px;
 }
+
 .e57_126 {
   width: 47px;
   height: 47px;
@@ -133,12 +151,11 @@
 /* Dropdown button on hover & focus */
 .dropbtn_myCart:hover,
 .dropbtn_myCart:focus {
-  background-color: rgba(
-    100.56154310703278,
-    206.12500101327896,
-    91.38210967183113,
-    0.6600000262260437
-  );
+  background-color: rgba(100.56154310703278,
+      206.12500101327896,
+      91.38210967183113,
+      0.6600000262260437);
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -197,6 +214,7 @@
   top: 12px;
   /* grid-area:span; */
 }
+
 /* THE ICON */
 .e57_129 {
   width: 88px;
@@ -205,14 +223,14 @@
   left: 749px;
   top: 38px;
 }
+
 .e57_130 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
+  background-color: rgba(245.43749392032623,
+      245.43749392032623,
+      245.43749392032623,
+      1);
+
   width: 88px;
   height: 43px;
   position: absolute;
@@ -223,6 +241,7 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
 .e57_131 {
   color: rgba(0, 0, 0, 1);
   width: 72px;
@@ -235,6 +254,7 @@
   font-size: 12px;
   letter-spacing: 0;
 }
+
 .e57_132 {
   width: 429px;
   height: 43px;
@@ -242,14 +262,13 @@
   left: 257px;
   top: 35px;
 }
+
 .e57_133 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
+  background-color: rgba(245.43749392032623,
+      245.43749392032623,
+      245.43749392032623,
+      1);
   width: 429px;
   height: 43px;
   position: absolute;
@@ -261,7 +280,7 @@
   border-bottom-right-radius: 10px;
 }
 
-.e57_134 {
+.Searchbtn {
   /* background-color:rgba(0, 0, 0, 1); */
   width: 20px;
   height: 17.575000762939453px;
@@ -274,6 +293,7 @@
   opacity: 30%;
   left: 400px;
 }
+
 .e57_135 {
   color: rgba(123.24999645352364, 123.24999645352364, 123.24999645352364, 1);
   width: 54.30379867553711px;
@@ -286,172 +306,10 @@
   font-size: 12px;
   letter-spacing: 0;
 }
-/* .e57_136 { 
-	width:198px;
-	height:588px;
-	position:absolute;
-	left:13px;
-	top:159px;
-}
-.e57_137 { 
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:504px;
-}
-.e57_138 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:23px;
-	border-top-right-radius:23px;
-	border-bottom-left-radius:23px;
-	border-bottom-right-radius:23px;
-}
-.e57_139 { 
-	color:rgba(0, 0, 0, 1);
-	width:150.3141326904297px;
-	height:39px;
-	position:absolute;
-	left:23.842931747436523px;
-	top:22px;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-}
-.e57_140 { 
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:375px;
-}
-.e57_141 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:23px;
-	border-top-right-radius:23px;
-	border-bottom-left-radius:23px;
-	border-bottom-right-radius:23px;
-}
-.e57_142 { 
-	color:rgba(0, 0, 0, 1);
-	width:195px;
-	height:36px;
-	position:absolute;
-	left:2px;
-	top:24px;
-	font-family:Inter;
-	text-align:center;
-	font-size:30px;
-	letter-spacing:0;
-}
-.e57_143 { 
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:250px;
-}
-.e57_144 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:23px;
-	border-top-right-radius:23px;
-	border-bottom-left-radius:23px;
-	border-bottom-right-radius:23px;
-}
-.e57_145 { 
-	color:rgba(0, 0, 0, 1);
-	width:102.6282730102539px;
-	height:39px;
-	position:absolute;
-	left:49.75916290283203px;
-	top:22px;
-	font-family:Inter;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-}
-.e57_146 { 
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:125px;
-}
-.e57_147 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:23px;
-	border-top-right-radius:23px;
-	border-bottom-left-radius:23px;
-	border-bottom-right-radius:23px;
-}
-.e57_148 { 
-	color:rgba(0, 0, 0, 1);
-	width:48.722511291503906px;
-	height:39px;
-	position:absolute;
-	left:74.63874053955078px;
-	top:23px;
-	font-family:Inter;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-}
-.e57_149 { 
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:0px;
-}
-.e57_150 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	background-color:rgba(245.43749392032623, 245.43749392032623, 245.43749392032623, 1);
-	width:198px;
-	height:84px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-top-left-radius:23px;
-	border-top-right-radius:23px;
-	border-bottom-left-radius:23px;
-	border-bottom-right-radius:23px;
-}
-.e57_151 { 
-	color:rgba(0, 0, 0, 1);
-	width:98.48167419433594px;
-	height:39px;
-	position:absolute;
-	left:49.75916290283203px;
-	top:23px;
-	font-family:Inter;
-	text-align:center;
-	font-size:32px;
-	letter-spacing:0;
-} */
+
+/*end search*/
+
+
 .e57_152 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   width: 367.00048828125px;
@@ -460,6 +318,7 @@
   left: 909px;
   top: 97px;
 }
+
 .e57_153 {
   width: 367.00048828125px;
   height: 353px;
@@ -467,13 +326,14 @@
   left: 0px;
   top: 0px;
 }
+
+
 .e57_154 {
-  background-color: rgba(
-    217.0000022649765,
-    217.0000022649765,
-    217.0000022649765,
-    1
-  );
+  background-color: rgba(217.0000022649765,
+      217.0000022649765,
+      217.0000022649765,
+      1);
+
   width: 367.0003356933594px;
   height: 353px;
   position: absolute;
@@ -484,13 +344,14 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+
 .e57_155 {
-  background-color: rgba(
-    100.56154310703278,
-    206.12500101327896,
-    91.38210967183113,
-    0.33000001311302185
-  );
+  background-color: rgba(100.56154310703278,
+      206.12500101327896,
+      91.38210967183113,
+      0.33000001311302185);
+
   /* width:362.5428466796875px;
 	height:46.216705322265625px;
 	position:absolute;
@@ -508,13 +369,14 @@
   cursor: pointer;
   z-index: 1;
 }
+
+
 .e57_156 {
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
+  background-color: rgba(245.43749392032623,
+      245.43749392032623,
+      245.43749392032623,
+      1);
+
   /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
@@ -529,30 +391,31 @@
   z-index: 1;
   /* add it everywhere! */
 }
+
+
 .e57_157 {
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
+  background-color: rgba(245.43749392032623,
+      245.43749392032623,
+      245.43749392032623,
+      1);
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
   left: -0.0002314651501365006px;
   top: 154.5869140625px;
 
+
   text-align: right;
   font-size: large;
   border: none;
 }
+
+
 .e57_158 {
-  background-color: rgba(
-    245.43749392032623,
-    245.43749392032623,
-    245.43749392032623,
-    1
-  );
+  background-color: rgba(245.43749392032623,
+      245.43749392032623,
+      245.43749392032623,
+      1);
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
@@ -564,12 +427,11 @@
   border: none;
 }
 .e57_159 {
-  background-color: rgba(
-    217.0000022649765,
-    217.0000022649765,
-    217.0000022649765,
-    1
-  );
+  background-color: rgba(217.0000022649765,
+      217.0000022649765,
+      217.0000022649765,
+      1);
+
   /* width:367.0003356933594px;
 	height:47.81038284301758px;
 	position:absolute; */
@@ -588,18 +450,19 @@
   z-index: 1;
   /* add it everywhere! */
 }
+
+
 .e57_160 {
-  background-color: rgba(
-    217.0000022649765,
-    217.0000022649765,
-    217.0000022649765,
-    1
-  );
+  background-color: rgba(217.0000022649765,
+      217.0000022649765,
+      217.0000022649765,
+      1);
   width: 367.0003356933594px;
   height: 47.81038284301758px;
   position: absolute;
   left: -0.0002314651501365006px;
   top: 204.78781127929688px;
+
 
   text-align: right;
   font-size: large;
@@ -1085,12 +948,26 @@
   background-color: #ddd;
 }
 
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: block;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@ PERSON @@@@@@@@@@@@@@@@@@@@@@@ */
+.person_logo {
+  height: 26px;
+  width: 26px;
+  background-image: url(images/person_logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: auto; */
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  /* grid-area:span; */
+}
+
 
 /* Edited by Omer 14/12/22 */
 .contact_info {
@@ -1153,6 +1030,7 @@
   margin: 0 auto;
   padding: 0 auto;
   width: 50%;
+
 }
 
 .contact_info_sperate_three_innterText {
@@ -1232,4 +1110,4 @@
   right: 250px;
   top: 350px;
   bottom: 20px;
-}
+
