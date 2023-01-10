@@ -9,7 +9,7 @@ What the project does:
 
 יש 3 סוגי משתמשים שיכולים להשתמש באתר, והם קשורים למחלקה : אפסנאי, מרצה וסטודנט.
 
-האתר נוצר בעזרת שימוש בvs code בfigma וhtml-genrator בתוך הfigma
+האתר נוצר בעזרת שימוש בvs code בfigma וhtml-genrator בתוך הfigma ושימוש בjest עבור הבדיקות יחידה
 
 Why the project is useful:
 
@@ -21,7 +21,7 @@ Why the project is useful:
 
 How users can get started with the project:
 
-יש 2 סוגי משתמשים: משתמשי תחזוק האתר: צריכים chrome, nodeJs, את התיקיה הכללית שמכילה את התמונות והקבצים, סביבת פיתוח של html,css,js
+יש 2 סוגי משתמשים: משתמשי תחזוק האתר: צריכים chrome, nodeJs, את התיקיה הכללית שמכילה את התמונות והקבצים, סביבת פיתוח של html,css,js ובשביל הבדיקות יחידה צריך בטרמינל npm run test 
 
 משתמשי רגילים שרואים רק את הuser interface: צריכים את תיקיית התמונות והקבצים, את קובץ הhtml של ההתחברות וchrome
 
