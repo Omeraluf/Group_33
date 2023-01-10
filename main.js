@@ -85,39 +85,53 @@ function dropDownCartBtn() {
 
 //######## order status DANIEL#######
 const btn_order_status = document.getElementById("order_status");
-if (btn_order_status !== null) {
+
+if (btn_order_status != null) {
   btn_order_status.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./order_status.html");
+    let accountRole = JSON.parse(window.localStorage.getItem("accountsLoggedIn"));
+    if(accountRole.role === "student" || accountRole.role === "teacher")
+      window.location.assign("./order_status.html");
   });
 }
 
-let flagmes,arr;
+let flagmes,arr,can;
 //let ordersdone =[]; // trying something
 const mes = document.getElementById("order_done");
+const checkStudent = document.getElementById("checkboxStudent");
+const checkTeacher = document.getElementById("checkboxTeacher");
 const mes2 = document.getElementById("order_done2");
+const cancelAreaStudent = document.getElementById("order_canceled");
+
 //for mes
 if(mes!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
 {
   //alert("in");
   flagmes=localStorage.setItem('flagmes1',false);
+  can = localStorage.setItem("cancelMes",false);
   //alert(localStorage.getItem('flagmes1'));
+}
+
+if(cancelAreaStudent!=null && !cancelAreaStudent.ariaChecked) // if we are in messages and the checkbox isnt mark
+{
+  can = localStorage.setItem("cancelMes",false);
 }
 
 //not relevent for now
 //for mes2
-/*if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
+if(mes2!=null && !mes.ariaChecked) // if we are in messages and the checkbox isnt mark
 {
   //alert("in mes 2");
   let ordersdone =[]; // trying something
-  arr=localStorage.setItem('trying',false);
+  arr=localStorage.setItem('flagmes2',false);
+
   //flagmes=localStorage.setItem('flagmes1',false);
   //alert(localStorage.getItem('flagmes1'));
 }
 function get_value2(){
-  alert("click");
-  arr=localStorage.setItem('trying',true);
-}*/
+
+  arr=localStorage.setItem('flagmes2',true);
+}
   
 //relevent
 function get_value(){
@@ -125,6 +139,11 @@ function get_value(){
   //alert("hey checkbox + "+ BrowserName.innerText);
   //document.getElementById('order_done').innerHTML = BrowserName;
   flagmes=localStorage.setItem('flagmes1',true);
+  mes.ariaChecked = true;
+  }
+
+  function get_cancel(){
+    can = localStorage.setItem("cancelMes",true);
   }
 
 
@@ -139,27 +158,34 @@ function get_value(){
     alert(localStorage.getItem("flagmes1"));
     if(localStorage.getItem("flagmes1") === "true")
     {
-      alert("in if figmas1 is true"+ localStorage.getItem('flagmes1'));
       checkPho.hidden = false;
       document.getElementById("no_orders").textContent = "ההזמנה אושרה";
     }
     //not relevent for now
-    /*if(localStorage.getItem("trying")=== "true")
+    if(localStorage.getItem("flagmes2")=== "true")
     {
-      const addOrder = document.getElementById("orders");
-      const textIn = document.createTextNode('הזמנה 2');
-      addOrder.appendChild(textIn);
+      checkPho.hidden = false;
+      document.getElementById("no_orders").textContent = "ההזמנה אושרה";
+
+      //const addOrder = document.getElementById("orders");
+      //const textIn = document.createTextNode('הזמנה 2');
+      //addOrder.appendChild(textIn);
       //addOrder.insertAdjacentText('beforeend',"הזמנה 2");
       //document.getElementById("orders").innerHTML += "הזמנה 2";
-      const img = document.createElement("img");
-      img.src = "./images/check.png";
-      addOrder.appendChild(img);
+      //const img = document.createElement("img");
+      //img.src = "./images/check.png";
+      //addOrder.appendChild(img);
       //addOrder.innerHTML = Image("./images/check.png");
       //loop of for each which adds the orders number
     //document.getElementById("add_to_me").innerHTML +=
            // "<h3>This is the text which has been inserted by JS</h3>"
-    }*/
+    }
+    if(localStorage.getItem("cancelMes") === "true")
+    {
+      document.getElementById("no_orders").textContent = "הזמנתך לא אושרה";
+    }
     
+
 }
 //########until here order status DANIEL#######
 const cartBtn_myCart = document.getElementById("myCart");
@@ -213,13 +239,29 @@ if (myPerson_myProfile !== null) {
   });
 }
 
-const myPerson_messageBox = document.getElementById("messageBox"); //change this
+let myPerson_messageBox = document.getElementById("messageBox"); //change this
 if (myPerson_messageBox !== null) {
   myPerson_messageBox.addEventListener("click", (e) => {
     e.preventDefault();
-    window.location.assign("./messageBox.html");
+
+    if (accountLoggedIn.role == "storage_keeper") {
+      window.location.assign("./messageBox.html");
+    }
+
+    else if (accountLoggedIn.role == "student") {
+      window.location.assign("./messageBoxStudent.html");
+    }
+
+    else if (accountLoggedIn.role == "teacher") {
+      window.location.assign("./messageBoxTeacher.html");
+    }
+    else {
+      alert("You have no access for that report");
+    }
+
   });
 }
+
 
 const myPerson_helpSupport = document.getElementById("help_support"); //change this
 if (myPerson_helpSupport !== null) {
@@ -792,6 +834,8 @@ if (newItemBtn !== null) {
 
 showMSGsBtn = document.getElementById("showMSGS");
 if (showMSGsBtn !== null) {
+  // while (localStorage.getItem("messgesForSKNewItem") !== null) {
+
   showMSGsBtn.addEventListener("click", (e) => {
     e.preventDefault();
     let temp = JSON.parse(localStorage.getItem("messgesForSKNewItem"));
@@ -803,6 +847,122 @@ if (showMSGsBtn !== null) {
     }
   });
 }
+// }
+
+
+function deleteTheMsg(keyNameOfLocalStorage) {
+  if (window.localStorage.getItem(keyNameOfLocalStorage) === null) {
+    window.localStorage.setItem(keyNameOfLocalStorage, "[]");
+  }
+  var old_data = JSON.parse(localStorage.getItem(keyNameOfLocalStorage));
+  old_data.shift();
+  localStorage.setItem(keyNameOfLocalStorage, JSON.stringify(old_data));
+}
+
+const item_arrived = document.getElementById("item_arrived");
+if (item_arrived !== null) {
+  item_arrived.addEventListener("click", (e) => {
+    e.preventDefault();
+    const MSGitemArivved = "your item has arrived";
+
+    if (localStorage.getItem("messgesForSKNewItem") != null) {
+
+      window.localStorage.setItem("itemArrived", MSGitemArivved);
+    }
+    deleteTheMsg("messgesForSKNewItem");
+
+  })
+};
+
+const extension_approve_teacher = document.getElementById("extension_approve_teacher");
+if (extension_approve_teacher !== null) {
+  extension_approve_teacher.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const extensionApproveTeacher = "your extention has been approved ,please return in two weeks from today";
+
+    if (localStorage.getItem("messgesForSKfromTeacher") != null) {
+
+      window.localStorage.setItem("extentionHasApprovedTeacher", extensionApproveTeacher);
+    }
+    deleteTheMsg("messgesForSKfromTeacher");
+
+  })
+};
+
+const extension_approve_student = document.getElementById("extension_approve_student");
+if (extension_approve_student !== null) {
+  extension_approve_student.addEventListener("click", (e) => {
+    e.preventDefault();
+    const extensionApproveTeacher = "your extention has been approved ,please return in two weeks from today";
+
+    if (localStorage.getItem("messgesForSKFromStudent") != null) {
+
+      window.localStorage.setItem("extentionHasApprovedStudent", extensionApproveTeacher);
+    }
+
+    deleteTheMsg("messgesForSKFromStudent");
+
+  })
+};
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@    show MSG from SK to student
+
+const showMSGSFromSKToStudent = document.getElementById("showMSGSFromSKToStudent");
+if (showMSGSFromSKToStudent !== null) {
+  showMSGSFromSKToStudent.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = localStorage.getItem("extentionHasApprovedStudent");
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("extentionHasApprovedStudent") !== null) {
+      document.getElementById(
+        "messagesShownFromSK"
+      ).innerHTML = temp;
+    }
+  });
+}
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@    show MSG from SK to Teacher about extension
+
+let showMSGSFromSKToTeacher = document.getElementById("showMSGSFromSKToTeacher");
+if (showMSGSFromSKToTeacher !== null) {
+  showMSGSFromSKToTeacher.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = localStorage.getItem("extentionHasApprovedTeacher");
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("extentionHasApprovedTeacher") !== null) {
+      document.getElementById(
+        "messagesShownFromSKAboutExtension"
+      ).innerHTML = temp;
+    }
+  });
+}
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+//@@@@@@@@@@@@@@@@@@@@@@@@    show MSG from SK to Teacher about new item
+
+showMSGSFromSKToTeacher = document.getElementById("showMSGSFromSKToTeacher");
+if (showMSGSFromSKToTeacher !== null) {
+  showMSGSFromSKToTeacher.addEventListener("click", (e) => {
+    e.preventDefault();
+    let temp = localStorage.getItem("itemArrived");
+    //console.log(temp[0].MKT);
+    if (localStorage.getItem("itemArrived") !== null) {
+      document.getElementById(
+        "messagesShownFromSKAboutExtension"
+      ).innerHTML = temp;
+    }
+  });
+}
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
 
 let BtnshowShortage = document.getElementById("showshortage");
 if (BtnshowShortage !== null) {
@@ -829,9 +989,14 @@ if (BtnaddShortage !== null) {
         "productShortage",
         JSON.stringify(newshortagetext)
       );
+
     }
   });
 }
+
+
+
+
 //to delete this item from local storage to be able to select to the cart other things
 window.localStorage.removeItem("searchProduct");
 
@@ -883,15 +1048,15 @@ if (btnGoProUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${
-        20 - HowManyGoPro
+      ).textContent = `מצלמת GoPro Available: ${20 - HowManyGoPro
       } Color: Black`;
       GoPro.quantity--;
+
     }
   });
 }
-
 //if there is something in the cart from this product
+
 if (btnGoProDown !== null) {
   btnGoProDown.addEventListener("click", function () {
     if (HowManyGoPro > 0) {
@@ -902,8 +1067,7 @@ if (btnGoProDown !== null) {
       console.log(HowManyGoPro);
       document.getElementById(
         "DescriptionGoPro"
-      ).textContent = `מצלמת GoPro Available: ${
-        GoPro.quantity + 1
+      ).textContent = `מצלמת GoPro Available: ${GoPro.quantity + 1
       } Color: Black`;
       GoPro.quantity++;
     }
@@ -936,6 +1100,7 @@ if (btncanvasUp !== null) {
   });
 }
 //if there is something in the cart from this product
+
 if (btncanvasDown !== null) {
   btncanvasDown.addEventListener("click", function () {
     if (HowManycanvas > 0) {
@@ -955,6 +1120,7 @@ if (btncanvasDown !== null) {
 let HowManyVideoCamera = 0;
 const btnVideoCameraUp = document.getElementById("plusVideoCamera");
 const btnVideoCameraDown = document.getElementById("minusVideoCamera");
+
 //select product and amount
 if (btnVideoCameraUp !== null) {
   //check if the pruduct available
@@ -968,8 +1134,7 @@ if (btnVideoCameraUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptionVideoCamera"
-      ).textContent = `Video Camera 24MP ו-1080P FHD Available: ${
-        10 - HowManyVideoCamera
+      ).textContent = `Video Camera 24MP ו-1080P FHD Available: ${10 - HowManyVideoCamera
       } Color:
       Black`;
       VideoCamera.quantity--;
@@ -987,8 +1152,7 @@ if (btnVideoCameraDown !== null) {
       deletetheitem("VideoCamera");
       document.getElementById(
         "DescriptionVideoCamera"
-      ).textContent = `Video Camera 24MP ו-1080P FHD Available: ${
-        VideoCamera.quantity + 1
+      ).textContent = `Video Camera 24MP ו-1080P FHD Available: ${VideoCamera.quantity + 1
       } Color:
       Black`;
       VideoCamera.quantity++;
@@ -1024,8 +1188,7 @@ if (btnUmbrellaDown !== null) {
       deletetheitem("Umbrella");
       document.getElementById(
         "DescriptionUmbrella"
-      ).textContent = `Umbrella Available: ${
-        Umbrella.quantity + 1
+      ).textContent = `Umbrella Available: ${Umbrella.quantity + 1
       }  Color: Black`;
       Umbrella.quantity++;
     }
@@ -1065,8 +1228,7 @@ if (btnCarCameraDown !== null) {
       deletetheitem("CarCamera");
       document.getElementById(
         "DescriptionCarCamera"
-      ).textContent = `Car Camera K4 Available: ${
-        CarCamera.quantity + 1
+      ).textContent = `Car Camera K4 Available: ${CarCamera.quantity + 1
       }  Color: Black`;
       CarCamera.quantity++;
     }
@@ -1088,8 +1250,7 @@ if (btntripodCameraUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptiontripodCamera"
-      ).textContent = `Tripod Kingjoy VT2500 Available:${
-        50 - HowManytripodCamera
+      ).textContent = `Tripod Kingjoy VT2500 Available:${50 - HowManytripodCamera
       } Color: Black`;
       tripodCamera.quantity--;
     }
@@ -1107,8 +1268,7 @@ if (btntripodCameraDown !== null) {
       deletetheitem("tripodCamera");
       document.getElementById(
         "DescriptiontripodCamera"
-      ).textContent = `Tripod Kingjoy VT2500 Available:${
-        tripodCamera.quantity + 1
+      ).textContent = `Tripod Kingjoy VT2500 Available:${tripodCamera.quantity + 1
       } Color: Black`;
       tripodCamera.quantity++;
     }
@@ -1202,8 +1362,7 @@ if (btnfaberCastellUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptionfaberCastell"
-      ).textContent = `Faber castell Available:${
-        70 - HowManyfaberCastell
+      ).textContent = `Faber castell Available:${70 - HowManyfaberCastell
       } Color: all`;
       faberCastell.quantity--;
     }
@@ -1221,8 +1380,7 @@ if (btnfaberCastellDown !== null) {
       deletetheitem("faberCastell");
       document.getElementById(
         "DescriptionfaberCastell"
-      ).textContent = `Faber castell Available:${
-        faberCastell.quantity + 1
+      ).textContent = `Faber castell Available:${faberCastell.quantity + 1
       } Color: all`;
       faberCastell.quantity++;
     }
@@ -1245,6 +1403,7 @@ if (btnLEDBourdUp !== null) {
         "DescriptionLEDBourd"
       ).textContent = `ledBord Available:${20 - HowManyLEDBourd} Color: Black`;
       LEDbourd.quantity--;
+
     }
   });
 }
@@ -1259,8 +1418,7 @@ if (btnLEDBourdDown !== null) {
       deletetheitem("LEDBourd");
       document.getElementById(
         "DescriptionLEDBourd"
-      ).textContent = `ledBord Available: ${
-        LEDbourd.quantity + 1
+      ).textContent = `ledBord Available: ${LEDbourd.quantity + 1
       } Color: Black`;
       LEDbourd.quantity++;
     }
@@ -1282,8 +1440,7 @@ if (btnApplePencilUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptionApplePencil"
-      ).textContent = `ApplePencil Available: ${
-        50 - HowManyApplePencil
+      ).textContent = `ApplePencil Available: ${50 - HowManyApplePencil
       } Color: Black`;
       ApplePencil.quantity--;
     }
@@ -1301,8 +1458,7 @@ if (btnApplePencilDown !== null) {
       deletetheitem("ApplePencil");
       document.getElementById(
         "DescriptionApplePencil"
-      ).textContent = `ApplePencil Available: ${
-        ApplePencil.quantity + 1
+      ).textContent = `ApplePencil Available: ${ApplePencil.quantity + 1
       } Color: Black`;
       ApplePencil.quantity++;
     }
@@ -1396,8 +1552,7 @@ if (btnsewingMechineUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptionsewingMechine"
-      ).textContent = `Sewing machine Available: ${
-        15 - HowManysewingMechine
+      ).textContent = `Sewing machine Available: ${15 - HowManysewingMechine
       } Color: grey`;
       sewingMechine.quantity--;
     }
@@ -1415,8 +1570,7 @@ if (btnsewingMechineDown !== null) {
       deletetheitem("sewingMechine");
       document.getElementById(
         "DescriptionsewingMechine"
-      ).textContent = `Sewing machine Available: ${
-        sewingMechine.quantity + 1
+      ).textContent = `Sewing machine Available: ${sewingMechine.quantity + 1
       } Color: grey`;
       sewingMechine.quantity++;
     }
@@ -1437,10 +1591,10 @@ if (btnmanniqenUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "Descriptionmanniqen"
-      ).textContent = `Manniqen Available:${
-        15 - HowManymanniqen
+      ).textContent = `Manniqen Available:${15 - HowManymanniqen
       } Color: Black `;
       manniqen.quantity--;
+
     }
   });
 }
@@ -1514,8 +1668,7 @@ if (btntapeMessuresUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "DescriptiontapeMessures"
-      ).textContent = `Tape messures Available:${
-        200 - HowManytapeMessures
+      ).textContent = `Tape messures Available:${200 - HowManytapeMessures
       } Color: white `;
       tapeMessures.quantity--;
     }
@@ -1533,8 +1686,7 @@ if (btntapeMessuresDown !== null) {
       deletetheitem("tapeMessures");
       document.getElementById(
         "DescriptiontapeMessures"
-      ).textContent = `Tape messures Available:${
-        tapeMessures.quantity + 1
+      ).textContent = `Tape messures Available:${tapeMessures.quantity + 1
       } Color: white `;
       tapeMessures.quantity++;
     }
@@ -1555,8 +1707,7 @@ if (btnstrecherUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "Descriptionstrecher"
-      ).textContent = `Stretcher Available:${
-        10 - HowManystrecher
+      ).textContent = `Stretcher Available:${10 - HowManystrecher
       }  Color: Black`;
       stretcher.quantity--;
     }
@@ -1573,8 +1724,9 @@ if (btnstrecherDown !== null) {
       deletetheitem("stretcher");
       document.getElementById(
         "Descriptionstrecher"
-      ).textContent = `Stretcher Available:${
-        stretcher.quantity + 1
+
+      ).textContent = `Stretcher Available:${stretcher.quantity + 1
+
       } Color: Black`;
       stretcher.quantity++;
     }
@@ -1631,8 +1783,10 @@ if (btnsilverUp !== null) {
       console.log(CartProduct);
       document.getElementById(
         "Descriptionsilver"
-      ).textContent = `Silver wire Available: ${
-        60 - HowManysilver
+
+      ).textContent = `Silver wire Available: ${60 - HowManysilver
+
+
       } Color: silver`;
       silver.quantity--;
     }
@@ -1649,8 +1803,9 @@ if (btnsilverDown !== null) {
       deletetheitem("silver");
       document.getElementById(
         "Descriptionsilver"
-      ).textContent = `Silver wire Available: ${
-        silver.quantity + 1
+
+      ).textContent = `Silver wire Available: ${silver.quantity + 1
+
       } Color: silver`;
       silver.quantity++;
     }
@@ -1771,10 +1926,11 @@ if (btnInvite !== null) {
     if (Role.role == "student") {
       alert("Please bring back the products in 3 weeks");
     }
-  })}
+  })
+}
 
 
-  //report Teacher
+//report Teacher
 const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
 if (reportTeacherNotNull !== null) {
 
@@ -1996,15 +2152,3 @@ document.getElementById(
 ).textContent = `${stretcher.MaxQuantity}`;
 
 
-//<<<<<<< Omer's-Branch
-
-//=======
-//const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
-//if (reportTeacherNotNull !== null) {
-//  if (localStorage.getItem("cart") !== null) {
-//    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
-//      localStorage.getItem("cart")
-//    );
-//  }
-//}
-//>>>>>>> main
