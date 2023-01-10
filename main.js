@@ -1795,17 +1795,31 @@ if (btnInvite !== null) {
       
       //checkStudent.style.opacity = 100;
     }
-    if (Role.role == "teacher") {
-      alert("Please bring back the products in 3 days");
-      //checkTeacher.style.opacity = 100;
-    }
-    document.getElementById(
-      "outputfromcart"
-    ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
-  });
+  })}
+
+
+  //report Teacher
+const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
+if (reportTeacherNotNull !== null) {
+
+  if (localStorage.getItem("cart") !== null) {
+    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
+      localStorage.getItem("cart")
+    );
+  }
 }
 
-//report student
+//    if (Role.role == "teacher") {
+//      alert("Please bring back the products in 3 days");
+//    }
+//    document.getElementById(
+//      "outputfromcart"
+//    ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
+//  });
+
+
+
+// report student
 const reportStudentNotNull = document.getElementById("reportStudentNotNull");
 if (reportStudentNotNull != null) {
 }
@@ -1931,7 +1945,6 @@ document.getElementById(
 document.getElementById("report_name_22").textContent = `${stretcher.name}`;
 document.getElementById("report_mkt_22").textContent = `${stretcher.MKT}`;
 
-//
 
 //report storageKeeper addons
 const reportStorageKeeperNotNull = document.getElementById(
@@ -2006,13 +2019,16 @@ document.getElementById(
   "report_quantity_max_22"
 ).textContent = `${stretcher.MaxQuantity}`;
 
-//report Teacher
 
-const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
-if (reportTeacherNotNull !== null) {
-  if (localStorage.getItem("cart") !== null) {
-    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
-      localStorage.getItem("cart")
-    );
-  }
-}
+//<<<<<<< Omer's-Branch
+
+//=======
+//const reportTeacherNotNull = document.getElementById("reportTeacherNotNull");
+//if (reportTeacherNotNull !== null) {
+//  if (localStorage.getItem("cart") !== null) {
+//    document.getElementById("reportTeacherNotNull").innerHTML = JSON.parse(
+//      localStorage.getItem("cart")
+//    );
+//  }
+//}
+//>>>>>>> main
