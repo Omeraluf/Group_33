@@ -94,7 +94,7 @@ if (btn_order_status != null) {
   });
 }
 
-let flagmes,can;
+let flagmes,arr,can;
 //let ordersdone =[]; // trying something
 const mes = document.getElementById("order_done");
 const checkStudent = document.getElementById("checkboxStudent");
