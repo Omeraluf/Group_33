@@ -1926,8 +1926,16 @@ if (btnInvite !== null) {
     if (Role.role == "student") {
       alert("Please bring back the products in 3 weeks");
     }
-  })
-}
+       if (Role.role == "teacher") {
+     alert("Please bring back the products in 3 days");
+   }
+   document.getElementById(
+     "outputfromcart"
+   ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
+ });
+  };
+
+
 
 
 //report Teacher
@@ -1941,13 +1949,7 @@ if (reportTeacherNotNull !== null) {
   }
 }
 
-//    if (Role.role == "teacher") {
-//      alert("Please bring back the products in 3 days");
-//    }
-//    document.getElementById(
-//      "outputfromcart"
-//    ).innerHTML = `הזמנתך נשלחה ומחכה לאישור`;
-//  });
+
 
 
 
